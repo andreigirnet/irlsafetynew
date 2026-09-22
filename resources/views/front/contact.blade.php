@@ -40,12 +40,12 @@
                     </div>
 
                     <div class="ct-address-box">
-                        51 Bracken Road, D18 CV48, Ireland
+                        84A Church Street, Dunstable, United Kingdom, LU5 4HP
                     </div>
 
                     <div class="ct-detail-text" style="grid-column: 1 / -1; margin-top: 15px; border-top: 1px solid #e5e7eb; padding-top: 15px;">
-                        <strong>Company Name:</strong> PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED<br>
-{{--                        <strong>Company Registration Number:</strong> 822301--}}
+                        <!-- <strong>Company Name:</strong>  -->
+                        This website is owned and operated by Andrei Girnet(Sole Trader)<br>
                     </div>
                 </div>
 

@@ -76,7 +76,7 @@
 
 
     <div class="title" data-aos="fade-up">
-        <div class="titleText" >Explore our Workplace Safety Courses</div>
+        <div class="titleText" >This website is owned and operated by Andrei Girnet(Sole Trader)</div>
         <div class="borderTitle"></div>
         <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>
@@ -138,7 +138,7 @@
                                     </span>
                                                             <span class="benefit-item">
                                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                                        100% Pass Guarantee
+                                        Unlimited test attempts
                                     </span>
                                 </div>
 
@@ -505,7 +505,7 @@
 
                     <div class="imh-contact-box">
                         <p >For inquiries, student support, sales, or technical assistance, reach out via chat or email.</p>
-                        <a href="mailto:info@ireland-safetycourse.com" class="imh-email-link">info@info@ireland-safetycourse.com</a>
+                        <a href="mailto:info@ireland-safetycourse.com" class="imh-email-link">info@ireland-safetycourse.com</a>
                     </div>
                 </div>
 

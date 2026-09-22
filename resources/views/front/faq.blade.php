@@ -23,7 +23,7 @@
                         <div class="fq-accordion-content" x-show="open" x-transition>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>Your digital certificate is available for immediate download the moment you finish the program.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>After the theoretical modules, you can arrange a 20-30 minute virtual practical assessment with our qualified assessor.</span></div>
-                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The total enrollment fee for manual handling is €35, which covers all assessments without hidden costs.</span></div>
+                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The total enrollment fee for manual handling is €{{config('global.course_price')}}, which covers all assessments without hidden costs.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The platform is available 24/7, allowing you to study whenever and wherever you choose.</span></div>
                             <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>Our training portal is optimized for smartphones, tablets, laptops, and desktop computers.</span></div>
                         </div>
