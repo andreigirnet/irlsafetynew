@@ -61,7 +61,7 @@
                             <span class="fq-question-text">Satisfaction Guarantee</span>
                             <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>We want you to feel confident in your choice. We provide a 15-day refund policy with no questions asked. To be eligible, you must not have finished the course or generated the certificate. Simply contact us via Online Chat to request a refund.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>We want you to feel confident in your choice. We provide a 14-day refund policy with no questions asked. To be eligible, you must not have finished the course or generated the certificate. Simply contact us via Online Chat to request a refund.</div>
                     </div>
                     <div class="fq-accordion-item" x-data="{ open: false }">
                         <button class="fq-accordion-trigger" @click="open = !open">
