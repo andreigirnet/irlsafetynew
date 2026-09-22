@@ -31,7 +31,7 @@
                     <div class="credentials-flex-box">
                         <div class="cred-pill">
                             <span class="c-label">Legal Entity Name</span>
-                            <span class="c-val">This website is owned and operated by Andrei Girnet(Sole Trader)/span>
+                            <span class="c-val">This website is owned and operated by Andrei Girnet(Sole Trader)</span>
                         </div>
                         
                         <div class="cred-pill">
