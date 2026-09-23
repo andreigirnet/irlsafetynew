@@ -76,7 +76,7 @@
 
 
     <div class="title" data-aos="fade-up">
-        <div class="titleText" >This website is owned and operated by Andrei Girnet(Sole Trader)</div>
+        <div class="titleText" >Leader in workplace safety courses</div>
         <div class="borderTitle"></div>
         <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>
