@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{asset("css/front/teamTraining.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/faq.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/contact.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/consulting.css")}}">
+    <!-- <link rel="stylesheet" href="{{asset("css/front/consulting.css")}}"> -->
     <link rel="stylesheet" href="{{asset("css/front/login.css")}}">
     <link rel="stylesheet" href="{{asset("css/front/blog.css")}}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
