@@ -26,7 +26,7 @@
             <p>This **Safe Operation Curriculum** is designed to satisfy the need for appropriate employee orientation and instruction. Through our **Digital Safety Instruction Online** platform, your team builds a proactive culture of fire prevention, ensuring readiness for internal reviews and operational standards.</p>
 
             <div class="mh-feature-list">
-                <li><strong>Preparedness Shield:</strong> Built around industry-recognized workplace safety frameworks.</li>
+                <li><strong>Preparedness Shield:</strong> Built around industry workplace safety frameworks.</li>
                 <li><strong>Nationwide Trust:</strong> Widely trusted across Irish facilities and property management standards.</li>
             </div>
         </article>

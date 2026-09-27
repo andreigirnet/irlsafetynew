@@ -44,7 +44,7 @@
                 <div class="mainBannerDescription">Online workplace safety courses and training. Our courses are clear, practical, and easy to follow with images, and concise text. Complete your training at your own pace on any device and receive your completion record.</div>
                     <a href="{{route('register')}}" class="modern-glow-btn">
                     START NOW
-                </a>
+                    </a>
             </div>
         </div>
         <div class="metrics-wrapper bg-brand-deep">
@@ -210,7 +210,7 @@
                         <div class="premium-icon-box">
                             <img src="{{asset('images/icons/33.png')}}" alt="Achieve">
                         </div>
-                        <p class="premium-step-text" >Learn & Achieve - Progress through the course, pass the assessment, and download your credentials.</p>
+                        <p class="premium-step-text" >Learn & Achieve - Progress through the course, pass the assessment, and download your certificate.</p>
                     </div>
 
                     <div class="premium-step-card">
@@ -645,7 +645,7 @@
                         <span class="imh-feature-icon">🏅</span>
                         <div>
                             <strong>Online Certificate</strong>
-                            <p>Showcase compliance with recognized safety regulations.</p>
+                            <p>Showcase compliance with safety.</p>
                         </div>
                     </div>
 

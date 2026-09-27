@@ -18,13 +18,13 @@
         <div class="swiper-slide" style="display: flex; align-items: center; justify-content: center">
             <div class="subNavElement">
                 <img src="{{asset('images/subnav/moneyBack.png')}}" class="subNavImg" alt="image">
-                <span>Money Back Guarantee</span>
+                <span>Affordable</span>
             </div>
         </div>
         <div class="swiper-slide" style="display: flex; align-items: center; justify-content: center">
             <div class="subNavElement">
                 <img src="{{asset('images/subnav/moneyBack.png')}}" class="subNavImg" alt="image">
-                <span>Fully accredited course</span>
+                <span>30 minutes course</span>
             </div>
         </div>
 

@@ -26,7 +26,7 @@
             <p>This **Safe Operation Curriculum** is designed to provide comprehensive educational instruction on equipment selection, commissioning, and proper handling. Through our **Digital Safety Instruction Online**, employees build the confidence and knowledge to act during the early stages of unexpected incidents, ensuring your team maintains high standards of safety awareness.</p>
 
             <div class="mh-feature-list">
-                <li><strong>Preparedness Shield:</strong> Built around industry-recognized safety and equipment standards.</li>
+                <li><strong>Preparedness Shield:</strong> Built around industry safety and equipment standards.</li>
                 <li><strong>Audit Ready:</strong> Every **Operator Proficiency Verification** features a unique verification ID for your records.</li>
             </div>
         </article>
@@ -63,7 +63,7 @@
             <h2>The Physics of Extinction: The PASS Technique</h2>
             <p>Understanding foundational fire behavior is core to this **Safe Operation Curriculum**. Safety tools operate on the principle of managing elements like heat, fuel, and oxygen. However, selecting the right equipment must be paired with proper application techniques.</p>
 
-            <p>Our **Digital Safety Instruction Online** provides a detailed breakdown of the <strong>PASS Technique</strong>, the internationally recognized standard for equipment handling:</p>
+            <p>Our **Digital Safety Instruction Online** provides a detailed breakdown of the <strong>PASS Technique</strong>, the internationally  standard for equipment handling:</p>
             <ul class="mh-v8-list">
                 <li><strong>P – Pull:</strong> Pull the safety pin to release the mechanism.</li>
                 <li><strong>A – Aim:</strong> Aim low, pointing the nozzle at the base of the fire, not the flames.</li>

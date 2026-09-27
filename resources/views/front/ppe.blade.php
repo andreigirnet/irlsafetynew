@@ -63,7 +63,7 @@
             <h2>The Hierarchy of Control: Equipment Context</h2>
             <p>The foundation of all **Digital Safety Instruction Online** regarding protective equipment is the <strong>Hierarchy of Control</strong>. Protective gear is part of a broader system designed to manage workplace risks effectively.</p>
 
-            <p>Our **Safe Operation Curriculum** provides a detailed look at certified equipment markings. We explain the technical importance of ensuring all gear meets recognized performance standards for quality and reliability across demanding sectors like construction and manufacturing.</p>
+            <p>Our **Safe Operation Curriculum** provides a detailed look at certified equipment markings. We explain the technical importance of ensuring all gear meets performance standards for quality and reliability across demanding sectors like construction and manufacturing.</p>
 
             <h3>The Importance of Compatibility</h3>
             <p>A common operational oversight is a lack of equipment compatibility—for example, wearing specific safety helmets that interfere with the seal of hearing protection or respiratory masks. Our training ensures workers know how to perform proper checks before entering specialized work zones.</p>

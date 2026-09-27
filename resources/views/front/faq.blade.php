@@ -134,7 +134,7 @@
                             <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            Yes, all instructors hold recognized QQI Level 6 Manual Handling Instructor certification and deliver training in line with work compliant standards.
+                            Yes, all instructors hold QQI Level 6 Manual Handling Instructor certification and deliver training in line with work compliant standards.
                         </div>
                     </div>
 

@@ -26,7 +26,7 @@
             <p>This **Safe Operation Curriculum** is designed to meet training standards set out for Levels 1 & 2. Through our **Digital Safety Instruction Online**, food handlers in catering and retail build essential knowledge to manage high-risk items safely, reducing risks and maintaining high standards of food hygiene.</p>
 
             <div class="mh-feature-list">
-                <li><strong>Preparedness Shield:</strong> Built around industry-recognized food safety and hygiene frameworks.</li>
+                <li><strong>Preparedness Shield:</strong> Built around industry food safety and hygiene frameworks.</li>
                 <li><strong>Audit Ready:</strong> Every **Operator Proficiency Verification** features a unique verification ID for your records.</li>
             </div>
         </article>

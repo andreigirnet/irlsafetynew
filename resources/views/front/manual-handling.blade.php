@@ -26,7 +26,7 @@
             <p>This **Safe Operation Curriculum** provides structured guidance for anyone involved in physical tasks. Through our **Digital Safety Instruction Online**, your team builds essential knowledge to minimize strain, support physical well-being, and maintain high standards of workplace ergonomics.</p>
 
             <div class="mh-feature-list">
-                <li><strong>Preparedness Shield:</strong> Built around industry-recognized ergonomic and safe movement standards.</li>
+                <li><strong>Preparedness Shield:</strong> Built around industry ergonomic and safe movement standards.</li>
                 <li><strong>Audit Ready:</strong> Every **Operator Proficiency Verification** features a unique verification ID for your records.</li>
             </div>
         </article>
