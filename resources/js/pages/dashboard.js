@@ -95,12 +95,11 @@ import ApexCharts from 'apexcharts';
             }
         };
 
-        var chart = new ApexCharts(
-            document.querySelector("#revenue-chart"),
-            options
-        );
-
-        chart.render();
+   var revenueElement = document.querySelector("#revenue-chart");
+if (revenueElement) {
+    var chart = new ApexCharts(revenueElement, options);
+    chart.render();
+}
 
         // --------------------------------------------------
         var colors = ["#3e60d5", "#47ad77", "#fa5c7c", "#ffbc00"];

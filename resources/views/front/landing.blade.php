@@ -26,7 +26,7 @@
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                         </div>
                         <div class="badge-content">
-                            <span class="badge-number">Instant</span>
+                            <span class="badge-number">Completion</span>
                             <span class="badge-label">Digital Certificates</span>
                         </div>
                     </div>
@@ -41,8 +41,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="mainBannerDescription" >Certified Workplace safety courses and Workplace safety training online trusted by 350,000+ professionals across Ireland and Europe. Our Workplace safety courses are clear, practical, and easy to follow, with videos, images, and concise text. Complete your Workplace safety training at your own pace on any device and receive your certificate instantly.</div>
-                <a href="{{route('register')}}" class="modern-glow-btn">
+                <div class="mainBannerDescription">Online workplace safety courses and training. Our courses are clear, practical, and easy to follow with images, and concise text. Complete your training at your own pace on any device and receive your completion record.</div>
+                    <a href="{{route('register')}}" class="modern-glow-btn">
                     START NOW
                 </a>
             </div>
@@ -94,7 +94,7 @@
                             @else
                                 <div class="card-badge green-badge">
                                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                    Instant Online Certification
+                                    Online Certificate
                                 </div>
                             @endif
 
@@ -134,7 +134,7 @@
                                 <div class="benefits-row">
                                     <span class="benefit-item">
                                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                                        Instant Certification
+                                        Course Certification
                                     </span>
                                                             <span class="benefit-item">
                                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
@@ -164,8 +164,8 @@
     </div>
 
     <div class="langTitle" data-aos="fade-up">
-        <div class="languageText"  >
-            At Ireland Safety Course, our Workplace safety courses and online Workplace safety training programs are designed to be simple, engaging, and accessible for learners of all nationalities. Each safety course online includes clear videos, illustrative graphics, straightforward images, and easy-to-read content to ensure every step is simple to follow. Our Workplace safety courses fully comply with standards, align with European Union legislation, and provide recognized certification trusted across Ireland, the UK, Europe, and beyond. Discover our safety courses online and begin your Workplace safety training today.
+        <div class="languageText">
+            At Ireland Safety Course, our Workplace safety courses and online Workplace safety training programs are designed to be simple, engaging, and accessible for learners of all nationalities. Each safety course online includes clear illustrative graphics, straightforward images, and easy-to-read content to ensure every step is simple to follow. Our Workplace safety courses focus on quality and essential workplace safety best practices. Discover our safety courses online and begin your Workplace safety training today.
         </div>
         <div class="languagesSection">
             <img src="{{asset('images/flags/en.png')}}" alt="">
@@ -210,7 +210,7 @@
                         <div class="premium-icon-box">
                             <img src="{{asset('images/icons/33.png')}}" alt="Achieve">
                         </div>
-                        <p class="premium-step-text" >Learn & Achieve - Progress through the course, pass the assessment, and instantly download your credentials.</p>
+                        <p class="premium-step-text" >Learn & Achieve - Progress through the course, pass the assessment, and download your credentials.</p>
                     </div>
 
                     <div class="premium-step-card">
@@ -513,15 +513,15 @@
                     <div class="imh-badge-item">
                         <div class="imh-icon">🌍</div>
                         <div>
-                            <strong>EU & UK Recognized</strong>
-                            <p>Fully compliant certifications across borders.</p>
+                            <strong>Learn from anywhere</strong>
+                            <p>24/7</p>
                         </div>
                     </div>
                     <div class="imh-badge-item">
                         <div class="imh-icon">🎓</div>
                         <div>
-                            <strong>CMIOSH Instructors</strong>
-                            <p>IOSH certified at NFQ Level 6 expertise.</p>
+                            <strong>Professional instructors</strong>
+                            <p>QQI Level 6 Instructors</p>
                         </div>
                     </div>
                     <div class="imh-badge-item">
@@ -550,7 +550,7 @@
                     <div class="exclusive-icon-box" style="border-color: #e60b31;">
                         <img src="{{asset('images/logo/home.svg')}}" alt="Home">
                     </div>
-                    <h3 class="exclusive-title" >FLEXIBLE Workplace SAFETY COURSE</h3>
+                    <h3 class="exclusive-title" >FLEXIBLE WORKPLACE SAFETY COURSE</h3>
                     <p class="exclusive-text" >Complete your training online at a time and location that fits your lifestyle.</p>
                 </div>
 
@@ -566,7 +566,7 @@
                     <div class="exclusive-icon-box" style="border-color: #345cb3;">
                         <img src="{{asset('images/logo/wallet.svg')}}" alt="Wallet">
                     </div>
-                    <h3 class="exclusive-title" >AFFORDABLE Workplace SAFETY COURSE ONLINE</h3>
+                    <h3 class="exclusive-title" >AFFORDABLE WORKPLACE SAFETY COURSE ONLINE</h3>
                     <p class="exclusive-text" >Online education removes the overhead expenses of traditional classroom settings.</p>
                 </div>
             </div>
@@ -580,7 +580,7 @@
                     <div class="exclusive-icon-box" style="border-color: #f49c12;">
                         <img src="{{asset('images/logo/download.svg')}}" alt="Download">
                     </div>
-                    <h3 class="exclusive-title" >INSTANT Workplace SAFETY CERTIFICATE</h3>
+                    <h3 class="exclusive-title" > WORKPLACE SAFETY CERTIFICATE</h3>
                     <p class="exclusive-text" >Finish your modules and download your certificate immediately upon completion.</p>
                 </div>
 
@@ -597,7 +597,7 @@
                         <img src="{{asset('images/logo/high-quality.svg')}}" alt="Quality">
                     </div>
                     <h3 class="exclusive-title" >RECOGNISED QUALIFICATIONS</h3>
-                    <p class="exclusive-text" >Our digital learning is a cost-effective alternative to earn your official Workplace safety certificate.</p>
+                    <p class="exclusive-text" >Our digital learning is a cost-effective alternative to earn your Workplace safety certificate.</p>
                 </div>
             </div>
 
@@ -644,7 +644,7 @@
                     <div class="imh-feature-item">
                         <span class="imh-feature-icon">🏅</span>
                         <div>
-                            <strong>Instant Certification</strong>
+                            <strong>Online Certificate</strong>
                             <p>Showcase compliance with recognized safety regulations.</p>
                         </div>
                     </div>
@@ -675,14 +675,14 @@
             <div class="mh-faq-list">
 
                 <!-- FAQ 1 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'is Workplace safety training a legal requirement in ireland? '.includes(search.toLowerCase())">
+                <div class="mh-faq-item" x-data="{ open: false }" x-show="'is Workplace safety training a requirement in ireland? '.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Is Workplace Safety training a legal requirement for my business?</span>
+                        <span class="mh-faq-question">How long the certificate is valid?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
-                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                    <div class="mh-faq-content" x-show="open" x-cloak>
                         <p class="mh-faq-text">
-                            Yes, under the <strong>Safety, Health and Welfare at Work Act 2005</strong>, providing safety training is a fundamental legal obligation for all Irish employers. Section 8 of the Act states that employers must provide the necessary information, instruction, and training to ensure, as far as is reasonably practicable, the safety and health of their employees. Failing to provide <strong>compliant training</strong> can lead to criminal prosecution, heavy fines, and significant civil liability in the event of a workplace accident.
+                            <strong>Our certificate</strong> is proof that you have successfully completed the course with us and is valid for 3 years. You can check your manual handling certificate validity here: <a href="{{route('front.verify')}}">verify certificate</a>
                         </p>
                     </div>
                 </div>
@@ -690,12 +690,12 @@
                 <!-- FAQ 2 -->
                 <div class="mh-faq-item" x-data="{ open: false }" x-show="'how long does a Workplace safety certificate last? expiry'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">How long is a Workplace Safety certificate valid for?</span>
+                        <span class="mh-faq-question">Is the manual handling course theory + practice?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
-                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                    <div class="mh-faq-content" x-show="open" x-cloak>
                         <p class="mh-faq-text">
-                            While the law does not always specify a hard expiry date for every course, industry standards indicate that most safety certificates (such as Manual Handling or Fire Safety) remain valid for <strong>3 years</strong>. However, high-risk industries or specific certifications like <strong>First Aid Response (FAR)</strong> require a refresher every 2 years. Keeping safety certifications up to date is critical for maintaining insurance coverage and ensuring continuous workplace competency.
+                            Yes, after you purchase the course, you will be able to <strong>start it immediately</strong> and go through the theory slides. At the end, you will have to pass a theory test. After successfully passing the theory test, you will need to record a video of yourself lifting an object while following <strong>proper manual handling techniques</strong> and send it to us via WhatsApp for approval. Our instructor will review the video and, once approved, will issue your certificate.
                         </p>
                     </div>
                 </div>
@@ -703,12 +703,12 @@
                 <!-- FAQ 3 -->
                 <div class="mh-faq-item" x-data="{ open: false }" x-show="'how are online safety courses utilized in compliance frameworks?'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">How are online safety courses utilized in compliance frameworks?</span>
+                        <span class="mh-faq-question">Can I complete the courses fully online?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
-                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                    <div class="mh-faq-content" x-show="open" x-cloak>
                         <p class="mh-faq-text">
-                            Online e-learning safety courses are applied for general theory-based subjects. For programs that require physical competencies, a <strong>blended learning</strong> model is typically used, allowing the theoretical portion to be completed online followed by a mandatory practical assessment to meet full compliance standards.
+                            Online e-learning safety courses are applied for general theory-based subjects. For programs that require physical competencies, a <strong>blended learning</strong> model is typically used, allowing the theoretical portion to be completed online followed by a mandatory practical assessment to meet full compliance standards.After successfully passing the theory test, you will need to record a video of yourself lifting an object while following <strong>proper manual handling techniques</strong> and send it to us via WhatsApp for approval. Our instructor will review the video and, once approved, will issue your certificate.
                         </p>
                     </div>
                 </div>
@@ -718,7 +718,7 @@
                         <span class="mh-faq-question">How do I verify a safety certificate?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
-                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                    <div class="mh-faq-content" x-show="open"  x-cloak>
                         <p class="mh-faq-text">
                             <strong>Yes, verification is simple.</strong> You can verify any certificate directly by visiting the <a href="{{ route('front.verify') }}">certificate verification page</a> on this website.
                         </p>
@@ -728,12 +728,12 @@
                 <!-- FAQ 5 -->
                 <div class="mh-faq-item" x-data="{ open: false }" x-show="'who is responsible for paying for the training? employer duties'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Who is responsible for the cost of Workplace safety training?</span>
+                        <span class="mh-faq-question">Who is issuing the certificate?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
-                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                    <div class="mh-faq-content" x-show="open" x-cloak>
                         <p class="mh-faq-text">
-                            Legally, the <strong>employer is responsible</strong> for all costs associated with mandatory workplace safety training. Section 25 of the Safety, Health and Welfare at Work Act 2005 specifies that training must be provided during paid working hours and must not result in any financial deduction or cost to the employee.
+                            <strong>The certificate</strong> is issued directly by our private company as  proof of course completion. It verifies that you have successfully completed our comprehensive training modules and met all necessary safety guidelines.
                         </p>
                     </div>
                 </div>
@@ -741,12 +741,12 @@
                 <!-- FAQ 6 -->
                 <div class="mh-faq-item" x-data="{ open: false }" x-show="'what happens if a business is not compliant? fines'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">What are the penalties for non-compliance with safety laws?</span>
+                        <span class="mh-faq-question">Can I download my certificate later?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
-                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                    <div class="mh-faq-content" x-show="open" x-cloak>
                         <p class="mh-faq-text">
-                            Failing to provide <strong>compliant training</strong> can result in summary fines of up to €3,000 per offense or fines of up to €3 million on indictment in Ireland. Furthermore, business owners or directors can face up to two years in prison. A lack of certified training can also lead to the <strong>voiding of insurance policies</strong>, leaving the company liable for personal injury settlement costs.
+                            You can login any time with your credentials. And download a <strong>new certificate</strong> in case you lost it
                         </p>
                     </div>
                 </div>
@@ -757,7 +757,7 @@
                         <span class="mh-faq-question">Do I get a discount if I buy bulk for my team?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
-                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                    <div class="mh-faq-content" x-show="open"  x-cloak>
                         <p class="mh-faq-text">
                             <strong>Yes.</strong> You receive a discount when purchasing 10 or more courses. Please check the corporate training section on the website for pricing tiers and group booking details.
                         </p>
@@ -770,7 +770,7 @@
                         <span class="mh-faq-question">Can I retake the assessment if I fail?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
-                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                    <div class="mh-faq-content" x-show="open"  x-cloak>
                         <p class="mh-faq-text">
                             <strong>Yes.</strong> You can retake the assessment as many times as you need with unlimited attempts until you successfully pass the course.
                         </p>
@@ -783,7 +783,7 @@
                         <span class="mh-faq-question">Can safety training be performed from a mobile device?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
-                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                    <div class="mh-faq-content" x-show="open" x-cloak>
                         <p class="mh-faq-text">
                             <strong>Yes.</strong> Modern e-learning safety courses are fully responsive and optimized for smartphones and tablets, allowing employees to complete theoretical modules, read training materials, and take assessments directly from any mobile device. Additionally, the courses are fully available in <strong>5 languages</strong> to accommodate diverse workforces.
                         </p>
@@ -793,12 +793,12 @@
                 <!-- FAQ 10 -->
                 <div class="mh-faq-item" x-data="{ open: false }" x-show="'mental health wellbeing workplace safety psychosocial'.includes(search.toLowerCase())">
                     <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Does safety training include mental Workplace well-being?</span>
+                        <span class="mh-faq-question">What if my certificate is not accepted by employer?</span>
                         <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
                     </button>
-                    <div class="mh-faq-content" x-show="open" x-collapse x-cloak>
+                    <div class="mh-faq-content" x-show="open" x-cloak>
                         <p class="mh-faq-text">
-                            Modern occupational safety places a high priority on psychosocial risks. Employers have a legal duty to manage workplace stress alongside physical hazards. Providing <strong>Mental Health First Aid</strong> and stress management training helps identify early signs of burnout, reduce absenteeism, and improve overall employee well-being.
+                            You will be <strong>fully refunded</strong>. Expect 5-10 business days for refund to take place
                         </p>
                     </div>
                 </div>

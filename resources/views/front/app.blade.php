@@ -1,190 +1,189 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     {{-- Title --}}
     <title>Online Safety Courses Ireland | Certified Training from €30 - {{ config('app.name') }}</title>
+    
     {{-- Meta description --}}
-    <meta name="description" content="30€  online safety courses in Ireland. Manual Handling, Fire Safety, First Aid & more. Instant certificate. Fully compliant training.">
-    <meta name="keywords" content="Manual Handling Courses Online, Best Manual Handling Training Ireland, Manual Handling Certification & Courses, Manual Handling Instructor Certification, Expert Manual Handling Assessment, Compliance with Manual Handling Regulations, Safety in Manual Handling Techniques, Ergonomic Lifting Practices, Efficient Load Handling Methods, Preventing Manual Handling Injuries, Top-Rated Manual Handling Practices in Ireland, Manual Handling Guidelines and Certification, Advanced Manual Handling Training Solutions, Certified Manual Handling Programs, Affordable Manual Handling Certification in Ireland, Professional Manual Handling Courses">
-    {{-- Open Graph / Facebook --}}
+    <meta name="description" content="€30 online safety courses in Ireland. Manual Handling, Fire Safety, First Aid & more. Get certificate. Fully compliant training.">
+    <meta name="keywords" content="Manual Handling Courses Online, Fire Safety Training Ireland, First Aid Certification, Online Safety Courses, Workplace Safety">
+    
+    {{-- Open Graph / Canonical --}}
     <link rel="canonical" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="en-ie" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="en-gb" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}">
     <meta name="format-detection" content="telephone=yes">
+    
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="Online Safety Courses Ireland |  Certified - {{ config('app.name') }}">
+    <meta property="og:title" content="Online Safety Courses Ireland | Certified - {{ config('app.name') }}">
     <meta property="og:description" content="Complete your certified safety training online. Manual Handling, Fire Safety, First Aid & more. Instant certificate included.">
     <meta property="og:image:alt" content="Ireland Safety Course - Certified Online Training">
     <meta property="og:image" content="https://www.irelandsafetycourse.com/images/metaImage.png">
-    <link rel = "icon" href ="{{asset('/favicon.ico')}}" type = "image/x-icon">
-
+    
+    {{-- Favicons --}}
+    <link rel="icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
+    {{-- Fonts & Stylesheets --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset("css/main.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/registerInclude.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/footer.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/brandSwiper.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/landing.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/products.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/product.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/teamTraining.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/faq.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/contact.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/consulting.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/login.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/working-at-heights.css")}}">
-    <link rel="stylesheet" href="{{asset("css/front/blog.css")}}">
-    <link rel="stylesheet" href="{{asset("css/admin/adminProduct.css")}}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/registerInclude.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/brandSwiper.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/landing.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/products.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/product.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/teamTraining.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/faq.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/contact.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/consulting.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/working-at-heights.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/front/blog.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/admin/adminProduct.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-<meta name="google-site-verification" content="LzejX2Dd-6oj32ZQRq5981tz74cTlalGjMXEwe6ZeiI" />
+    {{-- Scripts --}}
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
 
-
+    <meta name="google-site-verification" content="LzejX2Dd-6oj32ZQRq5981tz74cTlalGjMXEwe6ZeiI"/>
 </head>
 
-<body x-data="app()">
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18160580545">
-</script>
+<body>
+
+{{-- Google tag (gtag.js) --}}
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18160580545"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'AW-18160580545');
 </script>
-{{--@include("frontIncludes/hamburger")--}}
-{{--@include("frontIncludes/responsiveNav")--}}
+
 @include("frontIncludes/frontNav")
-{{--@include("frontIncludes/subNav")--}}
-{{--@include("frontIncludes/subNavMobile")--}}
 
 @yield('content')
 
-
-{{--<script>--}}
-{{--    window.replainSettings = { id: '4ca76446-067f-4bd3-bf12-f8cdcd962c13' };--}}
-{{--    (function(u){var s=document.createElement('script');s.async=true;s.src=u;--}}
-{{--        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);--}}
-{{--    })('https://widget.replain.cc/dist/client.js');--}}
-{{--</script>--}}
 <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=FCKWCyQL7PYg"></script>
+
 @include("frontIncludes/registerInclude")
 @include("frontIncludes/footer")
 @include("frontIncludes/brandSwiper")
-<script src="{{asset("js/hamburgerAction.js")}}"></script>
-<script src="{{asset("js/brandSwiper.js")}}"></script>
-<script src="{{asset("js/accordion.js")}}"></script>
-<script src="{{asset("js/review.js")}}"></script>
+
+{{-- Footer Scripts --}}
+<!-- <script src="{{ asset('js/hamburgerAction.js') }}"></script>
+<script src="{{ asset('js/brandSwiper.js') }}"></script> -->
+<script src="{{ asset('js/accordion.js') }}"></script>
+<script src="{{ asset('js/review.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="{{asset("js/swiper.js")}}"></script>
+<script src="{{ asset('js/swiper.js') }}"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-{{--<script src="{{asset('js/mainScript.js')}}"></script>--}}
 <script>
     AOS.init();
 </script>
-<script src="{{asset('js/prevent.js')}}"></script>
+<script src="{{ asset('js/prevent.js') }}"></script>
+
+{{-- FAQ Schema Markup --}}
 <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Health and Safety training a legal requirement for my business?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, under the Safety, Health and Welfare at Work Act 2005, providing safety training is a fundamental legal obligation for all Irish employers. Employers must provide necessary instruction and training to ensure employee safety."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long is a Health and Safety certificate valid for?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "While law varies by course, the industry standard and HSA best practice is that most safety certificates (such as Manual Handling or Fire Safety) remain valid for 3 years. High-risk certifications like First Aid Response (FAR) require a refresher every 2 years."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are online safety certificates recognized by Irish regulators?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Online E-Learning safety courses are widely accepted for theory-based subjects. For practical skills, we utilize a Blended Learning model that combines online theory with a focused practical assessment to meet full HSA regulatory standards."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is a workplace Risk Assessment and why do I need one?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A Risk Assessment identifies workplace hazards that could cause injury. Under the 2005 Act, every employer in Ireland must have a written Safety Statement based on these assessments to eliminate or control dangers effectively."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who is responsible for the cost of health and safety training?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Legally, the employer is responsible for all costs associated with mandatory health and safety training. Section 25 of the 2005 Act specifies that training must be provided during paid working hours at no cost to the employee."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are the penalties for non-compliance with safety laws?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Penalties include summary fines up to €3,000 per offense or fines up to €3 million on indictment. Directors can face prison, and lack of training often leads to the voiding of insurance policies during injury claims."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How many First Aiders does my company legally require?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Determined by a First Aid Needs Assessment, low-risk offices typically need one First Aid Responder (FAR) per 50 employees. High-risk sites require higher coverage to ensure a responder is available at all times."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Fire Safety training mandatory for every member of staff?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Every staff member must receive basic Fire Safety Awareness training upon induction. Businesses must also appoint and train Fire Wardens responsible for managing evacuations and fire checks."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is COSHH and do my employees require it?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "COSHH (Control of Substances Hazardous to Health) training is required if staff handle chemicals, dusts, or fumes. It teaches how to read Safety Data Sheets (SDS) and use PPE correctly to prevent occupational illness."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does safety training include mental health and well-being?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Modern occupational health includes psychosocial risk management. Providing Mental Health First Aid and stress management is an essential part of a robust safety culture to reduce burnout and improve retention."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "How long the certificate is valid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our certificate is proof that you have successfully completed the course with us and is valid for 3 years. You can check your manual handling certificate validity on our verification page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the manual handling course theory + practice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, after you purchase the course, you will be able to start it immediately and go through the theory slides. At the end, you will have to pass a theory test. After successfully passing the theory test, you will need to record a video of yourself lifting an object while following proper manual handling techniques and send it to us via WhatsApp for approval. Our instructor will review the video and, once approved, will issue your certificate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I complete the courses fully online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Online e-learning safety courses are applied for general theory-based subjects. For programs that require physical competencies, a blended learning model is typically used, allowing the theoretical portion to be completed online followed by a mandatory practical assessment to meet full compliance standards. After successfully passing the theory test, you will need to record a video of yourself lifting an object while following proper manual handling techniques and send it to us via WhatsApp for approval. Our instructor will review the video and, once approved, will issue your certificate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify a safety certificate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, verification is simple. You can verify any certificate directly by visiting the certificate verification page on this website."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is issuing the certificate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The certificate is issued directly by our private company as proof of course completion. It verifies that you have successfully completed our comprehensive training modules and met all necessary safety guidelines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I download my certificate later?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can login any time with your credentials. And download a new certificate in case you lost it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I get a discount if I buy bulk for my team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You receive a discount when purchasing 10 or more courses. Please check the corporate training section on the website for pricing tiers and group booking details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I retake the assessment if I fail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can retake the assessment as many times as you need with unlimited attempts until you successfully pass the course."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can safety training be performed from a mobile device?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Modern e-learning safety courses are fully responsive and optimized for smartphones and tablets, allowing employees to complete theoretical modules, read training materials, and take assessments directly from any mobile device. Additionally, the courses are fully available in 5 languages to accommodate diverse workforces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my certificate is not accepted by employer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You will be fully refunded. Expect 5-10 business days for refund to take place."
+      }
     }
+  ]
+}
 </script>
 </body>
 </html>

@@ -146,18 +146,19 @@
                     <div class="refund-card" style="margin-top: 1.5rem;">
                         <h2 style="margin-top: 0;">Support Contact for Refunds:</h2>
                         <p class="refund-text" style="margin-bottom: 0;">
-                            <strong>Online Irish Safety Training</strong><br>
+                            <strong>Online Safety Courses</strong><br>
                             Email: <a href="mailto:info@ireland-safetycourse.com">info@ireland-safetycourse.com</a>
                         </p>
                     </div>
 
                     <h2>Eligibility for Refunds:</h2>
                     <p class="refund-text">
-                        Because our services involve instant access to digital learning modules, training videos, and courseware, refunds are generally evaluated under the following conditions:
+                        We stand behind the quality and acceptance of our training. Refund requests are evaluated under the following conditions:
                     </p>
                     <ul class="refund-list">
-                        <li><strong>Unaccessed Courses:</strong> If you have purchased a course by mistake or experience technical blockades preventing access, you may request a full refund within 14 days of purchase.</li>
-                        <li><strong>Completed Courses:</strong> Once a training module has been fully completed and a certificate of completion has been generated, refund requests can no longer be honored due to the fulfillment of digital delivery. </li>
+                        <li><strong>Employer Rejection Guarantee:</strong> If the certificate is not accepted by your employer, we will issue a full refund.</li>
+                        <li><strong>Unaccessed Courses & 14-Day Window:</strong> If you have purchased a course by mistake, experience technical blockades preventing access, or wish to cancel, you may request a refund within 14 days of purchase.</li>
+                        <li><strong>Completed Courses:</strong> Once a training module has been fully completed and a certificate of completion has been generated, refund requests can no longer be honored unless subject to the employer acceptance policy outlined above.</li>
                         <li><strong>Duplicate Charges:</strong> In the event of a billing error or accidental duplicate payment processed through our secure payment provider (Stripe), a full refund will be issued immediately upon verification.</li>
                     </ul>
 
@@ -165,12 +166,12 @@
                     <p class="refund-text">
                         To submit a refund or cancellation inquiry, please email our support team directly at
                         <a href="mailto:info@ireland-safetycourse.com">info@ireland-safetycourse.com</a>
-                        with your full name, registered email address, transaction reference, and the reason for your request. Alternatively, you can also request a refund directly through our Live Chat support. All valid claims are processed back to your original payment card securely.
+                        with your full name, registered email address, transaction reference, and the reason for your request (including any details regarding employer rejection if applicable). Alternatively, you can also request a refund directly through our Live Chat support. All valid claims are processed back to your original payment card securely.
                     </p>
 
                     <h2>Processing Times:</h2>
                     <p class="refund-text" style="margin-bottom: 0;">
-                        Once a refund is approved by our team, please allow up to 5 to 10 business days for the funds to reflect back on your card statement, depending on your banking provider or card issuer's processing timelines.
+                        All refund requests must be submitted within our 14-day policy window. Once a refund is approved and processed by our team, please allow up to 5 to 10 business days for the funds to reflect on your card statement, depending heavily on your specific bank or card issuer's processing timelines.
                     </p>
 
                 </div>

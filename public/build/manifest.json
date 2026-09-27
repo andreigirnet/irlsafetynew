@@ -261,7 +261,7 @@
     "src": "resources/js/pages/chartjs-area.init.js"
   },
   "resources/js/pages/dashboard.js": {
-    "file": "assets/dashboard-fd4b84a9.js",
+    "file": "assets/dashboard-6fdf404b.js",
     "imports": [
       "__commonjsHelpers-de833af9.js"
     ],

@@ -9,7 +9,7 @@
                     <h1>Working at Heights <br>Training Online Ireland</h1>
                     <p class="mh-lead-text">
                         The definitive **Safe Operation Curriculum** for the Irish construction and industrial sectors.
-                        Secure your **Operator Proficiency Verification** through our standards-aligned 2026 digital platform.
+                        Secure your **Operator Proficiency Verification** through our modern standards-aligned digital platform.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('register')}}" class="btn-exclusive-teal">Enrol Individual — €{{ config('global.course_price') }}</a>
@@ -20,14 +20,14 @@
         </header>
 
         <article class="mh-container-content">
-            <h2>The Legal Mandate: Part 4 of the General Application Regulations</h2>
-            <p>In the Republic of Ireland, "Working at Height" is not defined by a specific distance (such as the old "2-meter rule"). Instead, it is defined as any place where, if measures were not taken, a person could fall a distance liable to cause personal injury. This broad definition means that **Digital Safety Instruction Online** is required for tasks ranging from changing a lightbulb on a step-ladder to erecting steel on a skyscraper.</p>
+            <h2>Height Safety Background: Operational Principles</h2>
+            <p>In the Republic of Ireland, maintaining high standards for elevated tasks is an important priority across industrial environments. Safe operations are defined by proactive planning and appropriate equipment use whenever elevated work takes place. Through our **Digital Safety Instruction Online**, teams build essential knowledge for safe procedures ranging from ladder usage to specialized maintenance tasks.</p>
 
-            <p>The **Safety, Health and Welfare at Work Act 2005** places the primary burden of responsibility on the employer to ensure a "Safe System of Work". This must be documented through a written Risk Assessment and a Method Statement (RAMS). Our **Safe Operation Curriculum** provides the specific knowledge required to draft these documents, ensuring that your organization remains fully compliant with regulatory inspections.</p>
+            <p>Organizations generally maintain structured risk assessments and operational workflows to support safe working practices. Our **Safe Operation Curriculum** provides the specific knowledge required to build robust safety habits, ensuring that your organization maintains high standards of operational readiness.</p>
 
             <div class="mh-feature-list">
-                <li><strong>Employer Duty:</strong> To provide adequate instruction and equipment.</li>
-                <li><strong>Employee Duty:</strong> To utilize safety systems and report defects.</li>
+                <li><strong>Employer Duty:</strong> To provide adequate instruction, orientation, and equipment.</li>
+                <li><strong>Employee Duty:</strong> To utilize safety systems properly and report equipment observations.</li>
             </div>
         </article>
 
@@ -38,51 +38,51 @@
                     <div class="pillar-card">
                         <div class="pillar-icon">🚫</div>
                         <h4>1. Avoidance</h4>
-                        <p>Can the work be done from the ground? Using long-reach tools or drones is the highest level of safety.</p>
+                        <p>Can work be completed from the ground level? Using specialized reach tools is a preferred primary safety measure.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">🛡️</div>
                         <h4>2. Prevention</h4>
-                        <p>Using collective protection like guardrails or scaffolding to prevent a fall from occurring.</p>
+                        <p>Using collective protection like guardrails or scaffolding to maintain a secure working perimeter.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">🪂</div>
                         <h4>3. Mitigation</h4>
-                        <p>Using personal fall protection (harnesses/nets) to minimize the distance and consequences of a fall.</p>
+                        <p>Using personal fall protection equipment to minimize risks during elevated tasks.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">🆘</div>
-                        <h4>4. Rescue</h4>
-                        <p>A mandatory requirement for any height work—planning for the immediate recovery of a fallen worker.</p>
+                        <h4>4. Emergency Planning</h4>
+                        <p>An essential consideration for elevated work—planning for prompt recovery and assistance procedures.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <article class="mh-container-content">
-            <h2>The Physics of a Fall: Impact & Suspension Trauma</h2>
-            <p>A central component of obtaining your **Operator Proficiency Verification** is understanding the physics involved in a fall. A worker falling just 2 meters will reach a speed of nearly 23km/h before impact. Without a deceleration device (like a shock-absorbing lanyard), the "arresting force" on the human body can exceed 10kN, which is sufficient to cause internal organ damage or skeletal failure.</p>
+            <h2>The Physics of Movement: Impact & Suspension Awareness</h2>
+            <p>A central component of obtaining your **Operator Proficiency Verification** is understanding the physical forces involved in elevated work. Recognizing momentum and deceleration mechanics highlights the importance of proper equipment usage.</p>
 
-            <p>Furthermore, this **Safe Operation Curriculum** covers the critical danger of **Suspension Trauma** (Orthostatic Intolerance). When a worker is suspended upright in a harness, blood can pool in the legs, leading to a rapid decrease in oxygen to the brain. If a rescue plan is not executed within 10 to 15 minutes, the results can be fatal. Our **Digital Safety Instruction Online** ensures every worker knows how to use "relief straps" and how to assist in a rescue operation.</p>
+            <p>Furthermore, this **Safe Operation Curriculum** covers the physiological aspects of equipment suspension. Understanding harness positioning and circulation support principles is vital for comprehensive safety awareness. Our **Digital Safety Instruction Online** ensures workers understand proper relief equipment and assistance coordination.</p>
         </article>
 
         <article class="mh-container-content">
             <h2>Essential Equipment & Inspection Protocols</h2>
-            <p>To maintain your **Operator Proficiency Verification**, workers must be competent in the pre-use inspection of their equipment. This includes "The ABC of Fall Protection": **A**nchorage, **B**ody Support (Harness), and **C**onnecting Device (Lanyard/SRL).</p>
+            <p>To maintain your **Operator Proficiency Verification**, workers must be competent in the pre-use inspection of their gear. This includes understanding the fundamentals of secure anchorage, body support, and connecting devices.</p>
 
             <ul class="mh-feature-list">
-                <li><strong>Ladders:</strong> Must only be used for low-risk, short-duration work (less than 30 mins).</li>
-                <li><strong>Fragile Surfaces:</strong> 22% of fatalities involve falls through fragile materials like roof-lights.</li>
-                <li><strong>Edge Protection:</strong> Guardrails must be at least 950mm high with no gap larger than 470mm.</li>
-                <li><strong>Anchor Points:</strong> Must be rated to withstand the force of a fall (typically 12kN for a single person).</li>
+                <li><strong>Ladders:</strong> Designated for appropriate low-risk, short-duration tasks.</li>
+                <li><strong>Fragile Surfaces:</strong> Recognizing and exercising caution around delicate roofing materials.</li>
+                <li><strong>Edge Protection:</strong> Maintaining awareness of guardrails and secure perimeter barriers.</li>
+                <li><strong>Anchor Points:</strong> Ensuring attachment points meet verified load-bearing ratings.</li>
             </ul>
         </article>
 
         <article class="mh-container-content">
-            <h2>Streamlining Compliance with Online Certification</h2>
-            <p>For Dublin-based contractors and nationwide facilities managers, the administrative burden of safety instruction is significant. Our **Operator Proficiency Verification** solves this by providing a centralized dashboard for managing employee records. No more lost paper docs or expired instruction; our system automatically notifies you when a refresher is due.</p>
+            <h2>Streamlining Safety with Digital Certification</h2>
+            <p>For contractors and facilities managers, the administrative side of team education can present scheduling challenges. Our **Operator Proficiency Verification** solves this by providing a centralized dashboard for managing employee records. No more lost paperwork; our system helps you track professional readiness seamlessly.</p>
 
-            <p>Our **Safe Operation Curriculum** is designed for the modern professional. You can pause the modules, resume on your mobile, and download your **Digital Safety Instruction Online** verification document the moment you pass the assessment. Join over 50,000 Irish workers who have chosen the fastest, most reliable path to compliance.</p>
+            <p>Our **Safe Operation Curriculum** is designed for the modern professional. You can pause modules, resume on mobile devices, and access your **Digital Safety Instruction Online** verification document immediately upon completion. Join the professionals who have chosen an efficient path to readiness.</p>
 
             <div style="text-align: center; margin-top: 50px;">
                 <a href="{{route('register')}}" class="btn-gold">Get Certified Now — €{{ config('global.course_price') }}</a>

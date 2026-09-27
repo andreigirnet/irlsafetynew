@@ -3,235 +3,340 @@
 
     <div class="fq-page-wrapper">
         <div class="fq-hero-banner">
-            <h1 class="fq-page-title">Frequently Asked Questions</h1>
+            <h1 class="fq-page-title">Manual Handling Training in Ireland – Frequently Asked Questions</h1>
             <div class="fq-title-underline"></div>
         </div>
 
         <div class="fq-container">
 
+            <!-- MANUAL HANDLING FAQ -->
             <div class="fq-category-card">
                 <div class="fq-category-header">
                     <img src="{{asset('images/icons/info.png')}}" class="fq-category-icon">
-                    <span class="fq-category-title">Manual Handling Guide</span>
+                    <span class="fq-category-title">Manual Handling Course – Complete Guide</span>
                 </div>
+
                 <div class="fq-accordion-list">
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
                         <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Top Questions</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <span class="fq-question-text">Top Questions About Our Online Training</span>
+                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
                         </button>
+
                         <div class="fq-accordion-content" x-show="open" x-transition>
-                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>Your digital certificate is available for immediate download the moment you finish the program.</span></div>
-                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>After the theoretical modules, you can arrange a 20-30 minute virtual practical assessment with our qualified assessor.</span></div>
-                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The total enrollment fee for manual handling is €{{config('global.course_price')}}, which covers all assessments without hidden costs.</span></div>
-                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The platform is available 24/7, allowing you to study whenever and wherever you choose.</span></div>
-                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>Our training portal is optimized for smartphones, tablets, laptops, and desktop computers.</span></div>
+                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>Your Manual Handling Ireland certification is available for immediate download once you complete the last part of the course practical video test, and it is approved by our instrutor.</span></div>
+                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>After finishing the theory modules of your manual handling training online Ireland, you can send a video via whatsup, and our instructor will look over it.</span></div>
+                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The total fee of €{{config('global.course_price')}} covers the full manual handling course Ireland, final assessment, and certification — no hidden charges.</span></div>
+                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The course is available 24/7 online, allowing you to complete your manual handling training Ireland at your own pace.</span></div>
+                            <div class="fq-major-item"><img src="{{asset('images/icons/right-arrow.png')}}" class="fq-bullet-icon"><span>The course is fully compatible with smartphones, tablets, laptops, and desktop computers.</span></div>
                         </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
                         <button class="fq-accordion-trigger" @click="open = !open">
                             <span class="fq-question-text">Practical Skills Assessment</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Once you have successfully passed the final theory exam, please reach out to us via our Online Chat to book your live practical session. These sessions are held in a virtual classroom and last roughly 15-20 minutes. There are no extra charges for this part of the training; it is fully included in the initial price.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Once you pass the theory exam, send a video to whatsup {{config('global.phone')}} with you lifting a object following manual handling techniques. Our instructor will asses it and in less than 10 minutes you get the certificate.
+                        </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
                         <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Accreditation & Standards</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <span class="fq-question-text">Is this course accepted in Ireland?</span>
+                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>This certification is delivered at the NFQ Level 6 standard.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                        Our courses are designed to meet the <strong>Irish industry standards</strong>. We have got professionally trained instructors who are reviewing your practical skills.                        </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
                         <button class="fq-accordion-trigger" @click="open = !open">
                             <span class="fq-question-text">Certificate Access</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Your credentials will be delivered to your registered email address and are also stored in your user profile for easy printing. You can access them instantly upon completion. 📱📩</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Your certificate will be emailed and stored in your account for easy access and printing — part of your Manual Handling Ireland certification.
+                        </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
                         <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Are there hidden fees for the practical part?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <span class="fq-question-text">Are there extra fees for the practical assessment?</span>
+                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Absolutely not. The €35 fee is all-inclusive, covering the theoretical modules, the final exam, and the practical skills demonstration.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            No, the full fee covers theory, practical assessment, and manual handling certification Ireland.
+                        </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
                         <button class="fq-accordion-trigger" @click="open = !open">
                             <span class="fq-question-text">Satisfaction Guarantee</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>We want you to feel confident in your choice. We provide a 14-day refund policy with no questions asked. To be eligible, you must not have finished the course or generated the certificate. Simply contact us via Online Chat to request a refund.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            We offer a 14-day refund policy if the course is not suitable for you, provided training has not been completed and the certificate not issued.
+                        </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
                         <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">How do I manage training for a group of staff members?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <span class="fq-question-text">Managing training for a team</span>
+                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>We provide a comprehensive PDF guide for business accounts. This dashboard allows you to track employee progress, manage licenses, and archive certificates. Our system is designed for transparency and ease of use for HR managers and business owners. If you need help getting started, please message us through the Online Chat.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            After you login, in your employer section, you will be able to manage your team. Add employees, assign courses, and view progress.
+                        </div>
                     </div>
+
                 </div>
             </div>
 
+            <!-- ABOUT COURSES -->
             <div class="fq-category-card">
                 <div class="fq-category-header">
                     <img src="{{asset('images/icons/info.png')}}" class="fq-category-icon">
-                    <span class="fq-category-title">About Ireland Safety Course</span>
+                    <span class="fq-category-title">About Our Manual Handling Training</span>
                 </div>
+
                 <div class="fq-accordion-list">
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Which devices can I use for learning?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Which devices can I use?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Any device with a standard web browser and an internet connection will work perfectly.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Any modern device with internet access can be used to complete your manual handling training online Ireland.
+                        </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Are the instructors certified professionals?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Are the instructors qualified?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Yes, every instructor is a certified instructor and holds NFQ Level 6 qualifications, ensuring your training meets all Irish HSA legal requirements.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Yes, all instructors hold recognized QQI Level 6 Manual Handling Instructor certification and deliver training in line with work compliant standards.
+                        </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Can I review the material after I finish?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Can I review the material after completing the course?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Yes, your login remains active 24/7, giving you perpetual access to the study materials even after you have been certified.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Yes, you will continue to have access to your manual handling training Ireland materials and Manual Handling Ireland certification.
+                        </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Is there a deadline to finish the course?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Is there a time limit to complete the course?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>There is no time pressure. You can complete the training in one sitting or break it into smaller sessions. Your progress is saved automatically, and you can recover your login details via the 'Forgot Password' link at any time.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            No, you can complete your manual handling course Ireland at your own pace. Progress is saved automatically.
+                        </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Can I take this course from abroad?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Can I take the course from outside Ireland?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Yes, our portal is globally accessible. While the content follows international safety standards, please verify that it meets the specific local legislation if you are working outside of Ireland. The assessment requirements remain the same regardless of your location.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Yes, the manual handling training online Ireland is accessible globally, while meeting job compliant standards.
+                        </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Do you offer corporate discounts?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Do you offer group discounts?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Yes! We offer a 10% discount for orders of 10 courses or more. This is applied automatically at checkout. For larger group rates, please speak with our team via the Online Chat.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Yes, a 10% discount is applied when purchasing 10 or more manual handling course Ireland licenses.
+                        </div>
                     </div>
+
                     <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">What languages can I study in?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">What languages are available?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>The core educational content is available in English, Polish, Spanish, Romanian, Russian, and Ukrainian. Note: The final practical assessment and self-evaluation are currently conducted in English only.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            The content is available in multiple languages. 
+                        </div>
                     </div>
+
                 </div>
             </div>
 
+            <!-- ENROLLMENT & PAYMENTS -->
             <div class="fq-category-card">
                 <div class="fq-category-header">
                     <img src="{{asset('images/icons/carts.png')}}" class="fq-category-icon">
                     <span class="fq-category-title">Enrollment & Payments</span>
                 </div>
+
                 <div class="fq-accordion-list">
-                    <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">How do I begin?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="fq-accordion-item" x-data="{ open:false }">
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">How do I start?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Simply select your course and sign up; you can start learning on any device immediately.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Create an account or login, then complete the purchase, after you will be able to start the course in the courses section.
+                        </div>
                     </div>
-                    <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Buying for a team?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="fq-accordion-item" x-data="{ open:false }">
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Buying for staff members?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Add the required number of seats to your cart. Once purchased, you can assign them to staff members through the 'Packages' section in your dashboard.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Add multiple courses to your cart and assign courses to employees. Discounts apply for larger orders.
+                            Follow this tutorial for clarification where it is shown step by step. <a href="https://www.youtube.com/watch?v=6QkYshqqdIo">Click Here</a>
+                        </div>
                     </div>
-                    <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Payment methods</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="fq-accordion-item" x-data="{ open:false }">
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Payment options</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>We accept all major credit and debit cards for instant access. We also support bank transfers for businesses requiring an invoice, though access is only granted once funds are cleared (usually 24-48 hours). A formal invoice is generated for every transaction.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            We accept all major debit and credit cards. Businesses may request an invoice for bank transfer payments.
+                        </div>
                     </div>
-                    <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Volume discounts</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="fq-accordion-item" x-data="{ open:false }">
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Bulk discounts</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Discounts for bulk orders are calculated automatically. You will save 10% when purchasing 10 or more licenses at once.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Automatic discounts apply for larger orders to support company-wide manual handling training Ireland goals.
+                        </div>
                     </div>
-                    <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Can I buy a gift or license for one other person?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="fq-accordion-item" x-data="{ open:false }">
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Can I purchase the course for someone else?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Yes. Just use the candidate’s name and email during the checkout process, and the login credentials will be sent directly to them.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Yes, you can send the course to anyone in the <strong>Employers section</strong>. Add him as employee. After that in courses section you can send him the course.
+                            Follow this tutorial for clarification where it is shown step by step. <a href="https://www.youtube.com/watch?v=6QkYshqqdIo">Click Here</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
+            <!-- ACCOUNT ACCESS -->
             <div class="fq-category-card">
                 <div class="fq-category-header">
                     <img src="{{asset('images/icons/login.png')}}" class="fq-category-icon">
                     <span class="fq-category-title">Account Access</span>
                 </div>
+
                 <div class="fq-accordion-list">
-                    <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">I paid for the course, what now?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="fq-accordion-item" x-data="{ open:false }">
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">I completed payment – what happens next?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Visit <a href="{{route('register')}}" style="color: blue">"https://ireland-safetycourse.com/packages"</a> to activate your license. If you have trouble, contact us via the Online Chat.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Spot inside the navbar the <strong>My courses section</strong>, click it. There you will be able to start your course immediately.
+                            Follow this tutorial if you still have questions. <a href="https://www.youtube.com/watch?v=pvU81g1_IJM">Click Here</a>
+                        </div>
                     </div>
-                    <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Password recovery</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="fq-accordion-item" x-data="{ open:false }">
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Forgot password?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Use the 'Forgot Password' link on the login page. If the course seems stuck, we recommend clearing your browser cache and using Google Chrome for the best experience. For further help, message us on the Online Chat.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Click “Forgot Password” on login, enter your email, and follow the link to reset access.
+                        </div>
                     </div>
-                    <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Technical issues during training</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="fq-accordion-item" x-data="{ open:false }">
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">How do I download my certificate?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Most technical glitches are solved by clearing your browser's temporary files or logging out and back in. We highly recommend using the latest version of Google Chrome. If problems persist, our team is available via the Online Chat.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                        After successfully passing the assessment, your Manual Handling Ireland Certificate will be available in your dashboard for download or printing. The certificate serves as proof of your successful course completion and the manual handling skills you have acquired through our training.
+                        </div>
                     </div>
+
                 </div>
             </div>
 
+            <!-- EXAMS & CERTIFICATION -->
             <div class="fq-category-card">
                 <div class="fq-category-header">
-                    <img src="{{asset('images/icons/sunny.png')}}" class="fq-category-icon">
-                    <span class="fq-category-title">Exams & Diplomas</span>
+                    <img src="{{asset('images/icons/certificate.png')}}" class="fq-category-icon">
+                    <span class="fq-category-title">Exams & Certification</span>
                 </div>
+
                 <div class="fq-accordion-list">
-                    <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">What if I fail the final test?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="fq-accordion-item" x-data="{ open:false }">
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Do I get a certificate after completion?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Don't worry. You have unlimited free attempts and three years of access to the content to ensure you pass successfully.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Yes, you will receive a certificate. The certificate serves as proof of your successful course completion and the manual handling skills you have acquired through our training.
+                        </div>
                     </div>
-                    <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">How do I get my diploma?</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="fq-accordion-item" x-data="{ open:false }">
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">Is the exam online?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>Upon completion and verification of payment, a PDF certificate is generated instantly for download.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Yes, the theory and practical exam is fully online. For theory you have a quiz at the end of the module. For practical test you have to send a video to whatsup {{config('global.phone')}} with you lifting a object following manual handling techniques. Our instructor will asses it and in less than 10 minutes you get the certificate. 
+                        </div>
                     </div>
-                    <div class="fq-accordion-item" x-data="{ open: false }">
-                        <button class="fq-accordion-trigger" @click="open = !open">
-                            <span class="fq-question-text">Replacement for lost certificates</span>
-                            <svg class="fq-icon-chevron" :class="open ? 'fq-rotate' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="fq-accordion-item" x-data="{ open:false }">
+                        <button class="fq-accordion-trigger" @click="open=!open">
+                            <span class="fq-question-text">How long is the certification valid?</span>
+                            <svg class="fq-icon-chevron" :class="open?'fq-rotate':''" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
-                        <div class="fq-accordion-content" x-show="open" x-transition>We do not issue plastic cards, but your digital PDF is valid and stored in our database for three years. You can log in and re-download it at any time. If you cannot log in, use the 'Forgot Password' feature or reach out via the Online Chat. As a reminder, the course material is available in several languages, but the practical assessment is conducted in English.</div>
+                        <div class="fq-accordion-content" x-show="open" x-transition>
+                            Your Certificate is valid for 3 years from the date of issue.
+                        </div>
                     </div>
+
                 </div>
             </div>
 

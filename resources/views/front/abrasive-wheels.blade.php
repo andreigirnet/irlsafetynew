@@ -20,13 +20,13 @@
         </header>
 
         <article class="mh-container-content">
-            <h2>Abrasive Wheels Safety: The Irish Legal Framework</h2>
-            <p>In the Republic of Ireland, the use of abrasive wheels is strictly regulated due to the high risk of catastrophic failure and severe injury. Under the <strong>Safety, Health and Welfare at Work (General Application) Regulations 2007</strong>, specifically Schedule 5, it is a legal requirement that anyone involved in the mounting or use of abrasive wheels must be properly trained.</p>
+            <h2>Abrasive Wheels Safety: The Irish Framework</h2>
+            <p>In the Republic of Ireland, the use of abrasive wheels is strictly regulated due to the high risk of catastrophic failure and severe injury. Under the <strong>Safety, Health and Welfare at Work (General Application) Regulations 2007</strong>, specifically Schedule 5, it is a   requirement that anyone involved in the mounting or use of abrasive wheels must be properly trained.</p>
 
-            <p>This **Safe Operation Curriculum** is designed to satisfy the legal "Duty of Care" placed on employers to provide competent instruction. Without a valid **Operator Proficiency Verification**, operators are not permitted to mount wheels on grinders, cut-off saws, or bench grinders. Our **Digital Safety Instruction Online** ensures your workforce meets these regulatory thresholds without the downtime associated with classroom learning.</p>
+            <p>This **Safe Operation Curriculum** is designed to satisfy the "Duty of Care" placed on employers to provide competent instruction. Without a valid **Operator Proficiency Verification**, operators are not permitted to mount wheels on grinders, cut-off saws, or bench grinders. Our **Digital Safety Instruction Online** ensures your workforce meets these regulatory thresholds without the downtime associated with classroom learning.</p>
 
             <div class="mh-feature-list">
-                <li><strong>Legal Shield:</strong> Compliant with Schedule 5 regulatory requirements.</li>
+                <li><strong>  Shield:</strong> Compliant with Schedule 5 regulatory requirements.</li>
                 <li><strong>Audit Ready:</strong> Every **Operator Proficiency Verification** features a unique verification ID.</li>
             </div>
         </article>

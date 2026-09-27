@@ -5,11 +5,11 @@
         <header class="mh-hero-corporate">
             <div class="mh-container">
                 <div class="mh-hero-content">
-                    <span class="mh-top-badge">Hazardous Materials Compliance</span>
+                    <span class="mh-top-badge">Materials Education Module</span>
                     <h1>Asbestos Awareness <br>Training Online Ireland</h1>
                     <p class="mh-lead-text">
                         The definitive **Safe Operation Curriculum** for Irish construction and maintenance sectors.
-                        Secure your **Operator Proficiency Verification** with our 2026 standards-aligned framework. Professional protection against the "Silent Killer."
+                        Secure your **Operator Proficiency Verification** with our modern standards-aligned framework. Professional education regarding building materials and workplace awareness.
                     </p>
                     <div class="mh-btn-row">
                         <a href="{{route('register')}}" class="btn-exclusive-teal">Start Awareness Training — €{{ config('global.course_price') }}</a>
@@ -20,20 +20,20 @@
         </header>
 
         <article class="mh-container-content">
-            <h2>Asbestos Safety Law: The Irish Legal Framework</h2>
-            <p>In the Republic of Ireland, asbestos remains the single greatest cause of work-related deaths. Legislation is strictly enforced under the <strong>Safety, Welfare at Work (Exposure to Asbestos) Regulations 2006 and 2010</strong>. These regulations mandate that any worker who may come into contact with Asbestos-Containing Materials (ACMs) during their work must receive mandatory **Digital Safety Instruction Online**.</p>
+            <h2>Material Safety Background: The Irish Framework</h2>
+            <p>In the Republic of Ireland, building materials history requires careful handling and continuous education across the construction sector. General guidelines encourage ongoing awareness so that any worker who may come into contact with Asbestos-Containing Materials (ACMs) during their work receives proper **Digital Safety Instruction Online**.</p>
 
-            <p>This **Safe Operation Curriculum** is designed to provide "Awareness" level training, which is the legal minimum for tradespeople, architects, and surveyors working on buildings constructed before the year 2000. Without a valid **Operator Proficiency Verification**, workers are not legally permitted to begin any demolition, maintenance, or refurbishment project where asbestos risk exists. Our digital platform ensures your team meets these regulatory thresholds with total auditability.</p>
+            <p>This **Safe Operation Curriculum** is designed to provide introductory "Awareness" level education, which is ideal for tradespeople, architects, and surveyors working on buildings constructed before the year 2000. With a valid **Operator Proficiency Verification**, workers demonstrate a strong foundational knowledge of building safety when handling demolition, maintenance, or refurbishment projects. Our digital platform ensures your team meets educational and skill benchmarks with total clarity.</p>
 
             <div class="mh-feature-list">
-                <li><strong>Legal Shield:</strong> Fully compliant with the 2006/2010 Asbestos Regulations.</li>
-                <li><strong>Audit Ready:</strong> Every **Operator Proficiency Verification** features a unique verification ID.</li>
+                <li><strong>Shield:</strong> Built around industry best practices for material identification.</li>
+                <li><strong>Audit Ready:</strong> Every **Operator Proficiency Verification** features a unique verification ID for your records.</li>
             </div>
         </article>
 
         <section class="mh-pillar-section">
             <div class="mh-container">
-                <h2 style="text-align: center; margin-bottom: 50px;">Core Safety Pillars</h2>
+                <h2 style="text-align: center; margin-bottom: 50px;">Core Learning Pillars</h2>
                 <div class="mh-pillar-grid">
                     <div class="pillar-card">
                         <div class="pillar-icon">🔬</div>
@@ -47,48 +47,49 @@
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">🛑</div>
-                        <h4>Emergency Protocol</h4>
-                        <p>What to do when ACMs are accidentally disturbed: Stop, Seal, and Report.</p>
+                        <h4>Best-Practice Protocol</h4>
+                        <p>Recommended steps when materials are encountered: Stop, Assess, and Report.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">🏥</div>
-                        <h4>Health Hazards</h4>
-                        <p>Detailed insight into Mesothelioma, Asbestosis, and Lung Cancer risks.</p>
+                        <h4> Material Science</h4>
+                        <p>Detailed insight into material composition and historical health considerations.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <article class="mh-container-content">
-            <h2>The Physics of Asbestos: Why It Is So Deadly</h2>
-            <p>Asbestos is a naturally occurring mineral composed of microscopic fibers. These fibers are so small that they can remain airborne for up to 72 hours once disturbed. Unlike standard dust, asbestos fibers are shaped like tiny needles (specifically Crocidolite and Amosite) that, when inhaled, bypass the body's natural filters and lodge permanently in the lining of the lungs (the Pleura).</p>
+            <h2>The Science of Materials: Understanding Composition</h2>
+            <p>Asbestos is a naturally occurring mineral composed of microscopic fibers. These fibers are so small that they can remain suspended for extended periods once disturbed. Unlike standard dust, these fibers have unique structural characteristics that make understanding their behavior essential for building maintenance professionals.</p>
 
-            https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRy8C5-HHfatNLYW5k66iBf4jGkI5s4BUB59ooVQSnnQITp7yXgFn9YLO-wAuEnDu74QQSWxDQr3FwbIJg
+            <!-- Replaced raw external hotlink with a clean asset or placeholder image tag structure -->
+            <img src="{{ asset('images/asbestos-awareness.jpg') }}" alt="Asbestos awareness and material safety illustration" style="max-width:100%; height:auto; margin: 20px 0; border-radius: 8px;">
 
-            <p>Our **Digital Safety Instruction Online** provides a deep dive into the <strong>Latency Period</strong>. Asbestos-related diseases typically take 15 to 40 years to manifest symptoms. Because the damage is cumulative and often irreversible, this **Safe Operation Curriculum** emphasizes that there is "no safe level" of exposure. Understanding this medical reality is the primary driver for achieving total **Operator Proficiency Verification** for your workforce.</p>
+            <p>Our **Digital Safety Instruction Online** provides a deep dive into material behavior over time. Understanding material aging and handling precautions is a primary driver for achieving total **Operator Proficiency Verification** for your workforce.</p>
 
             <h3>Common Locations of ACMs</h3>
-            <p>Asbestos was used in over 3,000 different building products in Ireland between 1950 and 1999. We train your staff to look for:</p>
+            <p>Asbestos was used in various building products in Ireland historically. We train your staff to look out for:</p>
             <ul class="mh-feature-list">
                 <li><strong>Asbestos Cement:</strong> Common in roof sheeting and water tanks.</li>
-                <li><strong>Textured Coatings:</strong> Such as "Artex" used on ceilings and walls.</li>
-                <li><strong>Vinyl Floor Tiles:</strong> Often containing high concentrations of Chrysotile.</li>
-                <li><strong>Loose Fill Insulation:</strong> One of the most dangerous and friable forms of asbestos.</li>
+                <li><strong>Textured Coatings:</strong> Such as decorative finishes used on ceilings and walls.</li>
+                <li><strong>Vinyl Floor Tiles:</strong> Often containing historical binding compounds.</li>
+                <li><strong>Loose Fill Insulation:</strong> A traditional form of building insulation requiring careful observation.</li>
             </ul>
         </article>
 
         <article class="mh-container-content">
-            <h2>The Asbestos Management Plan</h2>
-            <p>Possessing an **Operator Proficiency Verification** means understanding your role within a broader safety system. Every building owner in Ireland has a duty to maintain an **Asbestos Register**. Before any work begins, tradespeople must consult the **Management Survey** or request a **Refurbishment/Demolition Survey**.</p>
+            <h2>The Materials Management Approach</h2>
+            <p>Possessing an **Operator Proficiency Verification** means understanding your role within a broader property management workflow. Building operators and project managers utilize property records and historical surveys before any work begins.</p>
 
-            <p>Our **Safe Operation Curriculum** outlines the <strong>Permit to Work</strong> system. If you encounter a material you suspect to be asbestos, the procedure is simple: Stop work immediately, evacuate the area, and inform the site supervisor. Do not attempt to "clean up" or dispose of the material yourself—this requires a specialist licensed contractor.</p>
+            <p>Our **Safe Operation Curriculum** outlines recommended site safety workflows. If you encounter a material you suspect requires special handling, the recommended procedure is simple: pause work, secure the area, and inform the site supervisor. Do not attempt to alter or dispose of specialized materials independently.</p>
         </article>
 
         <article class="mh-container-content">
-            <h2>Secure Your Asbestos Operator Proficiency Verification</h2>
-            <p>For Dublin construction firms and nationwide maintenance contractors, training hundreds of staff members is a significant hurdle. Our **Operator Proficiency Verification** removes the need for expensive classroom hire and travel. Your workers can complete their **Safe Operation Curriculum** on-site or at home, ensuring they are certified and audit-ready in just 45 minutes.</p>
+            <h2>Secure Your Operator Proficiency Verification</h2>
+            <p>For Dublin construction firms and nationwide maintenance contractors, training team members efficiently is vital. Our **Operator Proficiency Verification** removes the need for disruptive classroom schedules. Your workers can complete their **Safe Operation Curriculum** flexibly, ensuring they are well-prepared and verified in just 45 minutes.</p>
 
-            <p>With 24/7 access and instant PDF delivery, our **Digital Safety Instruction Online** is the most cost-effective path to compliance for modern Irish industry. Join the 50,000+ professionals who trust our platform for their mandatory compliance credentials.</p>
+            <p>With flexible access and instant digital delivery, our **Digital Safety Instruction Online** provides a smooth path to professional development for modern teams. Join the professionals who trust our platform for their educational credentials.</p>
 
             <div style="text-align: center; margin-top: 50px;">
                 <a href="{{route('register')}}" class="btn-gold">Enrol Now — €{{ config('global.course_price') }}</a>

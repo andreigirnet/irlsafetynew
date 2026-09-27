@@ -58,7 +58,7 @@
             <div class="empty-state luxury-card">
                 <div class="empty-icon">🎓</div>
                 <h3>No Certificates Yet</h3>
-                <p>Complete your first course to unlock your official certification.</p>
+                <p>Complete your first course to unlock your training certificate.</p>
                 <a href="{{route('course.index', 1)}}" class="glow-button small-width" style="max-width: 250px; margin: 20px auto;">View My Courses</a>
             </div>
         @endif

@@ -138,14 +138,14 @@
                                 </div>
                             </div>
 
-                            <div class="pro-accreditations">
+                            <div class="pro-benefits">
                                 <span class="acc-tag">INSTANT</span>
                                 <span class="acc-tag">AFFORDABLE</span>
                                 <span class="acc-tag">PROFESSIONAL</span>
                                 <span class="acc-verified">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="#059669"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M8 11.5l3 3 6-7"/></svg>
-                Verified
-            </span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="#059669"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M8 11.5l3 3 6-7"/></svg>
+                                Verified
+                            </span>
                             </div>
 
                             <div class="pro-actions">
@@ -181,8 +181,8 @@
             🍀
         </div>
         <div class="trustBadge__text">
-            <div class="trustBadge__eyebrow">Top rated</div>
-            <div class="trustBadge__label">Irish Safety Provider</div>
+            <div class="trustBadge__eyebrow">Online Courses</div>
+            <div class="trustBadge__label">Ireland Safety Provider</div>
         </div>
     </div>
 </div>

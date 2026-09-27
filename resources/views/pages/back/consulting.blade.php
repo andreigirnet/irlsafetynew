@@ -4,7 +4,7 @@
     <div class="profile-dashboard">
         <div class="onboarding-header" style="text-align: left; margin-bottom: 40px;">
             <h2 class="user-name-title">Consulting & Advisory Services</h2>
-            <p class="stat-label">Expert health and safety solutions tailored to your organization</p>
+            <p class="stat-label">Expert safety solutions tailored to your organization</p>
         </div>
 
         <div class="services-grid">
@@ -39,7 +39,7 @@
 
             <div class="approach-body">
                 <p class="approach-text">
-                    We provide support to employers who require third-party assistance in achieving their health and safety objectives for their workplace or on a project basis.
+                    We provide support to employers who require third-party assistance in achieving their safety objectives for their workplace or on a project basis.
                 </p>
                 <p class="approach-text">
                     Through our <strong>discovery process</strong>, we work together to determine your unique objectives and requirements, establishing key results to align our work with your measurement of success.

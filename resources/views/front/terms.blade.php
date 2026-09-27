@@ -126,7 +126,7 @@
                     <div class="terms-card" style="margin-top: 1.5rem;">
                         <h2 style="margin-top: 0;">Company Information:</h2>
                         <p class="terms-text" style="margin-bottom: 0;">
-                            <strong>Online Irish Safety Training</strong><br>
+                            <strong>Online Safety Courses</strong><br>
                             Email: <a href="mailto:info@ireland-safetycourse.com">info@ireland-safetycourse.com</a><br>
                             Registered and licensed training provider.
                         </p>

@@ -1,6 +1,9 @@
 const registered = document.getElementById('modalRegisterEmployer');
 const understood = document.getElementById('understoodButton');
 
-understood.addEventListener('click', function(){
-    registered.style.display = 'none';
-})
+// Only run this code if the button actually exists on the page
+if (understood && registered) {
+    understood.addEventListener('click', function() {
+        registered.style.display = 'none';
+    });
+}

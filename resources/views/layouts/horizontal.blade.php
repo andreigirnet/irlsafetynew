@@ -74,11 +74,22 @@
 
     @include('layouts.shared/right-sidebar')
 
+    @section('script')
     @include('layouts.shared/footer-scripts')
+    
+    {{-- This safely intercepts and silences the missing element chart errors --}}
+    <script>
+        window.addEventListener('unhandledrejection', function(event) {
+            if (event.reason && event.reason.message && event.reason.message.includes('Element not found')) {
+                event.preventDefault();
+            }
+        });
+    </script>
+    @endsection
 
     @vite(['resources/js/layout.js', 'resources/js/main.js'])
     <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=FCKWCyQL7PYg"></script>
-    <script src="https://cdn.tiny.cloud/1/8htcs2m2n03rmg8dbr9dhfupzckkc16co1pzuf80yst8q9tj/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.tiny.cloud/1/8htcs2m2n03rmg8dbr9dhfupzckkc16co1pzuf80yst8q9tj/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script> -->
 
         <script src="{{asset('js/prevent.js')}}"></script>
 </body>

@@ -7,31 +7,31 @@
             <!-- Hero Header -->
             <div class="enterprise-hero">
                 <div class="hero-badge">
-                    <span class="pulse-dot"></span> Our Compliance Portal
+                    <span class="pulse-dot"></span> Corporate entity
                 </div>
                 <h1 class="enterprise-main-title">About Our Organization</h1>
                 <p class="enterprise-lead-text">
-                    Delivering standardized workplace safety education and operational compliance training across Ireland via <span class="highlight-domain">ireland-safetycourse.com</span>.
+                    Delivering  workplace safety education and operational compliance training across Ireland via <span class="highlight-domain">ireland-safetycourse.com</span>.
                 </p>
             </div>
 
             <!-- Bento Grid Layout for Content Cards -->
             <div class="enterprise-bento-grid">
 
-                <!-- Corporate Identity & Legal Structure -->
+                <!-- Corporate Identity Structure -->
                 <div class="bento-card span-two primary-accent">
                     <div class="card-top-row">
                         <div class="icon-badge">🏛️</div>
                         <span class="card-category">Corporate Governance</span>
                     </div>
-                    <h3 class="bento-title">Corporate Identity & Legal Structure</h3>
+                    <h3 class="bento-title">Corporate Identity Structure</h3>
                     <p class="bento-desc">
-                        We operate as an authorized educational provider specializing in workplace ergonomics, material handling instruction, and corporate safety modules. Our objective is to deliver standardized operational compliance training for enterprises and independent contractors nationwide.
+                        We operate as an  educational provider specializing in workplace ergonomics, material handling instruction, and corporate safety modules. Our objective is to deliver operational compliance training for enterprises and independent contractors nationwide. This website is owned by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED 822301
                     </p>
                     <div class="credentials-flex-box">
                         <div class="cred-pill">
-                            <span class="c-label">Legal Entity Name</span>
-                            <span class="c-val">This website is owned and operated by Andrei Girnet(Sole Trader)</span>
+                            <span class="c-label">Entity Name</span>
+                            <span class="c-val">This website is owned by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED 822301</span>
                         </div>
                         
                         <div class="cred-pill">
@@ -52,7 +52,7 @@
                         Our digital curriculum is structured to support corporate risk management and operational safety education. We specialize in teaching proper lifting mechanics, load management principles, and structural workplace risk reduction.
                     </p>
                     <p class="bento-desc">
-                        Every course module ensures corporate teams understand structural compliance, minimizing workplace incidents through verifiable testing assessments and structured video instruction.
+                        Our automated portal delivers a frictionless pathway from initial enrollment to instant certification download. The trainee can create an account, buy a course, instantly start it, pass a test and get a certificate.
                     </p>
 
                     <!-- Learning Steps Workflow -->
@@ -71,13 +71,13 @@
                             </div>
                             <div class="step-card-item">
                                 <div class="step-number-tag">03</div>
-                                <h4>Theory Assessment</h4>
-                                <p>Complete the integrated multi-choice test on the platform following the course material.</p>
+                                <h4>Interactive Test</h4>
+                                <p>Pass integrated multi-choice evaluations designed to verify your theoretical and practical skills.</p>
                             </div>
                             <div class="step-card-item">
                                 <div class="step-number-tag">04</div>
-                                <h4>WhatsApp Video & Cert</h4>
-                                <p>Submit your practical test via WhatsApp video demonstration to receive your instant digital certificate.</p>
+                                <h4>Get your certificate</h4>
+                                <p>After you send the practical test to us via whatsup, our instructor approves it, and emmits a certificate to you</p>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@
                         <div class="address-box-modern">
                             <strong>Registered Office Address</strong><br>
                         
-                            84A Church Street,<br> Dunstable, United Kingdom,<br> LU5 4HP
+                        51 Bracken Road,<br> Dublin, D18 CV48 <br> Ireland
                         </div>
                         <div class="contact-box-modern">
                             <div class="c-row">

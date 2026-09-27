@@ -88,6 +88,36 @@
             box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.01);
             margin-bottom: 1.5rem;
         }
+        /* WhatsApp Assessment Card Styling */
+        .whatsapp-card {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border: 1px solid #bbf7d0;
+            border-radius: 12px;
+            padding: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #22c55e;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.2s, transform 0.2s;
+            box-shadow: 0 4px 6px -1px rgba(34, 197, 94, 0.2);
+        }
+        .whatsapp-btn:hover {
+            background: #16a34a;
+            color: #ffffff;
+            transform: translateY(-1px);
+        }
+        .whatsapp-btn svg {
+            margin-right: 8px;
+            fill: currentColor;
+        }
         .privacy-list {
             list-style: none;
             padding: 0;
@@ -176,6 +206,7 @@
                 <h1>Privacy Policy</h1>
                 <p>{{ config('global.business_name') }}</p>
             </div>
+            
             @if(session('success'))
                 <div style="background: #d1fae5; color: #065f46; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; border: 1px solid #a7f3d0;">
                     {{ session('success') }}
@@ -192,6 +223,7 @@
                     </ul>
                 </div>
             @endif
+
             <div class="privacy-body">
                 <div class="privacy-section">
 
@@ -213,13 +245,13 @@
 
                     <h2>Information We Collect:</h2>
                     <p class="privacy-text">
-                        We may collect personal information that you voluntarily provide to us when registering for a course, purchasing services, or contacting support. This includes:
+                        We may collect personal information that you voluntarily provide to us when registering for a course, purchasing services, participating in practical assessments, or contacting support. This includes:
                     </p>
                     <ul class="privacy-list">
                         <li><strong>Identity Data:</strong> Full name and contact credentials.</li>
                         <li><strong>Contact Information:</strong> Email address and telephone number.</li>
                         <li><strong>Transaction & Payment Data:</strong> Details regarding course purchases (processed securely through encrypted payment gateways).</li>
-                        <li><strong>Technical Data:</strong> IP address, browser type, device information, and site interaction metrics gathered via analytics tools.</li>
+                        <li><strong>Assessment & Media Data:</strong> Practical session recordings, video assessments, photographs, or chat logs submitted via WhatsApp or communication channels for course verification and certification purposes.</li>
                     </ul>
 
                     <h2>How We Use Your Information:</h2>
@@ -227,15 +259,14 @@
                         The information we collect is utilized for lawful business and educational purposes, including:
                     </p>
                     <ul class="privacy-list">
-                        <li>Processing your course registration and issuing certificates of completion.</li>
-                        <li>Communicating updates, customer support replies, and operational announcements.</li>
-                        <li>Fulfilling legal, accounting, and regulatory tax obligations.</li>
+                        <li>Processing your course registration, verifying practical competency via video assessments, and issuing certificates of completion.</li>
+                        <li>Fulfilling accounting, and regulatory tax obligations.</li>
                         <li>Improving website performance and advertising relevance.</li>
                     </ul>
 
                     <h2>Data Sharing and Disclosure:</h2>
                     <p class="privacy-text">
-                        We do not sell, trade, or rent your personal identification information to third parties. We may share data only with trusted service providers (such as secure payment processors and technical hosting platforms) who assist us in operating our website, provided those parties agree to keep this information confidential.
+                        We do not sell, trade, or rent your personal identification information to third parties. We may share data only with trusted service providers (such as secure payment processors, technical hosting platforms, and communication tools like WhatsApp for assessment processing) who assist us in operating our services, provided those parties agree to keep this information confidential.
                     </p>
 
                     <h2>Your Data Protection Rights:</h2>
@@ -245,10 +276,12 @@
 
                     <h2>Policy Updates:</h2>
                     <p class="privacy-text">
-                        We may update this Privacy Policy from time to time to reflect operational changes or legal requirements. Any modifications will be posted directly on this page with a revised update date.
+                        We may update this Privacy Policy from time to time to reflect operational changes or requirements. Any modifications will be posted directly on this page with a revised update date.
                     </p>
 
                 </div>
+
+            
 
                 <!-- Data Removal Request Form Section -->
                 <div class="privacy-section" style="margin-bottom: 0;">

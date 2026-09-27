@@ -7,7 +7,7 @@
                 <!-- Logo light -->
                 <span  class="logo-light">
                     <span class="logo-lg">
-                        <img src="{{asset('images/login/logoLanding.png')}}" alt="logo">
+                        <img src="{{asset('images/logo/logoLanding.png')}}" alt="logo">
                     </span>
                     <span class="logo-sm">
                         <img src="{{asset('images/logo/logoLanding.png')}}" style="width: 80px" alt="small logo">
@@ -72,12 +72,12 @@
 {{--                    aria-haspopup="false" aria-expanded="false">--}}
 {{--                    <i class="ri-search-line fs-22"></i>--}}
 {{--                </a>--}}
-                <div class="dropdown-menu dropdown-menu-animated dropdown-lg p-0">
+                <!-- <div class="dropdown-menu dropdown-menu-animated dropdown-lg p-0">
                     <form class="p-3">
                         <input type="search" class="form-control" placeholder="Search ..."
                             aria-label="Recipient's username">
                     </form>
-                </div>
+                </div> -->
             </li>
 
 

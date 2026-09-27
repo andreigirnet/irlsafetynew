@@ -10,7 +10,7 @@
                     <h4 class="header-title">Example</h4>
                     <p class="text-muted mb-0">
                         Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.
-                        Please read the official <a target="_blank" href="https://getbootstrap.com/docs/5.3/components/breadcrumb/">Bootstrap</a> documentation for more options.
+                        Please read the  <a target="_blank" href="https://getbootstrap.com/docs/5.3/components/breadcrumb/">Bootstrap</a> documentation for more options.
                     </p>
                 </div>
                 <div class="card-body">

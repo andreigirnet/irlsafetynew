@@ -23,7 +23,7 @@
     <script src="{{asset('js/cart.js')}}"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.tiny.cloud/1/f5urckdwcwce4xjd072v2er6y33x3c23yw42dsugdzmgti41/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <!-- <script src="https://cdn.tiny.cloud/1/f5urckdwcwce4xjd072v2er6y33x3c23yw42dsugdzmgti41/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> -->
     <link rel = "icon" href ="{{asset('/favicon.ico')}}" type = "image/x-icon">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -101,7 +101,7 @@
     <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=FCKWCyQL7PYg"></script>
 {{--    <script src="https://js.stripe.com/v3/"></script>--}}
 {{--    <script src="{{ asset('js/stripe.js') }}"></script>--}}
-    <script src="https://cdn.tiny.cloud/1/8htcs2m2n03rmg8dbr9dhfupzckkc16co1pzuf80yst8q9tj/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
+    // <script src="https://cdn.tiny.cloud/1/8htcs2m2n03rmg8dbr9dhfupzckkc16co1pzuf80yst8q9tj/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
     @yield('modal')
 
     @include('layouts.shared/right-sidebar')
@@ -110,22 +110,22 @@
 
     @vite(['resources/js/layout.js', 'resources/js/main.js'])
     <script src="{{asset('js/hideAdminNav.js')}}"></script>
-    <script>
-        tinymce.init({
-            selector: 'textarea',
-            plugins: ['anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount'
-            ],
-            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography uploadcare | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
-            tinycomments_mode: 'embedded',
-            tinycomments_author: 'Author name',
-            mergetags_list: [
-                { value: 'First.Name', title: 'First Name' },
-                { value: 'Email', title: 'Email' },
-            ],
-            ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
-            uploadcare_public_key: '532672c6d11822cd9a7e',
-        });
-    </script>
+    // <script>
+    //     tinymce.init({
+    //         selector: 'textarea',
+    //         plugins: ['anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount'
+    //         ],
+    //         toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography uploadcare | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+    //         tinycomments_mode: 'embedded',
+    //         tinycomments_author: 'Author name',
+    //         mergetags_list: [
+    //             { value: 'First.Name', title: 'First Name' },
+    //             { value: 'Email', title: 'Email' },
+    //         ],
+    //         ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
+    //         uploadcare_public_key: '532672c6d11822cd9a7e',
+    //     });
+    // </script>
 
 {{--    <script src="{{asset('js/prevent.js')}}"></script>--}}
 

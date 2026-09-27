@@ -37,7 +37,6 @@ Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallba
     })->name('frontHome');
     Route::get('/terms', function(){return view("front.terms");})->name('terms');
     Route::get('/about-us', function(){return view("front.about");})->name('front.about');
-    Route::get('/legal', function(){return view("front.legal");})->name('front.legal');
     Route::get('/products', function(){return view("front.products");})->name('front.products');
     Route::get('/team', function(){return view("front.teamTraining");})->name('front.team');
     Route::get('/contact', function(){return view("front.contact");})->name('front.contact');
@@ -45,7 +44,6 @@ Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallba
 //    Route::get('/consulting', function(){return view("front.consulting");})->name('front.consulting');
     Route::get('/verify/certificate', function(){return view("front.verify");})->name('front.verify');
     Route::get('/cookies', function(){return view("front.cookies");})->name('front.cookies');
-    Route::get('/accreditations', function(){return view("front.accreditation");})->name('front.accreditation');
     Route::get('/privacy', function(){return view("front.privacy");})->name('front.privacy');
     Route::post('/privacy/data-removal', [PrivacyController::class, 'handleDataRemoval'])->name('privacy.data-removal.submit');
     Route::get('/refund', function(){return view("front.refund");})->name('front.refund');

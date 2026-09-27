@@ -9,7 +9,7 @@
 
         <div class="tmt-intro-section">
             <div class="tmt-intro-text">
-                At our platform, we specialize in delivering comprehensive <strong>Workplace Safety Training Ireland</strong> tailored to your organizational needs. Our digital learning modules are 100% web-based, providing your staff with the flexibility to study <strong>Workplace Safety Training Online</strong> at their convenience, whether during dedicated work blocks or outside of standard business hours. Completing our courses provides your team with an official <strong>Operator Proficiency Verification</strong>.
+                At our platform, we specialize in delivering comprehensive <strong>Workplace Safety Training Ireland</strong> tailored to your organizational needs. Our digital learning modules are 100% web-based, providing your staff with the flexibility to study <strong>Workplace Safety Training Online</strong> at their convenience, whether during dedicated work blocks or outside of standard business hours.
             </div>
         </div>
 
@@ -31,7 +31,7 @@
                 <div class="tmt-column-text">
                     <h2 class="tmt-section-title">B2B Invoicing | Operator Proficiency Verification</h2>
                     <div class="tmt-section-description">
-                        Yes, we support corporate billing. By choosing the invoice option, you benefit from: 30-day net payment terms, custom PO number integration, and immediate training deployment*. If you require an invoice for smaller orders, simply reach out to us. *Please note that official credentials are released once the final balance is settled.
+                        Yes, we support corporate billing. By choosing the invoice option, you benefit from: 30-day net payment terms, custom PO number integration, and immediate training deployment*. If you require an invoice for smaller orders, simply reach out to us. *Please note that  credentials are released once the final balance is settled.
                     </div>
                 </div>
                 <div class="tmt-column-image">
@@ -43,7 +43,7 @@
                 <div class="tmt-column-text">
                     <h2 class="tmt-section-title">Need Immediate Proficiency Verification? | Workplace Safety Training Ireland</h2>
                     <div class="tmt-section-description">
-                        We’ve got you covered. Our automated portal and instant document generation are designed for speed. In a fast-paced industry, a skill gap is a liability. Our platform allows your team to begin their <strong>Digital Safety Instruction Online</strong> modules in seconds. Compliance training can be completed in hours, not days, allowing you to train hundreds of employees simultaneously without the logistical headaches of physical classrooms. Every participant receives an <strong>Operator Proficiency Verification</strong> immediately upon completion.
+                        We’ve got you covered. Our automated portal and  certificate generation are designed for speed. In a fast-paced industry, a skill gap is a liability. Our platform allows your team to begin their <strong>Digital Safety Instruction Online</strong> modules in seconds. Compliance training can be completed in hours, not days, allowing you to train hundreds of employees simultaneously without the logistical headaches of physical classrooms. Every participant receives an <strong>Operator Proficiency Verification</strong> immediately upon completion.
                     </div>
                 </div>
                 <div class="tmt-column-image">

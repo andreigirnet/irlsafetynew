@@ -2,7 +2,8 @@
 
 return [
     'course_price' => 30,
-    'business_name' => "Andrei Girnet",
-    'business_number' => 'Sole Trader',
-    'business_address' => '84A Church Street, Dunstable, United Kingdom, LU5 4HP',
+    'business_name' => "PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED",
+    'business_number' => '822301',
+    'business_address' => '51 Bracken Road, Dublin, D18 CV48 Ireland',
+    'phone' => '+353899735295'
 ];
