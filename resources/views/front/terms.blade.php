@@ -134,7 +134,7 @@
 
                     <h2>Services & Access:</h2>
                     <p class="terms-text">
-                        We provide professional, industry-compliant online safety training modules designed for individuals and businesses across Ireland and Europe. Purchasing a course grants you personal access to complete your training online through our secure browser platform.
+                        We provide professional, online safety training modules designed for individuals and businesses. Purchasing a course grants you personal access to complete your training online through our secure browser platform.
                     </p>
 
                     <h2>Intellectual Property & Content Protection:</h2>

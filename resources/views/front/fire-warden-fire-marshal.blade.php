@@ -43,7 +43,7 @@
                     <div class="pillar-card">
                         <div class="pillar-icon">📢</div>
                         <h4>2. Evacuation Control</h4>
-                        <p>Leading the systematic check of floors, managing assembly points, and accounting for team members.</p>
+                        <p>Conducting the systematic check of floors, managing assembly points, and accounting for team members.</p>
                     </div>
                     <div class="pillar-card">
                         <div class="pillar-icon">🧯</div>

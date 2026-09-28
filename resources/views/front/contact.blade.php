@@ -25,8 +25,8 @@
                 <div class="ct-info-grid">
                     <div class="ct-detail-text">
                         <strong>Operating Hours:</strong><br>
-                        Monday to Friday: 10am – 7pm<br>
-                        Weekends & Bank Holidays: 10am – 7pm
+                        Monday to Sunday: 9am – 10pm<br>
+                    
                     </div>
 
                     <div class="ct-detail-text">

@@ -274,6 +274,11 @@
                         Depending on your jurisdiction (such as the GDPR framework in Europe), you have rights regarding your personal data, including the right to access, correct, or request deletion of your personal information stored on our systems. You can submit a request below.
                     </p>
 
+                    <h2>Assessment Video Data:</h2>
+                    <p class="privacy-text">
+                        Practical video tests submitted via WhatsApp for grading and course completion. The video is retained only until the practical assessment has been reviewed and completed. After the assessment is completed, the video will be deleted from our devices and systems where it is under our control. We retain the assessment result and certification records separately where necessary.
+                    </p>
+
                     <h2>Policy Updates:</h2>
                     <p class="privacy-text">
                         We may update this Privacy Policy from time to time to reflect operational changes or requirements. Any modifications will be posted directly on this page with a revised update date.

@@ -61,7 +61,7 @@
 
         <article class="mh-container-content">
             <h2>The Physics of Failure: Why Precision Matters</h2>
-            <p>An abrasive wheel rotating at high speeds stores immense kinetic energy. A standard 115mm angle grinder wheel can reach speeds of over 11,000 RPM. If a wheel is mismatched to the machine's spindle speed, the centrifugal forces can exceed the tensile strength of the bonding agent, leading to an "explosive" wheel burst.</p>
+            <p>An abrasive wheel rotating at high speeds stores immense kinetic energy. A standard 115mm angle grinder wheel can reach speeds of over 11,000 RPM. If a wheel is mismatched to the machine's spindle speed, the centrifugal forces can exceed the tensile strength of the bonding agent, causing to an "explosive" wheel burst.</p>
 
             <p>Our **Digital Safety Instruction Online** provides a deep dive into **Wheel Anatomy**. We explain the difference between Vitrified, Resinoid, and Diamond bonds, and how environmental factors like moisture and temperature can degrade these materials over time. Understanding the "Expiry Date" (V-code) marked on the metal center is critical for ensuring that your **Operator Proficiency Verification** actually translates to a safer workshop.</p>
 

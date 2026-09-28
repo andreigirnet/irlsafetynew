@@ -78,7 +78,6 @@
     <div class="title" data-aos="fade-up">
         <div class="titleText" >Leader in workplace safety courses</div>
         <div class="borderTitle"></div>
-        <img src="{{asset("images/products/saleOver.png")}}" id="overImgDash" alt="">
     </div>
     <div class="productSection" id="courses">
         <div class="productWrapper" >
@@ -116,7 +115,7 @@
                                         </div>
                                         <div class="spec-data">
                                             <span class="spec-label">Duration</span>
-                                            <span class="spec-value">@if($product->id == 14) {{$product->durationTraining}} Day @else {{$product->durationTraining}} Mins @endif</span>
+                                            <span class="spec-value">@if($product->id == 14) {{$product->durationTraining}} Day @else {{$product->durationTraining}} Mins @endif + instructor review</span>
                                         </div>
                                     </div>
 
@@ -733,7 +732,7 @@
                     </button>
                     <div class="mh-faq-content" x-show="open" x-cloak>
                         <p class="mh-faq-text">
-                            <strong>The certificate</strong> is issued directly by our private company as  proof of course completion. It verifies that you have successfully completed our comprehensive training modules and met all necessary safety guidelines.
+                            The certificate is issued by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED (trading as Manual Handling Ireland) after you successfully submit the practical video assessment via WhatsApp on +353899735295. Once our instructor has reviewed and approved the video, your certificate will be issued.
                         </p>
                     </div>
                 </div>
@@ -772,7 +771,7 @@
                     </button>
                     <div class="mh-faq-content" x-show="open"  x-cloak>
                         <p class="mh-faq-text">
-                            <strong>Yes.</strong> You can retake the assessment as many times as you need with unlimited attempts until you successfully pass the course.
+                            <strong>Yes.</strong> You can retake the assessment as many times as you need with unlimited attempts until you successfully pass the course. If your practical assessment is not approved, our instructor will provide feedback explaining what needs to be improved. You can then send a new video to whatsup addressing the feedback for another review, at no additional cost.
                         </p>
                     </div>
                 </div>
@@ -798,7 +797,7 @@
                     </button>
                     <div class="mh-faq-content" x-show="open" x-cloak>
                         <p class="mh-faq-text">
-                            You will be <strong>fully refunded</strong>. Expect 5-10 business days for refund to take place
+                            You will be <strong>fully refunded</strong>. Contact us in the live chat or email, your request will be reviewed up to 14 days and Expect 5-10 business days for money to arrive. For more details read <a href="{{route('front.refund')}}">refund policy</a>
                         </p>
                     </div>
                 </div>

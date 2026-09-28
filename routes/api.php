@@ -20,52 +20,52 @@ use App\Http\Controllers\CheckoutController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
 
-Route::middleware('auth:sanctum')->group(function () {
-    Route::post('/mobile-checkout', [CheckoutController::class, 'processMobileStripePayment']);
-    Route::post('/mobile-checkout-complete', [CheckoutController::class, 'completeMobileCheckout']);
-});
-Route::get('/courses', [CourseController::class, 'index']);
+// Route::middleware('auth:sanctum')->group(function () {
+//     Route::post('/mobile-checkout', [CheckoutController::class, 'processMobileStripePayment']);
+//     Route::post('/mobile-checkout-complete', [CheckoutController::class, 'completeMobileCheckout']);
+// });
+// Route::get('/courses', [CourseController::class, 'index']);
 
-Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login', [AuthController::class, 'login']);
+// Route::post('/register', [AuthController::class, 'register']);
+// Route::post('/login', [AuthController::class, 'login']);
 
-Route::middleware('auth:sanctum')->get('/mobile-packages', [PackageController::class, 'getApiPackages']);
+// Route::middleware('auth:sanctum')->get('/mobile-packages', [PackageController::class, 'getApiPackages']);
 
-Route::middleware('auth:sanctum')->get('/certificates', [CertificateController::class, 'getApiCertificates']);
+// Route::middleware('auth:sanctum')->get('/certificates', [CertificateController::class, 'getApiCertificates']);
 
-Route::middleware('auth:sanctum')->get('/certificates/{id}/download', [CertificateController::class, 'getApiCertificateDownload']);
+// Route::middleware('auth:sanctum')->get('/certificates/{id}/download', [CertificateController::class, 'getApiCertificateDownload']);
 
-// API Route to serve JSON data files with CORS protection handled automatically
-Route::get('/data/{filename}', function ($filename) {
-    $path = public_path('data/' . basename($filename));
+// // API Route to serve JSON data files with CORS protection handled automatically
+// Route::get('/data/{filename}', function ($filename) {
+//     $path = public_path('data/' . basename($filename));
 
-    if (!File::exists($path)) {
-        abort(404);
-    }
+//     if (!File::exists($path)) {
+//         abort(404);
+//     }
 
-    return response()->file($path);
-});
+//     return response()->file($path);
+// });
 
-// API Route to serve images with wildcard paths
-Route::get('/images/{path}', function ($path) {
-    // Strip out 'images/' if it was accidentally prefixed twice
-    $cleanPath = str_replace('images/', '', $path);
-    $fullPath = public_path('images/' . $cleanPath);
+// // API Route to serve images with wildcard paths
+// Route::get('/images/{path}', function ($path) {
+//     // Strip out 'images/' if it was accidentally prefixed twice
+//     $cleanPath = str_replace('images/', '', $path);
+//     $fullPath = public_path('images/' . $cleanPath);
 
-    if (!\Illuminate\Support\Facades\File::exists($fullPath)) {
-        abort(404);
-    }
+//     if (!\Illuminate\Support\Facades\File::exists($fullPath)) {
+//         abort(404);
+//     }
 
-    return response()->file($fullPath);
-})->where('path', '.*');
+//     return response()->file($fullPath);
+// })->where('path', '.*');
 
-Route::post('/certificate/create/{packageId}', [CertificateController::class, 'apiStore']);
+// Route::post('/certificate/create/{packageId}', [CertificateController::class, 'apiStore']);
 
-Route::middleware('auth:sanctum')->group(function () {
-    Route::get('/orders', [OrderController::class, 'getOrdersApi']);
-    Route::get('/invoice/download/{id}', [OrderController::class, 'downloadInvoiceApi'])->name('invoice.download');
-});
+// Route::middleware('auth:sanctum')->group(function () {
+//     Route::get('/orders', [OrderController::class, 'getOrdersApi']);
+//     Route::get('/invoice/download/{id}', [OrderController::class, 'downloadInvoiceApi'])->name('invoice.download');
+// });

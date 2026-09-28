@@ -52,7 +52,7 @@
                         Our digital curriculum is structured to support corporate risk management and operational safety education. We specialize in teaching proper lifting mechanics, load management principles, and structural workplace risk reduction.
                     </p>
                     <p class="bento-desc">
-                        Our automated portal delivers a frictionless pathway from initial enrollment to instant certification download. The trainee can create an account, buy a course, instantly start it, pass a test and get a certificate.
+                        Our portal delivers a frictionless pathway from initial enrollment to certificate download. The trainee can create an account, buy a course, instantly start it, pass a test and get a certificate.
                     </p>
 
                     <!-- Learning Steps Workflow -->
@@ -66,13 +66,13 @@
                             </div>
                             <div class="step-card-item">
                                 <div class="step-number-tag">02</div>
-                                <h4>Sequential Theory</h4>
-                                <p>Progress through self-paced interactive lessons without skipping modules to ensure complete comprehension.</p>
+                                <h4>Complete the purchase</h4>
+                                <p>Add the course in your basket and complete the payment.</p>
                             </div>
                             <div class="step-card-item">
                                 <div class="step-number-tag">03</div>
-                                <h4>Interactive Test</h4>
-                                <p>Pass integrated multi-choice evaluations designed to verify your theoretical and practical skills.</p>
+                                <h4>Complete the course</h4>
+                                <p>Carefully go through the course slides and complete the theory quiz at the end of modules. Send a video of yourself lifting an object to our WhatsApp for instructor review.</p>
                             </div>
                             <div class="step-card-item">
                                 <div class="step-number-tag">04</div>
@@ -111,7 +111,7 @@
                             </div>
                             <div class="c-row">
                                 <span>Operational Hours:</span>
-                                <strong>Mon – Fri, 9:00 AM – 10:00 PM</strong>
+                                <strong>Mon – Sun, 9:00 AM – 10:00 PM</strong>
                             </div>
                         </div>
                     </div>
