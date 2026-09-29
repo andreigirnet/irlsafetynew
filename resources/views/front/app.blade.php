@@ -20,7 +20,7 @@
     
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="Online Safety Courses Ireland | Certified - {{ config('app.name') }}">
+    <meta property="og:title" content="Online Safety Courses Ireland | Workplace Safety - {{ config('app.name') }}">
     <meta property="og:description" content="Complete your safety training online. Manual Handling Course, Manual Handling Training. Certificate after you pass included.">
     <meta property="og:image:alt" content="Ireland Safety Course - Online Safety Training">
     <meta property="og:image" content="https://www.irelandsafetycourse.com/images/metaImage.png">

@@ -595,7 +595,7 @@
                     <div class="exclusive-icon-box" style="border-color: #f91819;">
                         <img src="{{asset('images/logo/high-quality.svg')}}" alt="Quality">
                     </div>
-                    <h3 class="exclusive-title" >RECOGNISED QUALIFICATIONS</h3>
+                    <h3 class="exclusive-title" >ONLINE TRAINING</h3>
                     <p class="exclusive-text" >Our digital learning is a cost-effective alternative to earn your Workplace safety certificate.</p>
                 </div>
             </div>
