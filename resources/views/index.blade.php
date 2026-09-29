@@ -40,7 +40,7 @@
                             <p>Best regards,</p>
                             <p class="isc-modal-team">The Ireland Safety Course Team</p>
                         </div>
-                        <!-- Fixed using $el.closest('.isc-modal-overlay').remove() to guarantee instant removal upon dynamic injection -->
+                        <!-- Fixed using $el.closest('.isc-modal-overlay').remove() to guarantee  removal upon dynamic injection -->
                         <button type="button" @click="$el.closest('.isc-modal-overlay').remove()" class="adminButtonModal" id="understoodButton">UNDERSTOOD</button>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                         @else
                             <div class="pro-badge badge-online">
                                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                Instant Certificate
+                             Certificate Included
                             </div>
                         @endif
 
@@ -139,7 +139,7 @@
                             </div>
 
                             <div class="pro-benefits">
-                                <span class="acc-tag">INSTANT</span>
+                                <span class="acc-tag">ONLINE</span>
                                 <span class="acc-tag">AFFORDABLE</span>
                                 <span class="acc-tag">PROFESSIONAL</span>
                                 <span class="acc-verified">

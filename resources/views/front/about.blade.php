@@ -52,7 +52,7 @@
                         Our digital curriculum is structured to support corporate risk management and operational safety education. We specialize in teaching proper lifting mechanics, load management principles, and structural workplace risk reduction.
                     </p>
                     <p class="bento-desc">
-                        Our portal delivers a frictionless pathway from initial enrollment to certificate download. The trainee can create an account, buy a course, instantly start it, pass a test and get a certificate.
+                        Create an account, purchase your course, complete the theory modules and pass the theory test. Then submit your practical assessment video for instructor review. Your certificate will be available to download once your practical assessment has been approved.
                     </p>
 
                     <!-- Learning Steps Workflow -->
@@ -124,7 +124,8 @@
                         <div>
                             <h3 class="bento-title text-white">Transparency & Compliance Assurance</h3>
                             <p class="bento-desc text-slate mb-0">
-                                This platform operates exclusively as an educational delivery network. All digital transactions, data protection protocols, and course completions are fully transparent, backed by verified corporate registration within the Republic of Ireland.
+                                
+For Transparency & Trust Assurance section: Manual Handling Ireland is operated by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED, registered in Ireland under company number 822301. Information about our services, assessment process, payments and data handling is available in our FAQs, Terms and Conditions, Refund Policy and Privacy Policy.
                             </p>
                         </div>
                     </div>

@@ -21,7 +21,7 @@
     If you are an employer looking to register a team or staff members, please visit our **FAQ section** first. It contains a step-by-step guide on how to manage group enrollments effectively.
 
     ### Account Support
-    If you have forgotten your password, please use the reset link below. You will receive an automated password via email instantly—please remember to check your spam or junk folders if it does not appear in your inbox.
+    If you have forgotten your password, please use the reset link below. You will receive an automated password via email —please remember to check your spam or junk folders if it does not appear in your inbox.
 
     [Reset Password Here](https://www.ireland-safetycourse.com/forgot-password)
 

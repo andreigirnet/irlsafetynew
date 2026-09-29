@@ -91,7 +91,7 @@
             <h2>Secure Your Workplace Operator Proficiency Verification</h2>
             <p>For logistics firms and retail managers, coordinating team training efficiently is a priority. Our **Operator Proficiency Verification** removes the need for disruptive scheduling bottlenecks. Your team can complete their **Safe Operation Curriculum** at their own pace, ensuring they are well-prepared in just 45 minutes.</p>
 
-            <p>With convenient access and instant digital delivery, our **Digital Safety Instruction Online** is an efficient path to professional readiness for modern businesses. Join the professionals who trust our platform for their educational credentials.</p>
+            <p>With convenient access and digital delivery, our **Digital Safety Instruction Online** is an efficient path to professional readiness for modern businesses. Join the professionals who trust our platform for their educational credentials.</p>
 
             <div style="text-align: center; margin-top: 50px;">
                 <a href="{{route('register')}}" class="btn-gold">Enrol Today — €{{ config('global.course_price') }}</a>

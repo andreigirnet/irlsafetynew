@@ -79,7 +79,7 @@
                                 <h6 class="text-muted fs-14">Notes:</h6>
                                 <small>
                                     Thank you for choosing <b>Ireland Safety Course</b>.
-                                    Digital certificates are issued instantly upon successful completion of the course.
+                                    Digital certificates are issued upon successful completion of the course.
                                     You have 3 years of free access to your course content and digital credentials.
                                 </small>
                             </div>

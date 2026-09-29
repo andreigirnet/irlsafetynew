@@ -156,8 +156,8 @@
                         We stand behind the quality and acceptance of our training. Refund requests are evaluated under the following conditions:
                     </p>
                     <ul class="refund-list">
-                        <li><strong>Employer Rejection Guarantee:</strong> If the certificate is not accepted by your employer, we will issue a full refund.</li>
-                        <li><strong>Unaccessed Courses & 14-Day Window:</strong> If you have purchased a course by mistake, experience technical blockades preventing access, or wish to cancel, you may request a refund within 14 days of purchase.</li>
+                        <li><strong>Employer Rejection Guarantee:</strong> Please confirm your employer’s training requirements before purchasing. If your employer confirms that our course will not meet their requirements, you may request a refund within 14 days of purchase, provided you have not completed the course and no certificate has been issued. This refund option does not apply after course completion or certificate issuance. Your statutory consumer rights remain unaffected.</li>
+                        <li><strong>Change Your Mind Refunds:</strong> You may request a refund within 14 days of purchase, provided you have not completed the course and no certificate has been issued. Your statutory consumer rights remain unaffected.</li>
                         <li><strong>Completed Courses:</strong> Once a training module has been fully completed and a certificate of completion has been generated, refund requests can no longer be honored unless subject to the employer acceptance policy outlined above.</li>
                         <li><strong>Duplicate Charges:</strong> In the event of a billing error or accidental duplicate payment processed through our secure payment provider (Stripe), a full refund will be issued immediately upon verification.</li>
                     </ul>

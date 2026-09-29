@@ -24,7 +24,7 @@
         </div>
 
         <!-- COLUMN 3: MANUAL HANDLING (PRIMARY SERVICES) -->
-        <div class="footer-column">
+        <!-- <div class="footer-column">
             <h3 class="footer-heading">Our Courses</h3>
             <ul class="footer-links">
                 <li><a href="#courses">Manual Handling</a></li>
@@ -33,7 +33,7 @@
                 <li><a href="#courses">HACCP</a></li>
                 <li><a href="#courses">Fire Safety</a></li>
             </ul>
-        </div>
+        </div> -->
 
 {{--        <!-- COLUMN 4: LOCATIONS -->--}}
 {{--        <div class="footer-column">--}}

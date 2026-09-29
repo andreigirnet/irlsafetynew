@@ -93,7 +93,7 @@
             <h2>Secure Your Workplace Operator Proficiency Verification</h2>
             <p>For HR Managers in Dublin, Cork, and Galway, coordinating in-person safety sessions can present logistical and scheduling challenges. Our **Operator Proficiency Verification** removes these barriers, offering a 100% digital, self-paced curriculum that can be completed on any device in just 45-60 minutes.</p>
 
-            <p>With 24/7 access and instant digital delivery, our **Digital Safety Instruction Online** is an efficient path to professional readiness for modern businesses. Join the professionals who trust our platform to secure their educational credentials.</p>
+            <p>With 24/7 access and  digital delivery, our **Digital Safety Instruction Online** is an efficient path to professional readiness for modern businesses. Join the professionals who trust our platform to secure their educational credentials.</p>
 
             <div style="text-align: center; margin-top: 50px;">
                 <a href="{{route('register')}}" class="btn-gold">Enrol Today — €{{ config('global.course_price') }}</a>

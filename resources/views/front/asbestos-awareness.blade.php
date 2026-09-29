@@ -89,7 +89,7 @@
             <h2>Secure Your Operator Proficiency Verification</h2>
             <p>For Dublin construction firms and nationwide maintenance contractors, training team members efficiently is vital. Our **Operator Proficiency Verification** removes the need for disruptive classroom schedules. Your workers can complete their **Safe Operation Curriculum** flexibly, ensuring they are well-prepared and verified in just 45 minutes.</p>
 
-            <p>With flexible access and instant digital delivery, our **Digital Safety Instruction Online** provides a smooth path to professional development for modern teams. Join the professionals who trust our platform for their educational credentials.</p>
+            <p>With flexible access and digital delivery, our **Digital Safety Instruction Online** provides a smooth path to professional development for modern teams. Join the professionals who trust our platform for their educational credentials.</p>
 
             <div style="text-align: center; margin-top: 50px;">
                 <a href="{{route('register')}}" class="btn-gold">Enrol Now — €{{ config('global.course_price') }}</a>

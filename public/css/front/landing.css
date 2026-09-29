@@ -334,6 +334,7 @@
 .productWrapper {
     display: flex;
     border-radius: 7px 7px 7px 7px;
+    width: 85%;
 }
 .bulkContainer{
     width: 100%;

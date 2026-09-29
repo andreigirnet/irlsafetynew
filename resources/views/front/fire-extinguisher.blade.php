@@ -90,7 +90,7 @@
             <h2>Secure Your Fire Safety Operator Proficiency Verification</h2>
             <p>For Dublin-based enterprises and nationwide retailers, organizing staff education efficiently is essential. Our **Operator Proficiency Verification** removes the need for disruptive on-site visits and scheduling bottlenecks. Your staff can complete their **Safe Operation Curriculum** on any device, ensuring they are well-prepared and certified in just 45 minutes.</p>
 
-            <p>With convenient access and instant digital delivery, our **Digital Safety Instruction Online** is an efficient path to professional readiness for modern businesses. Join the professionals who trust our platform for their educational credentials.</p>
+            <p>With convenient access and digital delivery, our **Digital Safety Instruction Online** is an efficient path to professional readiness for modern businesses. Join the professionals who trust our platform for their educational credentials.</p>
 
             <div style="text-align: center; margin-top: 50px;">
                 <a href="{{route('register')}}" class="btn-gold">Enrol Today — €{{ config('global.course_price') }}</a>

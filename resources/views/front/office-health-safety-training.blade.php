@@ -85,7 +85,7 @@
             <h2>Secure Your Corporate Operator Proficiency Verification</h2>
             <p>For HR managers and operations directors, coordinating training for a hybrid workforce can present scheduling challenges. Our **Operator Proficiency Verification** removes the need for disruptive on-site consultants. Your team can complete their **Safe Operation Curriculum** at their own pace—whether in the office or working remotely—ensuring they are well-prepared in just 45 minutes.</p>
 
-            <p>With convenient access and instant digital delivery, our **Digital Safety Instruction Online** is an efficient path to professional readiness for modern businesses. Join the professionals who trust our platform for their educational credentials.</p>
+            <p>With convenient access and digital delivery, our **Digital Safety Instruction Online** is an efficient path to professional readiness for modern businesses. Join the professionals who trust our platform for their educational credentials.</p>
 
             <div style="text-align: center; margin-top: 50px;">
                 <a href="{{route('register')}}" class="btn-gold">Enrol Your Team — €{{ config('global.course_price') }}</a>

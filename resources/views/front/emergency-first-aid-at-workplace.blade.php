@@ -85,7 +85,7 @@
             <h2>Secure Your Workplace Operator Proficiency Verification</h2>
             <p>For HR managers and facilities supervisors, coordinating team training efficiently is a priority. Our **Operator Proficiency Verification** provides a flexible solution without disruptive classroom scheduling. Your team can complete their **Safe Operation Curriculum** at their own pace, ensuring they are well-prepared in under an hour.</p>
 
-            <p>With convenient access and instant digital delivery, our **Digital Safety Instruction Online** is an effective path to professional readiness for modern teams. Join the professionals who trust our platform for their educational credentials.</p>
+            <p>With convenient access and digital delivery, our **Digital Safety Instruction Online** is an effective path to professional readiness for modern teams. Join the professionals who trust our platform for their educational credentials.</p>
 
             <div style="text-align: center; margin-top: 50px;">
                 <a href="{{route('register')}}" class="btn-gold">Enrol Today — €{{ config('global.course_price') }}</a>

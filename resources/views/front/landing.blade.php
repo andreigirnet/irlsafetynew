@@ -76,7 +76,7 @@
 
 
     <div class="title" data-aos="fade-up">
-        <div class="titleText" >Leader in workplace safety courses</div>
+        <div class="titleText" >Workplace safety courses</div>
         <div class="borderTitle"></div>
     </div>
     <div class="productSection" id="courses">
@@ -667,8 +667,8 @@
         <div class="mh-faq-wrapper">
 
             <header class="mh-faq-header">
-                <span class="mh-faq-badge">National Safety Standards</span>
-                <h2 class="mh-faq-title">Workplace Safety: Expert FAQs</h2>
+                <span class="mh-faq-badge">Faqs</span>
+                <h2 class="mh-faq-title">Workplace Safety: FAQs</h2>
             </header>
 
             <div class="mh-faq-list">
@@ -707,7 +707,7 @@
                     </button>
                     <div class="mh-faq-content" x-show="open" x-cloak>
                         <p class="mh-faq-text">
-                            Online e-learning safety courses are applied for general theory-based subjects. For programs that require physical competencies, a <strong>blended learning</strong> model is typically used, allowing the theoretical portion to be completed online followed by a mandatory practical assessment to meet full compliance standards.After successfully passing the theory test, you will need to record a video of yourself lifting an object while following <strong>proper manual handling techniques</strong> and send it to us via WhatsApp for approval. Our instructor will review the video and, once approved, will issue your certificate.
+                            Online e-learning safety courses are applied for general theory-based subjects. For programs that require physical competencies, a <strong>online learning</strong> model is typically used, allowing the theoretical portion to be completed online followed by a mandatory practical assessment to meet full compliance standards.After successfully passing the theory test, you will need to record a video of yourself lifting an object while following <strong>proper manual handling techniques</strong> and send it to us via WhatsApp for approval. Our instructor will review the video and, once approved, will issue your certificate.
                         </p>
                     </div>
                 </div>

@@ -8,8 +8,8 @@
     <title>Online Safety Courses Ireland | Certified Training from €30 - {{ config('app.name') }}</title>
     
     {{-- Meta description --}}
-    <meta name="description" content="€30 online safety courses in Ireland. Manual Handling, Fire Safety, First Aid & more. Get certificate. Fully compliant training.">
-    <meta name="keywords" content="Manual Handling Courses Online, Fire Safety Training Ireland, First Aid Certification, Online Safety Courses, Workplace Safety">
+    <meta name="description" content="€30 online safety courses in Ireland. Manual Handling Training, Manual Handling Course, Manual Handling Online Course">
+    <meta name="keywords" content="Manual Handling Courses Online">
     
     {{-- Open Graph / Canonical --}}
     <link rel="canonical" href="{{ url()->current() }}">
@@ -21,8 +21,8 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:title" content="Online Safety Courses Ireland | Certified - {{ config('app.name') }}">
-    <meta property="og:description" content="Complete your certified safety training online. Manual Handling, Fire Safety, First Aid & more. Instant certificate included.">
-    <meta property="og:image:alt" content="Ireland Safety Course - Certified Online Training">
+    <meta property="og:description" content="Complete your safety training online. Manual Handling Course, Manual Handling Training. Certificate after you pass included.">
+    <meta property="og:image:alt" content="Ireland Safety Course - Online Safety Training">
     <meta property="og:image" content="https://www.irelandsafetycourse.com/images/metaImage.png">
     
     {{-- Favicons --}}
@@ -123,7 +123,7 @@
       "name": "Can I complete the courses fully online?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Online e-learning safety courses are applied for general theory-based subjects. For programs that require physical competencies, a blended learning model is typically used, allowing the theoretical portion to be completed online followed by a mandatory practical assessment to meet full compliance standards. After successfully passing the theory test, you will need to record a video of yourself lifting an object while following proper manual handling techniques and send it to us via WhatsApp for approval. Our instructor will review the video and, once approved, will issue your certificate."
+        "text": "Online e-learning safety courses are applied for general theory-based subjects. For programs that require physical competencies, a online learning model is typically used, allowing the theoretical portion to be completed online followed by a mandatory practical assessment to meet full compliance standards. After successfully passing the theory test, you will need to record a video of yourself lifting an object while following proper manual handling techniques and send it to us via WhatsApp for approval. Our instructor will review the video and, once approved, will issue your certificate."
       }
     },
     {
