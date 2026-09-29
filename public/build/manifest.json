@@ -158,7 +158,7 @@
     "src": "node_modules/x-editable/dist/bootstrap-editable/img/loading.gif"
   },
   "public/images/auth-bg.jpg": {
-    "file": "assets/auth-bg-0905eb10.jpg",
+    "file": "assets/auth-bg-29940bab.jpg",
     "src": "public/images/auth-bg.jpg"
   },
   "resources/fonts/bootstrap-icons.woff": {
@@ -393,7 +393,7 @@
     "src": "resources/js/pages/vector-maps.init.js"
   },
   "resources/scss/app.scss": {
-    "file": "assets/app-d1ef834b.css",
+    "file": "assets/app-7fa71238.css",
     "isEntry": true,
     "src": "resources/scss/app.scss"
   },

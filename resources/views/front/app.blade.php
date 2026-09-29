@@ -23,7 +23,7 @@
     <meta property="og:title" content="Online Safety Courses Ireland | Workplace Safety - {{ config('app.name') }}">
     <meta property="og:description" content="Complete your safety training online. Manual Handling Course, Manual Handling Training. Certificate after you pass included.">
     <meta property="og:image:alt" content="Ireland Safety Course - Online Safety Training">
-    <meta property="og:image" content="https://www.irelandsafetycourse.com/images/metaImage.png">
+    <meta property="og:image" content="https://www.ireland-safetycourse.com/images/metaImage.png">
     
     {{-- Favicons --}}
     <link rel="icon" href="{{ asset('/favicon.ico') }}" type="image/x-icon">
