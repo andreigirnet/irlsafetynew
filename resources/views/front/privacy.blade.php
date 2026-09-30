@@ -251,12 +251,12 @@
                         <li><strong>Identity Data:</strong> Full name and contact credentials.</li>
                         <li><strong>Contact Information:</strong> Email address and telephone number.</li>
                         <li><strong>Transaction & Payment Data:</strong> Details regarding course purchases (processed securely through encrypted payment gateways).</li>
-                        <li><strong>Assessment & Media Data:</strong> Practical session recordings, video assessments, photographs, or chat logs submitted via WhatsApp or communication channels for course verification and certification purposes.</li>
+                        <li><strong>Assessment & Media Data:</strong> Practical session recordings, video assessments, photographs, or chat logs are submitted via WhatsApp, <a href="https://www.whatsapp.com/legal/privacy-policy">Whats up privacy page</a>.</li>
                     </ul>
 
                     <h2>How We Use Your Information:</h2>
                     <p class="privacy-text">
-                        The information we collect is utilized for lawful business and educational purposes, including:
+                        The information we collect is utilized for business and educational purposes, including:
                     </p>
                     <ul class="privacy-list">
                         <li>Processing your course registration, verifying practical competency via video assessments, and issuing certificates of completion.</li>
@@ -266,7 +266,7 @@
 
                     <h2>Data Sharing and Disclosure:</h2>
                     <p class="privacy-text">
-                        We do not sell, trade, or rent your personal identification information to third parties. We may share data only with trusted service providers (such as secure payment processors, technical hosting platforms, and communication tools like WhatsApp for assessment processing) who assist us in operating our services, provided those parties agree to keep this information confidential.
+                        We do not sell, trade or rent your personal information or assessment videos. We use service providers for payment processing, website hosting and assessment communications. We use whts up to receive practical assessment videos and communicate assessment feedback. When you submit a video, we receive your video, telephone number, any visible profile information and accompanying messages. The messaging provider also processes information in accordance with its own privacy policy. Deleting a video from devices and systems under our control does not necessarily delete information retained by the messaging provider or copies stored on your device
                     </p>
 
                     <h2>Your Data Protection Rights:</h2>

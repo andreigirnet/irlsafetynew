@@ -9,7 +9,7 @@
 
         <div class="tmt-intro-section">
             <div class="tmt-intro-text">
-                At our platform, we specialize in delivering comprehensive <strong>Workplace Safety Training Ireland</strong> tailored to your organizational needs. Our digital learning modules are 100% web-based, providing your staff with the flexibility to study <strong>Workplace Safety Training Online</strong> at their convenience, whether during dedicated work blocks or outside of standard business hours.
+                We provide online manual handling training for teams. Each learner completes the theory modules, passes the theory test and submits a practical assessment video for instructor review. A Certificate of Completion is issued after successful practical assessment approval. Employers should confirm that the course meets their workplace requirements before purchasing.
             </div>
         </div>
 
@@ -17,9 +17,9 @@
 
             <div class="tmt-feature-row">
                 <div class="tmt-column-text">
-                    <h2 class="tmt-section-title">Volume Licensing | Workplace Safety Training Online</h2>
+                    <h2 class="tmt-section-title">Volume Courses | Workplace Safety Training Online</h2>
                     <div class="tmt-section-description">
-                        Maximize your budget with our scaled pricing model. Discounts are applied automatically to mixed-course orders. There is no expiration date for these licenses, allowing you to deploy training whenever necessary. Save 10% on orders of 10+ licenses. For large-scale enterprise requirements (500+ courses), we provide bespoke solutions. This includes a dedicated account representative, seat recycling options for staff turnover, and granular analytics via your corporate Management Suite. To discuss custom pricing and logistical needs, please message our sales team through the Online Chat.
+                        Save 10% when purchasing 10 or more courses. Each learner must complete the theory and practical assessment requirements before receiving a certificate. Contact us to discuss larger team bookings. Save 10% on orders of 10+ licenses. For large-scale enterprise requirements (500+ courses), we provide bespoke solutions. This includes a dedicated account representative, seat recycling options for staff turnover, and granular analytics via your corporate Management Suite. To discuss custom pricing and logistical needs, please message our sales team through the Online Chat.
                     </div>
                 </div>
                 <div class="tmt-column-image">
@@ -41,9 +41,9 @@
 
             <div class="tmt-feature-row">
                 <div class="tmt-column-text">
-                    <h2 class="tmt-section-title">Need Immediate Proficiency Verification? | Workplace Safety Training Ireland</h2>
+                    <h2 class="tmt-section-title">Need Safety Courses? | Workplace Safety Training Ireland</h2>
                     <div class="tmt-section-description">
-                        We’ve got you covered. Our automated portal and  certificate generation are designed for speed. In a fast-paced industry, a skill gap is a liability. Our platform allows your team to begin their <strong>Digital Safety Instruction Online</strong> modules in seconds. Compliance training can be completed in hours, not days, allowing you to train hundreds of employees simultaneously without the logistical headaches of physical classrooms. Every participant receives an <strong>Operator Proficiency Verification</strong> immediately upon completion.
+                        Learners can begin after course access is activated. Certificate availability depends on successful completion of the theory test and instructor approval of the practical assessment. Submission does not guarantee approval.
                     </div>
                 </div>
                 <div class="tmt-column-image">
