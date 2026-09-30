@@ -12,7 +12,7 @@
     <meta name="keywords" content="Manual Handling Courses Online">
     
     {{-- Open Graph / Canonical --}}
-    <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="canonical" href="{{ config('app.url') }}{{ request()->getRequestUri() }}">
     <link rel="alternate" hreflang="en-ie" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="en-gb" href="{{ url()->current() }}">
     <link rel="alternate" hreflang="x-default" href="{{ url()->current() }}">
