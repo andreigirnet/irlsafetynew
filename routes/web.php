@@ -32,9 +32,8 @@ Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallba
 
     //Front end routes, User experience
     Route::get('/', function(){
-        // $products = Product::orderBy('id', 'asc')->get();
-        // return view("front.landing", compact('products'));
-        abort(404);
+        $products = Product::orderBy('id', 'asc')->get();
+        return view("front.landing", compact('products'));
     })->name('frontHome');
     Route::get('/terms', function(){return view("front.terms");})->name('terms');
     Route::get('/about-us', function(){return view("front.about");})->name('front.about');
