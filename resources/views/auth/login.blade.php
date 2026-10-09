@@ -1,126 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full bg-surfaceLight">
 <head>
-    @include('layouts.shared/title-meta', ['title' => 'Log In'])
-    @include('layouts.shared/head-css', ['mode' => $mode ?? '', 'demo' => $demo ?? ''])
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
+    <title>Log in | {{ config('app.name', 'Ireland Safety Course') }}</title>
+
+    {{-- Tailwind CSS CDN --}}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldPrimary: '#065F46',
+                        emeraldHover: '#047857',
+                        emeraldLight: '#ECFDF5',
+                        emeraldBorder: '#A7F3D0',
+                        emeraldDark: '#022C22',
+                        sageAccent: '#10B981',
+                        surfaceLight: '#F8FAFC',
+                        cardLight: '#FFFFFF',
+                        textMain: '#1E293B',
+                        textMuted: '#64748B'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    {{-- Google Fonts & Icons --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="authentication-bg position-relative">
-<div class="account-pages pt-4 pt-sm-5 pb-4 pb-sm-5 position-relative">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xxl-9 col-lg-11">
-                <div class="card overflow-hidden border-0 shadow-lg" style="border-radius: 16px;">
-                    <div class="row g-0 flex-row-reverse">
-                        <!-- Right Side Image (Reversed) -->
-                        <div class="col-lg-6 d-none d-lg-block position-relative bg-light">
-                            <img src="/images/login/registerLogin.jpg" alt="Safety Course Login" class="img-fluid w-100 h-100 object-fit-cover">
+<body class="h-full font-sans antialiased text-textMain bg-surfaceLight flex flex-col justify-between selection:bg-emeraldPrimary selection:text-white">
+
+    <!-- Company details bar -->
+    <header class="bg-emeraldDark text-emerald-100 text-xs py-2 px-4 text-center font-medium border-b border-emerald-950">
+        <span>Operated by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED (CRO 822301)</span> &bull; <span>51 Bracken Road, Dublin, Ireland</span>
+    </header>
+
+    <!-- Main Login Container -->
+    <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl w-full bg-cardLight border border-slate-200 rounded-3xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+
+            <!-- Left info panel -->
+            <div class="lg:col-span-5 bg-gradient-to-br from-emeraldDark to-emerald-900 text-white p-8 sm:p-12 flex flex-col justify-between relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#10B981_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+                <div class="relative z-10 space-y-6">
+                    <a href="{{ url('/') }}" class="inline-flex items-center space-x-3 group">
+                        <div class="w-10 h-10 rounded-xl bg-sageAccent flex items-center justify-center text-emeraldDark font-bold text-xl shadow-md">
+                            <i class="fa-solid fa-shield-halved"></i>
                         </div>
+                        <span class="font-display font-bold text-xl tracking-tight text-white">Ireland Safety Course</span>
+                    </a>
 
-                        <!-- Left Side Form (Reversed) -->
-                        <div class="col-lg-6 bg-white d-flex flex-column justify-content-center">
-                            <div class="p-4 p-sm-5 w-100">
-
-                                <!-- Brand Header -->
-                                <div class="text-center mb-4">
-                                    <img src="/images/logo/logoLanding.png" alt="logo" height="75" class="mb-3">
-                                    <h2 class="fw-bold mb-2" style="color: #1E4D2B; font-size: 28px; letter-spacing: -0.5px;">Ireland Safety Course</h2>
-                                    <p class="text-secondary" style="font-size: 16px;">Access your professional training portal</p>
-                                </div>
-
-                                <!-- Global Flash & Validation Messages -->
-                                @if (session('success'))
-                                    <div class="alert alert-success border-0 bg-success-subtle text-success py-3 mb-4" style="font-size: 15px;">
-                                        {{ session('success') }}
-                                    </div>
-                                @endif
-
-                                @if ($errors->any())
-                                    <div class="alert alert-danger border-0 bg-danger-subtle text-danger py-3 mb-4" style="font-size: 15px;">
-                                        <ul class="mb-0 ps-3">
-                                            @foreach ($errors->all() as $error)
-                                                <li>{{ $error }}</li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-                                @endif
-
-                                <!-- Google Login Button -->
-                                <div class="mb-4">
-                                    <a href="{{ route('auth.google') }}" class="btn w-100 d-flex align-items-center justify-content-center gap-2 py-3" style="background-color: #ffffff; color: #374151; border: 1.5px solid #d1d5db; border-radius: 8px; font-weight: 600; font-size: 16px; transition: all 0.2s ease; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
-                                        <svg style="width: 22px; height: 22px;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
-                                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
-                                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
-                                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
-                                        </svg>
-                                        <span>Continue with Google</span>
-                                    </a>
-                                </div>
-
-                                <div class="position-relative text-center mb-4">
-                                    <hr class="text-muted opacity-25">
-                                    <span class="position-absolute top-50 start-50 translate-middle bg-white px-3 text-muted text-uppercase" style="font-size: 13px; letter-spacing: 0.5px; font-weight: 600;">Or with email</span>
-                                </div>
-
-                                <!-- Standard Login Form -->
-                                <form method="POST" action="{{ route('login') }}">
-                                    @csrf
-
-                                    <div class="mb-3">
-                                        <label for="emailaddress" class="form-label fw-bold text-secondary" style="font-size: 15px;">Email address</label>
-                                        <input class="form-control form-control-lg" style="font-size: 16px; padding: 12px 16px;" type="email" name="email" id="emailaddress"
-                                               placeholder="name@example.com" value="{{ old('email') }}" required>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <div class="d-flex justify-content-between align-items-center mb-1">
-                                            <label for="password" class="form-label fw-bold text-secondary mb-0" style="font-size: 15px;">Password</label>
-                                            <a href="{{ route('password.request') }}" class="text-muted text-decoration-none" style="font-size: 15px;">Forgot password?</a>
-                                        </div>
-                                        <input class="form-control form-control-lg" style="font-size: 16px; padding: 12px 16px;" type="password" name="password" id="password" placeholder="Enter your password" required>
-                                    </div>
-
-{{--                                    <div class="mb-3">--}}
-{{--                                        <div class="form-check">--}}
-{{--                                            <input type="checkbox" class="form-check-input" id="checkbox-signin" name="remember" style="width: 1.2em; height: 1.2em; margin-top: 0.2em;">--}}
-{{--                                            <label class="form-check-label text-secondary ms-1" for="checkbox-signin" style="font-size: 15px;">Remember this device</label>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-                                    <div class="mb-3">
-                                        <label class="form-check-label text-secondary ms-1" style="font-size: 12px;">
-                                            By submitting this form, you acknowledge our
-                                            <a href="{{ route('front.privacy') }}">Privacy Policy</a>.
-                                        </label>
-                                    </div>
-                                    <div class="d-grid">
-                                        <button class="btn py-3 text-white fw-bold" type="submit" style="background-color: #1E4D2B; border-radius: 8px; font-size: 17px; transition: opacity 0.2s;">
-                                            <i class="ri-login-circle-fill me-1"></i> Sign In
-                                        </button>
-                                    </div>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sign Up Redirect Footer -->
-                <div class="row mt-4">
-                    <div class="col-12 text-center">
-                        <p class="text-secondary mb-0" style="font-size: 17px;">Don't have an account?
-                            <a href="{{ route('register') }}" class="fw-bold text-decoration-none ms-1" style="color: #1E4D2B;">Sign up free</a>
+                    <div class="space-y-3 pt-6">
+                        <span class="bg-emerald-800/80 text-emerald-200 border border-emerald-700 text-xs font-semibold px-3 py-1 rounded-full inline-block">Learning portal</span>
+                        <h2 class="font-display text-3xl font-extrabold tracking-tight">Welcome back</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Log in to continue your course, take your theory test, and send your practical video for instructor review.
                         </p>
                     </div>
                 </div>
+
+                <div class="relative z-10 pt-10 border-t border-emerald-800/60 mt-8 text-xs text-slate-300 space-y-2">
+                    <p class="font-semibold text-white">How certification works</p>
+                    <p>A certificate of completion is issued after you pass the online theory test and an instructor approves your practical video.</p>
+                </div>
             </div>
+
+            <!-- Right login form panel -->
+            <div class="lg:col-span-7 p-8 sm:p-12 bg-cardLight flex flex-col justify-center">
+
+                <div class="mb-8">
+                    <h1 class="font-display text-2xl sm:text-3xl font-extrabold text-textMain tracking-tight">Log in to your account</h1>
+                    <p class="text-textMuted text-sm mt-1">Enter your details to open your dashboard.</p>
+                </div>
+
+                <!-- Session success alert -->
+                @if (session('success'))
+                    <div class="bg-emeraldLight text-emeraldPrimary border border-emeraldBorder p-4 rounded-xl mb-6 text-sm font-semibold flex items-center gap-2" role="status">
+                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+                        <span>{{ session('success') }}</span>
+                    </div>
+                @endif
+
+                <!-- Validation errors alert -->
+                @if ($errors->any())
+                    <div class="bg-rose-50 text-rose-800 border border-rose-200 p-4 rounded-xl mb-6 text-sm" role="alert">
+                        <div class="font-bold mb-1 flex items-center gap-2">
+                            <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Please fix the following:
+                        </div>
+                        <ul class="list-disc pl-5 space-y-1">
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+            
+
+                <div class="relative flex py-2 items-center mb-6">
+                    <div class="flex-grow border-t border-slate-200"></div>
+                    <span class="flex-shrink mx-4 text-xs font-semibold text-textMuted">Or log in with email</span>
+                    <div class="flex-grow border-t border-slate-200"></div>
+                </div>
+
+                <!-- Login form -->
+                <form method="POST" action="{{ route('login') }}" class="space-y-4">
+                    @csrf
+
+                    <div>
+                        <label for="emailaddress" class="block text-sm font-semibold text-textMain mb-2">Email address</label>
+                        <input type="email" name="email" id="emailaddress" autocomplete="email" class="w-full bg-surfaceLight border border-slate-200 rounded-xl px-4 py-3 text-textMain text-sm focus:outline-none focus:border-emeraldPrimary transition" value="{{ old('email') }}" placeholder="name@example.com" required>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label for="password" class="block text-sm font-semibold text-textMain mb-0">Password</label>
+                            <a href="{{ route('password.request') }}" class="text-xs font-semibold text-emeraldPrimary hover:underline">Forgot password?</a>
+                        </div>
+                        <input type="password" name="password" id="password" autocomplete="current-password" class="w-full bg-surfaceLight border border-slate-200 rounded-xl px-4 py-3 text-textMain text-sm focus:outline-none focus:border-emeraldPrimary transition" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="pt-2 text-xs text-textMuted">
+                        By logging in, you acknowledge our <a href="{{ route('front.privacy') }}" class="text-emeraldPrimary font-semibold hover:underline">Privacy Policy</a>.
+                    </div>
+
+                    <button type="submit" class="w-full bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg shadow-emeraldPrimary/20 mt-4 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-right-to-bracket text-xs" aria-hidden="true"></i>
+                        <span>Log in</span>
+                    </button>
+                </form>
+
+                <!-- Register redirect -->
+                <div class="mt-8 pt-6 border-t border-slate-100 text-center text-sm text-textMuted">
+                    Don't have an account? <a href="{{ route('register') }}" class="font-bold text-emeraldPrimary hover:underline ml-1">Create an account</a>
+                    <p class="text-xs mt-2">Creating an account does not cost anything. The course costs €30.</p>
+                </div>
+
+                <!-- Support: chat only loads when the visitor asks for it -->
+                <div class="mt-4 text-center text-xs text-textMuted">
+                    Need help? Message us on
+                    <a href="https://wa.me/353899735295" target="_blank" rel="noopener noreferrer" class="text-emeraldPrimary font-semibold hover:underline">WhatsApp</a>
+                </div>
+
+            </div>
+
         </div>
-    </div>
-</div>
+    </main>
 
-<script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=FCKWCyQL7PYg"></script>
-@include('layouts.shared/footer-scripts')
+    <!-- Footer -->
+    <footer class="py-6 text-center text-xs text-textMuted bg-cardLight border-t border-slate-200">
+        <p class="mb-2">&copy; {{ date('Y') }} PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED (CRO 822301). All rights reserved.</p>
+        <p>
+            <a href="{{ route('front.privacy') }}" class="hover:underline">Privacy Policy</a>
+            <span class="mx-2">&bull;</span>
+            <a href="{{ route('terms') }}" class="hover:underline">Terms &amp; Conditions</a>
+        </p>
+    </footer>
+
 </body>
-
 </html>

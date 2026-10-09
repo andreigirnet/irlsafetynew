@@ -1,284 +1,255 @@
 @extends('front.app')
 @section('content')
-    <div id="mainBanner">
-{{--        <img src="{{asset('images/banners/BackgroundIreland.png')}}" class="warehouse" alt="">--}}
-{{--        <video autoplay muted loop class="warehouse" >--}}
-{{--            <source src="video/bannerVideoBig.mp4" type="video/mp4">--}}
-{{--        </video>--}}
-        <div class="opacityLayer"></div>
-        <div class="mainBannerContent">
-            <div class="mainBannerRight">
-                <h1 class="mainBannerTitle">IRELAND SAFETY COURSE -<br> WORKPLACE SAFETY COURSES ONLINE</h1>
-                <div class="trust-badges-column">
-
-                    <div class="trust-badge">
-                        <div class="badge-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        </div>
-                        <div class="badge-content">
-                            <span class="badge-number">4.9 / 5</span>
-                            <span class="badge-label">Satisfied Customers</span>
-                        </div>
+    <section class="relative overflow-hidden hero-pattern py-20 lg:py-32 border-b border-slate-200 bg-gradient-to-b from-white via-surfaceLight to-surfaceLight">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-emeraldLight border border-emeraldBorder px-3.5 py-1.5 rounded-full text-xs font-semibold text-emeraldPrimary">
+                        <span class="w-2 h-2 rounded-full bg-sageAccent"></span>
+                        <span>Online theory + practical video review</span>
                     </div>
-
-                    <div class="trust-badge">
-                        <div class="badge-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                        </div>
-                        <div class="badge-content">
-                            <span class="badge-number">Completion</span>
-                            <span class="badge-label">Digital Certificates</span>
-                        </div>
+                    <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-textMain tracking-tight leading-tight">
+                        Online Manual Handling Training in <span class="text-emeraldPrimary">Ireland</span>
+                    </h1>
+                    <p class="text-lg text-textMuted max-w-2xl leading-relaxed">
+                        Ireland Safety Course is an independent training provider operated by Progressive Velocity Fast Solutions Limited. We are not affiliated with, endorsed by, or an official representative of any government body or third-party brand.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                        <a href="{{ url('/register') }}" class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-8 py-4 rounded-xl shadow-xl shadow-emeraldPrimary/25 text-center transition-all hover:scale-105">
+                            Register and enrol (€30)
+                        </a>
+                        <a href="#workflow" class="bg-cardLight hover:bg-slate-100 text-textMain font-semibold px-8 py-4 rounded-xl border border-slate-200 text-center transition-all shadow-sm">
+                            See how it works
+                        </a>
                     </div>
-
-                    <div class="trust-badge">
-                        <div class="badge-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <p class="text-sm text-textMuted">
+                        Already registered? <a href="{{ url('/login') }}" class="text-emeraldPrimary font-semibold underline">Log in</a>
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-200 text-sm text-textMuted">
+                        <div>
+                            <span class="block font-bold text-textMain text-lg">€30</span>
+                            Flat price
                         </div>
-                        <div class="badge-content">
-                            <span class="badge-number">24/7</span>
-                            <span class="badge-label">Learn at Your Pace</span>
+                        <div>
+                            <span class="block font-bold text-textMain text-lg">Online + WhatsApp</span>
+                            Practical assessment
+                        </div>
+                        <div>
+                            <span class="block font-bold text-textMain text-lg">Instructor review</span>
+                            Before certificate
                         </div>
                     </div>
                 </div>
-                <div class="mainBannerDescription">Online workplace safety courses and training. Our courses are clear, practical, and easy to follow with images, and concise text. Complete your training at your own pace on any device and receive your completion record.</div>
-                    <a href="{{route('register')}}" class="modern-glow-btn">
-                    START NOW
+
+                <!-- Hero Card -->
+                <div class="lg:col-span-5">
+                    <div class="hero-course-card">
+                        <div class="card-image-container">
+                            <img src="{{ asset('images/lifting.webp') }}" alt="Person lifting a box using manual handling technique" class="hero-course-img">
+                            <div class="image-gradient-overlay"></div>
+                            <div class="floating-price-tag">
+                                <span class="currency">€</span>30
+                            </div>
+                        </div>
+
+                        <div class="p-6 sm:p-8">
+                            <span class="text-xs font-bold text-emeraldPrimary uppercase tracking-wider block mb-1">Available now</span>
+                            <h3 class="font-display font-bold text-2xl text-textMain mb-2">Manual Handling Training</h3>
+                            <p class="text-textMuted text-sm mb-6">Online theory covering the spine, safe lifting principles and risk assessment, followed by a practical video review.</p>
+
+                            <div class="space-y-3 mb-8 text-sm text-textMain">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fa-solid fa-circle-check text-emeraldPrimary"></i>
+                                    <span>Self-paced online theory slides</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fa-solid fa-circle-check text-emeraldPrimary"></i>
+                                    <span>Online theory test</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fa-solid fa-circle-check text-emeraldPrimary"></i>
+                                    <span>Practical lifting video sent via WhatsApp</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fa-solid fa-circle-check text-emeraldPrimary"></i>
+                                    <span>Certificate of completion after instructor approval</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                                <div>
+                                    <span class="text-xs text-textMuted block">Price</span>
+                                    <span class="font-display font-extrabold text-3xl text-textMain">€30</span>
+                                </div>
+                                <a href="{{ url('/register') }}" class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md shadow-emeraldPrimary/20 text-center">
+                                    Register and enrol
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section class="py-16 bg-white border-b border-slate-200" id="course">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-textMain mb-4">Our course</h2>
+                <p class="text-textMuted">
+                    Ireland Safety Course is an independent training provider operated by Progressive Velocity Fast Solutions Limited. We are not affiliated with, endorsed by, or an official representative of any government body or third-party brand.
+                </p>
+            </div>
+
+            <div class="max-w-md mx-auto hero-course-card">
+                <div class="card-image-container">
+                    <img src="{{ asset('/images/lifting.webp') }}" alt="Manual handling lifting technique" class="hero-course-img">
+                    <div class="image-gradient-overlay"></div>
+                    <div class="floating-price-tag">
+                        <span class="currency">€</span>30
+                    </div>
+                </div>
+
+                <div class="p-6 sm:p-8">
+                    <h3 class="font-display font-bold text-xl text-textMain mb-2">Manual Handling Training</h3>
+                    <p class="text-textMuted text-sm mb-6">Online theory slides, a theory test, and a practical video reviewed by an instructor.</p>
+
+                    <ul class="space-y-2.5 text-sm text-textMain mb-8">
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Register an account and pay online</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Study on mobile, tablet or computer</span></li>
+                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Send your practical video on WhatsApp: +353899735295</span></li>
+                    </ul>
+
+                    <a href="{{ url('/register') }}" class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg shadow-emeraldPrimary/20 text-center">
+                        Register and enrol (€30)
                     </a>
+                </div>
             </div>
         </div>
-        <div class="metrics-wrapper bg-brand-deep">
-            <div class="metrics-grid">
+    </section>
 
-                <div class="metric-card">
-                    <span class="metric-value">100%</span>
-                    <span class="metric-caption">ONLINE LEARNING</span>
+    <!-- Workflow Section -->
+    <section class="py-20 bg-surfaceLight relative border-b border-slate-200" id="workflow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-emeraldPrimary font-semibold text-sm tracking-wider uppercase">Seven steps</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-textMain mt-2 mb-4">How the course works</h2>
+                <p class="text-textMuted">
+                    From registration to your certificate of completion, this is the full journey.
+                </p>
+            </div>
+
+            <!-- Stepper -->
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-3 mb-12">
+                <button onclick="setWorkflowStep(1)" id="step-btn-1" class="workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight border-emeraldPrimary text-textMain shadow-md">
+                    <span class="text-xs font-bold text-emeraldPrimary block mb-1">STEP 01</span>
+                    <span class="font-semibold text-xs block">Register</span>
+                </button>
+                <button onclick="setWorkflowStep(2)" id="step-btn-2" class="workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight/70 border-slate-200 text-textMuted hover:border-slate-300">
+                    <span class="text-xs font-bold text-textMuted block mb-1">STEP 02</span>
+                    <span class="font-semibold text-xs block">Buy the course (€30)</span>
+                </button>
+                <button onclick="setWorkflowStep(3)" id="step-btn-3" class="workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight/70 border-slate-200 text-textMuted hover:border-slate-300">
+                    <span class="text-xs font-bold text-textMuted block mb-1">STEP 03</span>
+                    <span class="font-semibold text-xs block">Online slides</span>
+                </button>
+                <button onclick="setWorkflowStep(4)" id="step-btn-4" class="workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight/70 border-slate-200 text-textMuted hover:border-slate-300">
+                    <span class="text-xs font-bold text-textMuted block mb-1">STEP 04</span>
+                    <span class="font-semibold text-xs block">Theory test</span>
+                </button>
+                <button onclick="setWorkflowStep(5)" id="step-btn-5" class="workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight/70 border-slate-200 text-textMuted hover:border-slate-300">
+                    <span class="text-xs font-bold text-textMuted block mb-1">STEP 05</span>
+                    <span class="font-semibold text-xs block">WhatsApp video</span>
+                </button>
+                <button onclick="setWorkflowStep(6)" id="step-btn-6" class="workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight/70 border-slate-200 text-textMuted hover:border-slate-300">
+                    <span class="text-xs font-bold text-textMuted block mb-1">STEP 06</span>
+                    <span class="font-semibold text-xs block">Instructor review</span>
+                </button>
+                <button onclick="setWorkflowStep(7)" id="step-btn-7" class="workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight/70 border-slate-200 text-textMuted hover:border-slate-300">
+                    <span class="text-xs font-bold text-textMuted block mb-1">STEP 07</span>
+                    <span class="font-semibold text-xs block">Certificate issued</span>
+                </button>
+            </div>
+
+            <!-- Detail card -->
+            <div class="bg-cardLight border border-slate-200 rounded-2xl p-8 lg:p-12 shadow-xl relative overflow-hidden">
+                <div id="workflow-content" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-8 space-y-4">
+                        <div class="inline-flex items-center space-x-2 bg-emeraldLight text-emeraldPrimary px-3 py-1 rounded-full text-xs font-bold border border-emeraldBorder">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <span id="workflow-tag">Step 1 of 7</span>
+                        </div>
+                        <h3 id="workflow-title" class="font-display font-bold text-2xl sm:text-3xl text-textMain">Register your account</h3>
+                        <p id="workflow-desc" class="text-textMuted text-base sm:text-lg leading-relaxed">
+                            Sign up with your email and a password to open your dashboard. Your progress is saved across your devices.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-4 flex flex-col items-center justify-center bg-surfaceLight p-8 rounded-xl border border-slate-200 text-center">
+                        <div id="workflow-icon" class="w-16 h-16 rounded-2xl bg-emeraldLight text-emeraldPrimary flex items-center justify-center text-3xl mb-4 shadow-sm border border-emeraldBorder">
+                            <i class="fa-solid fa-user-plus"></i>
+                        </div>
+                        <span class="text-xs text-textMuted font-medium">PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED</span>
+                    </div>
                 </div>
-
-                <div class="metric-card">
-                    <span class="metric-value">€{{config('global.course_price')}}</span>
-                    <span class="metric-caption">Course & certificate</span>
-                </div>
-
-                {{--            <div class="metric-card">--}}
-                {{--                <span class="metric-value">30</span></span>--}}
-                {{--                <span class="metric-caption">Minutes Course</span>--}}
-                {{--            </div>--}}
-
-                <div class="metric-card">
-                    <span class="metric-value">24/7</span>
-                    <span class="metric-caption">Train at your own pace</span>
-                </div>
-
             </div>
         </div>
-    </div>
+    </section>
 
-
-    <div class="title" data-aos="fade-up">
-        <div class="titleText" >Workplace safety courses</div>
-        <div class="borderTitle"></div>
-    </div>
-    <div class="productSection" id="courses">
-        <div class="productWrapper" >
-            <div class="adminProducts">
-                @foreach($products as $product)
-                    @if($product->status == 0)
-                        <div class="hero-course-card">
-                            @if($product->id == 1)
-                                <div class="card-badge orange-badge">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M23 7l-7 5 7 5V7z"></path><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
-                                    Theory + Practical Included
-                                </div>
-                            @else
-                                <div class="card-badge green-badge">
-                                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                    Online Certificate
-                                </div>
-                            @endif
-
-                            <div class="card-image-container">
-                                <img src="{{asset('images/productAdd/'.$product->image)}}" alt="{{$product->name}}" class="hero-course-img">
-                                <div class="image-gradient-overlay"></div>
-                                <div class="floating-price-tag">
-                                    <span class="currency">€</span>{{$product->price}}
-                                </div>
-                            </div>
-
-                            <div class="card-content-area">
-                                <h3 class="hero-title">{{$product->name}}</h3>
-
-                                <div class="specs-grid">
-                                    <div class="spec-card">
-                                        <div class="spec-icon">
-                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                        </div>
-                                        <div class="spec-data">
-                                            <span class="spec-label">Duration</span>
-                                            <span class="spec-value">@if($product->id == 14) {{$product->durationTraining}} Day @else {{$product->durationTraining}} Mins @endif + instructor review</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="spec-card">
-                                        <div class="spec-icon">
-                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                                        </div>
-                                        <div class="spec-data">
-                                            <span class="spec-label">Validity</span>
-                                            <span class="spec-value">{{$product->certificateValidity}} Years</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="benefits-row">
-                                    <span class="benefit-item">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                                        Course Certification
-                                    </span>
-                                                            <span class="benefit-item">
-                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                                        Unlimited test attempts
-                                    </span>
-                                </div>
-
-                                @if($product->status == 0)
-                                    <div class="card-action-buttons">
-                                        @if($product->description)
-                                            <a href="{{route('front.product', $product->slug)}}" class="btn-secondary-info">
-                                                Course Info
-                                            </a>
-                                        @endif
-                                        <a href="{{route('register')}}" class="btn-primary-enroll">
-                                            <span>Start Now</span>
-                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                                        </a>
-                                    </div>
-                                @endif
+    <!-- About the certificate -->
+    <section class="py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold text-textMain">About the certificate</h2>
+                    <p class="text-textMuted leading-relaxed">
+                        The certificate is a private certificate of completion issued by Progressive Velocity Fast Solutions Limited. It shows that you completed our training. It is not a State qualification, and whether it meets the requirements of a particular workplace is for the employer to decide.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-emeraldLight text-emeraldPrimary flex items-center justify-center text-xs mt-1 shrink-0 border border-emeraldBorder"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-textMain">When it is issued</h4>
+                                <p class="text-textMuted text-sm">After you pass the online theory test and an instructor approves your WhatsApp practical video. It is not issued automatically.</p>
                             </div>
                         </div>
-                    @endif
-                @endforeach
-            </div>
-        </div>
-    </div>
-
-    <div class="langTitle" data-aos="fade-up">
-        <div class="languageText">
-            At Ireland Safety Course, our Workplace safety courses and online Workplace safety training programs are designed to be simple, engaging, and accessible for learners of all nationalities. Each safety course online includes clear illustrative graphics, straightforward images, and easy-to-read content to ensure every step is simple to follow. Our Workplace safety courses focus on quality and essential workplace safety best practices. Discover our safety courses online and begin your Workplace safety training today.
-        </div>
-        <div class="languagesSection">
-            <img src="{{asset('images/flags/en.png')}}" alt="">
-            <img src="{{asset('images/flags/pl.png')}}" alt="">
-            <img src="{{asset('images/flags/ro.png')}}" alt="">
-            <img src="{{asset('images/flags/ru.png')}}" alt="">
-            <img src="{{asset('images/flags/sp.png')}}" alt="">
-            <img src="{{asset('images/flags/ukr.png')}}" alt="">
-        </div>
-    </div>
-
-    <section class="premium-bulk-wrapper">
-        <div class="premium-bulk-container">
-
-            <div class="premium-info-wing">
-                <header class="premium-info-header">
-                    <h2 class="premium-main-title" >
-                        How Our Workplace Safety Courses Work: 4 Easy Steps
-                    </h2>
-                    <div class="premium-divider"></div>
-                </header>
-
-                <div class="premium-step-list">
-
-                    <div class="premium-step-card">
-                        <div class="premium-icon-box">
-                            <img src="{{asset('images/icons/22.png')}}" alt="Activate">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-emeraldLight text-emeraldPrimary flex items-center justify-center text-xs mt-1 shrink-0 border border-emeraldBorder"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-textMain">Price</h4>
+                                <p class="text-textMuted text-sm">€30, paid once, with no hidden fees or subscriptions.</p>
+                            </div>
                         </div>
-                        <p class="premium-step-text" >Create or Login in your account to buy the courses you need</p>
-                    </div>
-
-                    <div class="premium-step-card">
-                        <div class="premium-icon-box">
-                            <img src="{{asset('images/icons/11.png')}}" alt="Purchase">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-emeraldLight text-emeraldPrimary flex items-center justify-center text-xs mt-1 shrink-0 border border-emeraldBorder"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="font-semibold text-textMain">Questions</h4>
+                                <p class="text-textMuted text-sm">Call or message us on WhatsApp at +353899735295.</p>
+                            </div>
                         </div>
-                        <p class="premium-step-text" >Complete the payment and go to your courses section to start the course</p>
-                    </div>
-
-
-
-                    <div class="premium-step-card">
-                        <div class="premium-icon-box">
-                            <img src="{{asset('images/icons/33.png')}}" alt="Achieve">
-                        </div>
-                        <p class="premium-step-text" >Learn & Achieve - Progress through the course, pass the assessment, and download your certificate.</p>
-                    </div>
-
-                    <div class="premium-step-card">
-                        <div class="premium-icon-box">
-                            <img src="{{asset('images/icons/44.png')}}" alt="Support">
-                        </div>
-                        <p class="premium-step-text" >For technical support, please contact us at info@ireland-safetycourse.com.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="premium-visual-wing">
-                <img src="{{asset('images/landingBulk.webp')}}" class="premium-promo-img" alt="Bulk Purchase Offer">
-            </div>
-
-        </div>
-    </section>
-
-
-    
-
-    {{--    <div class="title" data-aos="fade-up">--}}
-    {{--        <div class="titleText sizeTextMobile" >About Us</div>--}}
-    {{--        <div class="borderTitle"></div>--}}
-    {{--    </div>--}}
-
-    <section class="imh-about-section" data-aos="fade-up">
-        <div class="imh-container">
-            <div class="imh-header">
-                <span class="imh-subtitle">Excellence in Safety</span>
-                <h2 class="imh-title">Safety Courses Online: Study Anytime, Anywhere With Ireland Safety Course</h2>
-                <div class="imh-divider"></div>
-            </div>
-
-            <div class="imh-content-grid">
-                <div class="imh-main-text">
-                    <p class="imh-lead-para" >
-                        Welcome to IrelandSafety-Course.com, your premier destination for top-notch online Workplace Safety Course Online in Ireland...
-                    </p>
-                    <p class="imh-body-para" >
-                        At Ireland Safety Course, we take immense pride in the integrity and excellence of our safety training services...
-                    </p>
-
-                    <div class="imh-contact-box">
-                        <p >For inquiries, student support, sales, or technical assistance, reach out via chat or email.</p>
-                        <a href="mailto:info@ireland-safetycourse.com" class="imh-email-link">info@ireland-safetycourse.com</a>
                     </div>
                 </div>
 
-                <div class="imh-trust-card">
-                    <div class="imh-badge-item">
-                        <div class="imh-icon">🌍</div>
-                        <div>
-                            <strong>Learn from anywhere</strong>
-                            <p>24/7</p>
-                        </div>
-                    </div>
-                    <div class="imh-badge-item">
-                        <div class="imh-icon">🎓</div>
-                        <div>
-                            <strong>Professional instructors</strong>
-                            <p>QQI Level 6 Instructors</p>
-                        </div>
-                    </div>
-                    <div class="imh-badge-item">
-                        <div class="imh-icon">🛡️</div>
-                        <div>
-                            <strong>100% Digital</strong>
-                            <p>Secure, efficient, and accessible anywhere.</p>
+                <div class="lg:col-span-6">
+                    <div class="bg-cardLight border border-slate-200 p-8 rounded-2xl shadow-xl space-y-6">
+                        <h3 class="font-display font-bold text-xl text-textMain border-b border-slate-100 pb-4">Company details</h3>
+                        <div class="space-y-4 text-sm">
+                            <div class="flex justify-between py-2 border-b border-slate-100">
+                                <span class="text-textMuted">Company name</span>
+                                <span class="font-medium text-textMain text-right">PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-slate-100">
+                                <span class="text-textMuted">Company number (CRO)</span>
+                                <span class="font-medium text-textMain text-right">822301</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-slate-100">
+                                <span class="text-textMuted">Registered address</span>
+                                <span class="font-medium text-textMain text-right">51 Bracken Road, Dublin, D18 CV48, Ireland</span>
+                            </div>
+                            <div class="flex justify-between py-2">
+                                <span class="text-textMuted">Phone / WhatsApp</span>
+                                <span class="font-medium text-textMain text-right">+353899735295</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,275 +257,176 @@
         </div>
     </section>
 
-    <div class="title">
-        <div class="titleText sizeTextMobile" >Get your Certificate</div>
-        <div class="borderTitle"></div>
-        <a href="{{route('register')}}"><div class="pulse-button" data-aos="fade-up">Pay / Register Here</div></a>
-    </div>
-
-    <section class="exclusive-benefits-area">
-        <div class="exclusive-benefits-grid">
-
-            <div class="exclusive-col" data-aos="fade-up">
-                <div class="exclusive-card">
-                    <div class="exclusive-icon-box" style="border-color: #e60b31;">
-                        <img src="{{asset('images/logo/home.svg')}}" alt="Home">
-                    </div>
-                    <h3 class="exclusive-title" >FLEXIBLE WORKPLACE SAFETY COURSE</h3>
-                    <p class="exclusive-text" >Complete your training online at a time and location that fits your lifestyle.</p>
-                </div>
-
-                <div class="exclusive-card">
-                    <div class="exclusive-icon-box" style="border-color: #c3d600;">
-                        <img src="{{asset('images/logo/clock.svg')}}" alt="Clock">
-                    </div>
-                    <h3 class="exclusive-title" >SAVE TIME WITH VIRTUAL LEARNING</h3>
-                    <p class="exclusive-text" >Avoid travel time and the wait for physical classes to begin.</p>
-                </div>
-
-                <div class="exclusive-card">
-                    <div class="exclusive-icon-box" style="border-color: #345cb3;">
-                        <img src="{{asset('images/logo/wallet.svg')}}" alt="Wallet">
-                    </div>
-                    <h3 class="exclusive-title" >AFFORDABLE WORKPLACE SAFETY COURSE ONLINE</h3>
-                    <p class="exclusive-text" >Online education removes the overhead expenses of traditional classroom settings.</p>
-                </div>
+    <!-- FAQ Section -->
+    <section class="py-20 bg-surfaceLight border-b border-slate-200" id="faq">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-textMain mt-2 mb-4">Frequently asked questions</h2>
+                <p class="text-textMuted">Answers about the course, the practical video and the certificate.</p>
             </div>
 
-            <div class="exclusive-hero-center" data-aos="zoom-in">
-                <img src="{{asset('images/indian.png')}}" class="indianimage" alt="Workplace Safety Training">
-            </div>
-
-            <div class="exclusive-col" data-aos="fade-up" data-aos-delay="100">
-                <div class="exclusive-card">
-                    <div class="exclusive-icon-box" style="border-color: #f49c12;">
-                        <img src="{{asset('images/logo/download.svg')}}" alt="Download">
-                    </div>
-                    <h3 class="exclusive-title" > WORKPLACE SAFETY CERTIFICATE</h3>
-                    <p class="exclusive-text" >Finish your modules and download your certificate immediately upon completion.</p>
-                </div>
-
-                <div class="exclusive-card">
-                    <div class="exclusive-icon-box" style="border-color: #356ce6;">
-                        <img src="{{asset('images/logo/internet.svg')}}" alt="Global">
-                    </div>
-                    <h3 class="exclusive-title" >MAXIMIZE EFFICIENCY</h3>
-                    <p class="exclusive-text" >Skip the commute and work through your Workplace safety course at the speed that is right for you.</p>
-                </div>
-
-                <div class="exclusive-card">
-                    <div class="exclusive-icon-box" style="border-color: #f91819;">
-                        <img src="{{asset('images/logo/high-quality.svg')}}" alt="Quality">
-                    </div>
-                    <h3 class="exclusive-title" >ONLINE TRAINING</h3>
-                    <p class="exclusive-text" >Our digital learning is a cost-effective alternative to earn your Workplace safety certificate.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <div class="title spaceTop" data-aos="fade-up" >
-        <div class="titleText sizeTextMobile" >Expert Online Workplace Safety Course Online | ireland-safetycourse.com</div>
-        <div class="borderTitle"></div>
-    </div>
-
-    <section class="imh-expert-section" data-aos="fade-up">
-        <div class="imh-expert-container">
-
-            <div class="imh-expert-main-grid">
-                <div class="imh-expert-narrative">
-                    <p >At ireland-safetycourse.com, we understand the critical importance...</p>
-
-                    <div class="imh-expert-cta-card">
-                        <h3 >Elevate your workplace safety standards...</h3>
-                        <a href="mailto:info@ireland-safetycourse.com" class="imh-expert-btn">Email Us Today</a>
+            <div class="space-y-4">
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(1)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>How does the practical video work?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        After you pass the online theory test, record a short video of yourself lifting an object using the technique shown in the course slides. Send it on WhatsApp to +353899735295. An instructor reviews it and replies with the result. Please film only yourself and make sure no other people are visible.
                     </div>
                 </div>
 
-                <div class="imh-expert-features">
-                    <h4 class="imh-feature-heading" >Why Choose ireland-safetycourse.com?</h4>
-
-                    <div class="imh-feature-item">
-                        <span class="imh-feature-icon">📋</span>
-                        <div>
-                            <strong>Modern Curriculum</strong>
-                            <p>Latest industry standards and best practices.</p>
-                        </div>
-                    </div>
-
-                    <div class="imh-feature-item">
-                        <span class="imh-feature-icon">💻</span>
-                        <div>
-                            <strong>Interactive Learning</strong>
-                            <p>Engaging modules that make safety training effective.</p>
-                        </div>
-                    </div>
-
-                    <div class="imh-feature-item">
-                        <span class="imh-feature-icon">🏅</span>
-                        <div>
-                            <strong>Online Certificate</strong>
-                            <p>Showcase compliance with safety.</p>
-                        </div>
-                    </div>
-
-                    <div class="imh-feature-item">
-                        <span class="imh-feature-icon">🕒</span>
-                        <div>
-                            <strong>24/7 Access</strong>
-                            <p>Learn at your own pace, anytime, anywhere.</p>
-                        </div>
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(2)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>When will I receive my certificate?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        Your certificate of completion is issued after you pass the theory test and an instructor approves your practical video. It is not issued automatically.
                     </div>
                 </div>
-            </div>
 
-            <div class="imh-expert-footer">
-                <p >Ensure your team's safety and efficiency—choose ireland-safetycourse.com today!</p>
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(3)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>What kind of certificate is it?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        It is a private certificate of completion issued by Progressive Velocity Fast Solutions Limited. It is not a State-accredited qualification. If your employer needs a specific type of training or certificate, please check with them before you enrol.
+                    </div>
+                </div>
+
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(4)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>How much does the course cost?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        The course costs €30. There are no hidden fees and no subscription.
+                    </div>
+                </div>
+
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(5)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>What happens to my practical video?</span>
+                        <i id="faq-icon-5" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-5" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        Videos are sent by WhatsApp, a service provided by Meta. We review your video to assess your technique, and delete it from our devices and systems once the assessment is complete. A copy may remain in your own chat history, which you can delete yourself. Our Privacy Policy, linked in the footer, has the full details.
+                    </div>
+                </div>
+
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(6)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>Who runs Ireland Safety Course?</span>
+                        <i id="faq-icon-6" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-6" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        Ireland Safety Course is an independent training provider operated by Progressive Velocity Fast Solutions Limited. We are not affiliated with, endorsed by, or an official representative of any government body or third-party brand. Company number (CRO) 822301, registered address 51 Bracken Road, Dublin, D18 CV48, Ireland.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="mh-faq" x-data="{ search: '' }">
-        <div class="mh-faq-wrapper">
 
-            <header class="mh-faq-header">
-                <span class="mh-faq-badge">Faqs</span>
-                <h2 class="mh-faq-title">Workplace Safety: FAQs</h2>
-            </header>
-
-            <div class="mh-faq-list">
-
-                <!-- FAQ 1 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'is Workplace safety training a requirement in ireland? '.includes(search.toLowerCase())">
-                    <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">How long the certificate is valid?</span>
-                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
-                    </button>
-                    <div class="mh-faq-content" x-show="open" x-cloak>
-                        <p class="mh-faq-text">
-                            <strong>Our certificate</strong> is proof that you have successfully completed the course with us and is valid for 3 years. You can check your manual handling certificate validity here: <a href="{{route('front.verify')}}">verify certificate</a>
-                        </p>
-                    </div>
+    <!-- Contact Section -->
+    <section class="py-20 bg-white border-b border-slate-200" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-6">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-textMain">Need help enrolling or sending your video?</h2>
+                <p class="text-textMuted">
+                    Call us or message us on WhatsApp.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="tel:+353899735295" class="w-full sm:w-auto bg-surfaceLight hover:bg-slate-100 border border-slate-200 text-textMain font-semibold px-8 py-4 rounded-xl flex items-center justify-center space-x-3 transition-all shadow-sm">
+                        <i class="fa-solid fa-phone text-emeraldPrimary"></i>
+                        <span>+353899735295</span>
+                    </a>
+                    <a href="https://wa.me/353899735295" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl flex items-center justify-center space-x-3 transition-all shadow-lg shadow-emerald-600/20">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Chat on WhatsApp</span>
+                    </a>
                 </div>
-
-                <!-- FAQ 2 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'how long does a Workplace safety certificate last? expiry'.includes(search.toLowerCase())">
-                    <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Is the manual handling course theory + practice?</span>
-                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
-                    </button>
-                    <div class="mh-faq-content" x-show="open" x-cloak>
-                        <p class="mh-faq-text">
-                            Yes, after you purchase the course, you will be able to <strong>start it immediately</strong> and go through the theory slides. At the end, you will have to pass a theory test. After successfully passing the theory test, you will need to record a video of yourself lifting an object while following <strong>proper manual handling techniques</strong> and send it to us via WhatsApp for approval. Our instructor will review the video and, once approved, will issue your certificate.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ 3 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'how are online safety courses utilized in compliance frameworks?'.includes(search.toLowerCase())">
-                    <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Can I complete the courses fully online?</span>
-                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
-                    </button>
-                    <div class="mh-faq-content" x-show="open" x-cloak>
-                        <p class="mh-faq-text">
-                            Online e-learning safety courses are applied for general theory-based subjects. For programs that require physical competencies, a <strong>online learning</strong> model is typically used, allowing the theoretical portion to be completed online followed by a mandatory practical assessment to meet full compliance standards.After successfully passing the theory test, you will need to record a video of yourself lifting an object while following <strong>proper manual handling techniques</strong> and send it to us via WhatsApp for approval. Our instructor will review the video and, once approved, will issue your certificate.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'how do i verify a certificate validation check'.includes(search.toLowerCase())">
-                    <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">How do I verify a safety certificate?</span>
-                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
-                    </button>
-                    <div class="mh-faq-content" x-show="open"  x-cloak>
-                        <p class="mh-faq-text">
-                            <strong>Yes, verification is simple.</strong> You can verify any certificate directly by visiting the <a href="{{ route('front.verify') }}">certificate verification page</a> on this website.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ 5 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'who is responsible for paying for the training? employer duties'.includes(search.toLowerCase())">
-                    <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Who is issuing the certificate?</span>
-                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
-                    </button>
-                    <div class="mh-faq-content" x-show="open" x-cloak>
-                        <p class="mh-faq-text">
-                            The certificate is issued by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED (trading as Manual Handling Ireland) after you successfully submit the practical video assessment via WhatsApp on +353899735295. Once our instructor has reviewed and approved the video, your certificate will be issued.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ 6 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'what happens if a business is not compliant? fines'.includes(search.toLowerCase())">
-                    <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Can I download my certificate later?</span>
-                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
-                    </button>
-                    <div class="mh-faq-content" x-show="open" x-cloak>
-                        <p class="mh-faq-text">
-                            You can login any time with your credentials. And download a <strong>new certificate</strong> in case you lost it
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ 7 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'do i get a discount if i buy bulk for my team corporate training'.includes(search.toLowerCase())">
-                    <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Do I get a discount if I buy bulk for my team?</span>
-                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
-                    </button>
-                    <div class="mh-faq-content" x-show="open"  x-cloak>
-                        <p class="mh-faq-text">
-                            <strong>Yes.</strong> You receive a discount when purchasing 10 or more courses. Please check the corporate training section on the website for pricing tiers and group booking details.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ 8 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'can i retake assessment attempts exam test'.includes(search.toLowerCase())">
-                    <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Can I retake the assessment if I fail?</span>
-                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
-                    </button>
-                    <div class="mh-faq-content" x-show="open"  x-cloak>
-                        <p class="mh-faq-text">
-                            <strong>Yes.</strong> You can retake the assessment as many times as you need with unlimited attempts until you successfully pass the course. If your practical assessment is not approved, our instructor will provide feedback explaining what needs to be improved. You can then send a new video to whatsup addressing the feedback for another review, at no additional cost.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ 9 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'can training be performed from mobile device mobile friendly smartphone languages'.includes(search.toLowerCase())">
-                    <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">Can safety training be performed from a mobile device?</span>
-                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
-                    </button>
-                    <div class="mh-faq-content" x-show="open" x-cloak>
-                        <p class="mh-faq-text">
-                            <strong>Yes.</strong> Modern e-learning safety courses are fully responsive and optimized for smartphones and tablets, allowing employees to complete theoretical modules, read training materials, and take assessments directly from any mobile device. Additionally, the courses are fully available in <strong>5 languages</strong> to accommodate diverse workforces.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- FAQ 10 -->
-                <div class="mh-faq-item" x-data="{ open: false }" x-show="'mental health wellbeing workplace safety psychosocial'.includes(search.toLowerCase())">
-                    <button class="mh-faq-trigger" @click="open = !open">
-                        <span class="mh-faq-question">What if my certificate is not accepted by employer?</span>
-                        <div class="mh-faq-plus" :style="open ? 'transform: rotate(45deg);' : ''"></div>
-                    </button>
-                    <div class="mh-faq-content" x-show="open" x-cloak>
-                        <p class="mh-faq-text">
-                            You will be <strong>fully refunded</strong>. Contact us in the live chat or email, your request will be reviewed up to 14 days and Expect 5-10 business days for money to arrive. For more details read <a href="{{route('front.refund')}}">refund policy</a>
-                        </p>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
-    <script src="{{asset("js/counter.js")}}"></script>
+
+    <!-- Workflow and FAQ Script Logic -->
+    <script>
+        const workflowSteps = {
+            1: {
+                title: "Register your account",
+                desc: "Sign up with your email and a password to open your dashboard. Your progress is saved across your devices.",
+                icon: "fa-user-plus",
+                tag: "Step 1 of 7"
+            },
+            2: {
+                title: "Buy the course (€30)",
+                desc: "Pay €30 securely online. There are no hidden fees and no recurring charges.",
+                icon: "fa-credit-card",
+                tag: "Step 2 of 7"
+            },
+            3: {
+                title: "Complete the online slides",
+                desc: "Work through the theory slides on the spine, risk assessment and safe lifting principles, at your own pace.",
+                icon: "fa-laptop-code",
+                tag: "Step 3 of 7"
+            },
+            4: {
+                title: "Take the theory test",
+                desc: "Answer the online test questions to check your understanding of the theory before the practical step.",
+                icon: "fa-clipboard-question",
+                tag: "Step 4 of 7"
+            },
+            5: {
+                title: "Record and send your practical video",
+                desc: "Record a short video of yourself lifting an object with the technique shown in the course, and send it on WhatsApp to +353899735295.",
+                icon: "fa-video",
+                tag: "Step 5 of 7"
+            },
+            6: {
+                title: "Wait for the instructor's review",
+                desc: "An instructor reviews your practical video and your theory test result. Certificates are not issued automatically.",
+                icon: "fa-user-check",
+                tag: "Step 6 of 7"
+            },
+            7: {
+                title: "Certificate of completion issued",
+                desc: "Once the instructor approves your video, your certificate of completion is issued and made available in your account.",
+                icon: "fa-award",
+                tag: "Step 7 of 7"
+            }
+        };
+
+        function setWorkflowStep(stepNum) {
+            for (let i = 1; i <= 7; i++) {
+                const btn = document.getElementById(`step-btn-${i}`);
+                if (i === stepNum) {
+                    btn.className = "workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight border-emeraldPrimary text-textMain shadow-md";
+                } else {
+                    btn.className = "workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight/70 border-slate-200 text-textMuted hover:border-slate-300";
+                }
+            }
+
+            const data = workflowSteps[stepNum];
+            document.getElementById('workflow-title').innerText = data.title;
+            document.getElementById('workflow-desc').innerText = data.desc;
+            document.getElementById('workflow-tag').innerText = data.tag;
+            document.getElementById('workflow-icon').innerHTML = `<i class="fa-solid ${data.icon}"></i>`;
+        }
+
+        function toggleFaq(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        
+    </script>
 @endsection

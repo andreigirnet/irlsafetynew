@@ -1,81 +1,47 @@
-<footer class="main-footer">
-    <div class="footer-container">
-
-        <!-- COLUMN 1: CUSTOMER SUPPORT -->
-        <div class="footer-column">
-            <h3 class="footer-heading">CUSTOMER SUPPORT</h3>
-            <ul class="footer-links">
-                <li><a href="{{ route('front.faq') }}">FAQs</a></li>
-                <li><a href="{{ route('front.contact') }}">Contact Us</a></li>
-                <li><a href="{{ route('front.team') }}">Team Training</a></li>
-                <li><a href="{{ route('front.verify') }}">Verify Certificate</a></li>
-            </ul>
-        </div>
-
-        <!-- COLUMN 2: COMPANY -->
-        <div class="footer-column">
-            <h3 class="footer-heading">COMPANY</h3>
-            <ul class="footer-links">
-                <li><a href="{{ route('terms') }}">Terms and Conditions</a></li>
-                <li><a href="{{ route('front.cookies') }}">Cookies Policy</a></li>
-                <li><a href="{{ route('front.privacy') }}">Privacy policy</a></li>
-                <li><a href="{{ route('front.refund') }}">Refund policy</a></li>
-            </ul>
-        </div>
-
-        <!-- COLUMN 3: MANUAL HANDLING (PRIMARY SERVICES) -->
-        <!-- <div class="footer-column">
-            <h3 class="footer-heading">Our Courses</h3>
-            <ul class="footer-links">
-                <li><a href="#courses">Manual Handling</a></li>
-                <li><a href="#courses">Working At Heights</a></li>
-                <li><a href="#courses">Abrasive Wheels</a></li>
-                <li><a href="#courses">HACCP</a></li>
-                <li><a href="#courses">Fire Safety</a></li>
-            </ul>
-        </div> -->
-
-{{--        <!-- COLUMN 4: LOCATIONS -->--}}
-{{--        <div class="footer-column">--}}
-{{--            <h3 class="footer-heading">LOCATIONS</h3>--}}
-{{--            <ul class="footer-links">--}}
-{{--                <li><a href="{{ route('front.manual.dublin') }}">Manual Handling Dublin</a></li>--}}
-{{--                <li><a href="{{ route('front.manual.handling.cork') }}">Manual Handling Cork</a></li>--}}
-{{--                <li><a href="{{ route('front.manual.handling.galway') }}">Manual Handling Galway</a></li>--}}
-{{--                <li><a href="{{ route('front.manual.handling.limerick') }}">Manual Handling Limerick</a></li>--}}
-{{--                <li><a href="{{ route('front.manual.handling.waterford') }}">Manual Handling Waterford</a></li>--}}
-{{--            </ul>--}}
-{{--        </div>--}}
-
-        <!-- COLUMN 5: BUYER PROTECTION -->
-        <div class="footer-column protection">
-            <h3 class="footer-heading">BUYER PROTECTION</h3>
-            <p class="protection-subtext">Fast, encrypted payments</p>
-
-            <div class="stripe-badge">
-                Powered by <strong>stripe</strong>
+<footer class="bg-cardLight border-t border-slate-200 py-12 text-textMuted text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-emeraldPrimary flex items-center justify-center text-white font-bold text-sm shadow-sm">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="font-display font-bold text-textMain text-lg">Ireland Safety Course</span>
+                    </div>
+                    <p class="text-xs text-textMuted leading-relaxed">
+                        Professional online workplace safety training operator committed to factual clarity and rigorous practical verification.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-textMain mb-4">Active Course</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#course" class="hover:text-emeraldPrimary transition-colors">Manual Handling Training (€30)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-textMain mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#workflow" class="hover:text-emeraldPrimary transition-colors">Step-by-Step Process</a></li>
+                        <li><a href="#faq" class="hover:text-emeraldPrimary transition-colors">Frequently Asked Questions</a></li>
+                        <li><a href="#contact" class="hover:text-emeraldPrimary transition-colors">Support & WhatsApp</a></li>
+                        <li><a href="{{route('front.privacy')}}" class="hover:text-emeraldPrimary transition-colors">Privacy Policy</a></li>
+                        <li><a href="{{route('terms')}}" class="hover:text-emeraldPrimary transition-colors">Terms&Conditions</a></li>
+                        <li><a href="{{route('front.refund')}}" class="hover:text-emeraldPrimary transition-colors">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-textMain mb-4">Corporate Information</h4>
+                    <p class="text-xs text-textMuted space-y-1">
+                        <span class="block font-medium text-textMain">PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED</span>
+                        <span class="block">CRO Number: 822301</span>
+                        <span class="block">51 Bracken Road, Dublin, D18 CV48 Ireland</span>
+                        <span class="block">Phone: +353899735295</span>
+                    </p>
+                </div>
             </div>
-
-            <p class="payment-title">Accepted payment methods</p>
-            <div class="payment-icons">
-                <!-- Large Icons for Visibility -->
-                <img src="https://img.icons8.com/color/96/visa.png" class="footerImg" alt="Visa">
-                <img src="https://img.icons8.com/color/96/mastercard.png" class="footerImg" alt="Mastercard">
-                <img src="https://img.icons8.com/ios-filled/96/000000/apple-pay.png" class="footerImg" alt="Apple Pay">
-                <img src="https://img.icons8.com/color/96/google-pay.png" class="footerImg" alt="Google Pay">
-            </div>
-
-            <!-- Corporate Identity  Footer Information -->
-            <div class="footer-company-info mt-4 pt-3 border-top" style="border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 1.5rem; padding-top: 1rem;">
-                <p class="footer-reg-num mb-1" style="font-size: 0.85rem; color: #94a3b8;">This website is owned by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED 822301</p>
-                <p class="footer-address mb-2" style="font-size: 0.85rem; color: #94a3b8; line-height: 1.4;">51 Bracken Road, Dublin, D18 CV48 Ireland</p>
-                <p class="footer-contact mb-0" style="font-size: 0.85rem; color: #94a3b8;">
-                    Support: <a href="mailto:info@ireland-safetycourse.com" style="color: #60a5fa; text-decoration: none;">info@ireland-safetycourse.com</a>
-                </p>
-                <p class="footer-contact mb-0" style="font-size: 0.85rem; color: #94a3b8;">+353899735295</p>
+            <div class="border-t border-slate-200 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400">
+                <p>&copy; 2026 PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED. All rights reserved.</p>
+                <p class="mt-4 sm:mt-0">Certificates of completion issued subject to human review and approval.</p>
             </div>
         </div>
-
-    </div>
-
-</footer>
+    </footer>

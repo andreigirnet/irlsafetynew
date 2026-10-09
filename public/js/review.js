@@ -12,3 +12,14 @@
 // }
 //
 // window.addEventListener('resize', handleResize);
+ function switchDevice(type) {
+      const screen = document.getElementById('deviceScreen');
+      const tabs = document.querySelectorAll('.mhi-tab');
+      
+      // Update active tab styling
+      tabs.forEach(tab => tab.classList.remove('active'));
+      event.target.classList.add('active');
+
+      // Update screen class frame size
+      screen.className = `mhi-device-screen ${type}`;
+    }

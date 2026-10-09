@@ -1,180 +1,88 @@
 @extends('front.app')
 
 @section('content')
-    <style>
-        .refund-wrapper {
-            background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
-            min-height: 100vh;
-            padding: 4rem 1rem;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-        .refund-container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-            overflow: hidden;
-            border: 1px solid #e2e8f0;
-        }
-        .refund-header {
-            background: #0f172a;
-            color: #ffffff;
-            padding: 3rem 2.5rem;
-            position: relative;
-        }
-        .refund-header h1 {
-            font-size: 2.25rem;
-            font-weight: 800;
-            letter-spacing: -0.025em;
-            margin: 0 0 0.5rem 0;
-            line-height: 1.2;
-        }
-        .refund-header p {
-            color: #94a3b8;
-            font-size: 0.95rem;
-            margin: 0;
-        }
-        .refund-body {
-            padding: 2.5rem;
-        }
-        .refund-section {
-            margin-bottom: 2.5rem;
-        }
-        .refund-section h2 {
-            font-size: 1.35rem;
-            font-weight: 700;
-            color: #1e293b;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-        }
-        .refund-section h2::before {
-            content: "";
-            display: inline-block;
-            width: 6px;
-            height: 20px;
-            background: #3b82f6;
-            margin-right: 10px;
-            border-radius: 3px;
-        }
-        .refund-section h1.main-title {
-            font-size: 1.75rem;
-            font-weight: 800;
-            color: #1e293b;
-            margin-top: 0;
-            margin-bottom: 1.5rem;
-        }
-        .refund-text {
-            color: #475569;
-            line-height: 1.7;
-            font-size: 1.05rem;
-            margin-bottom: 1rem;
-        }
-        .refund-text a {
-            color: #2563eb;
-            text-decoration: underline;
-            font-weight: 500;
-        }
-        .refund-text a:hover {
-            color: #1d4ed8;
-        }
-        .refund-card {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 1.75rem;
-            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.01);
-            margin-bottom: 1.5rem;
-        }
-        .refund-list {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 1rem 0;
-        }
-        .refund-list li {
-            position: relative;
-            padding-left: 1.75rem;
-            margin-bottom: 0.75rem;
-            color: #475569;
-            line-height: 1.6;
-        }
-        .refund-list li::before {
-            content: "•";
-            position: absolute;
-            left: 0.5rem;
-            color: #2563eb;
-            font-weight: 900;
-            font-size: 1.25rem;
-        }
-        @media (max-width: 768px) {
-            .refund-wrapper {
-                padding: 1.5rem 0.5rem;
-            }
-            .refund-header {
-                padding: 2rem 1.5rem;
-            }
-            .refund-header h1 {
-                font-size: 1.75rem;
-            }
-            .refund-body {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+    <div class="py-16 lg:py-24 bg-surfaceLight min-h-screen text-textMain">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <div class="refund-wrapper" data-aos="fade-up">
-        <div class="refund-container">
+            <div class="bg-cardLight border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
 
-            <div class="refund-header">
-                <h1>Refund Policy</h1>
-                <p>{{ config('global.business_name') }}</p>
-            </div>
+                <!-- Header Banner -->
+                <div class="bg-[#022C22] text-white p-8 sm:p-12 relative border-b border-emerald-800">
+                    <h1 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight mb-2">Refund Policy</h1>
+                    <p class="text-slate-300 text-sm sm:text-base">{{ config('global.business_name') }}</p>
+                </div>
 
-            <div class="refund-body">
-                <div class="refund-section" style="margin-bottom: 0;">
+                <!-- Body Content -->
+                <div class="p-8 sm:p-12 space-y-10">
 
-                    <h1 class="main-title">Refund & Cancellation Policy</h1>
+                    <div class="space-y-4">
+                        <h2 class="font-display font-bold text-2xl text-textMain tracking-tight">Refund and cancellation policy</h2>
+                        <p class="text-textMuted text-base leading-relaxed">
+                            This policy explains how refunds work for the online training course sold by <strong>{{ config('global.business_name') }}</strong> at
+                            <a href="https://www.ireland-safetycourse.com/" target="_blank" rel="noopener noreferrer" class="text-emeraldPrimary font-semibold hover:underline">https://www.ireland-safetycourse.com/</a>.
+                            Please read the conditions below before you buy.
+                        </p>
 
-                    <p class="refund-text">
-                        At <strong>{{ config('global.business_name') }}</strong>, we strive to ensure complete satisfaction with our online training programs provided via
-                        <a href="https://www.ireland-safetycourse.com/" target="_blank">https://www.ireland-safetycourse.com/</a>.
-                        Please review our policy regarding course purchases, cancellations, and refunds below.
-                    </p>
+                        <div class="bg-surfaceLight border border-slate-200 rounded-xl p-6 mt-6">
+                            <h3 class="font-bold text-textMain text-sm mb-2">Who to contact about refunds</h3>
+                            <p class="text-textMain text-base font-medium mb-0 leading-relaxed">
+                                <strong>Progressive Velocity Fast Solutions Limited</strong> (trading as Ireland Safety Course)<br>
+                                Company number (CRO): 822301<br>
+                                Registered address: 51 Bracken Road, Dublin, D18 CV48, Ireland<br>
+                                Email: <a href="mailto:info@ireland-safetycourse.com" class="text-emeraldPrimary font-bold hover:underline">info@ireland-safetycourse.com</a>
+                            </p>
+                        </div>
+                    </div>
 
-                    <div class="refund-card" style="margin-top: 1.5rem;">
-                        <h2 style="margin-top: 0;">Support Contact for Refunds:</h2>
-                        <p class="refund-text" style="margin-bottom: 0;">
-                            <strong>Online Safety Courses</strong><br>
-                            Email: <a href="mailto:info@ireland-safetycourse.com">info@ireland-safetycourse.com</a>
+                    <div class="space-y-3">
+                        <h3 class="font-display font-bold text-xl text-textMain flex items-center">
+                            <span class="w-1.5 h-5 bg-emeraldPrimary rounded-full mr-3"></span>
+                            When you can get a refund
+                        </h3>
+                        <p class="text-textMuted text-base leading-relaxed pl-4">
+                            Refund requests are assessed under the following conditions:
+                        </p>
+                        <ul class="space-y-3 pl-4 text-textMuted text-base">
+                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span><strong>Change of mind:</strong> You may request a refund within 14 days of purchase, as long as you have not completed the course and no certificate has been issued.</span></li>
+                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span><strong>Employer requirements:</strong> Please check your employer's training requirements before you buy. If your employer tells you this course does not meet their requirements, you may request a refund within 14 days of purchase, as long as you have not completed the course and no certificate has been issued.</span></li>
+                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span><strong>Duplicate charges:</strong> If you were charged twice by mistake or there was another billing error through our payment provider (Stripe), we will refund the extra charge promptly once we have verified it.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="font-display font-bold text-xl text-textMain flex items-center">
+                            <span class="w-1.5 h-5 bg-emeraldPrimary rounded-full mr-3"></span>
+                            When a refund is not available
+                        </h3>
+                        <p class="text-textMuted text-base leading-relaxed pl-4">
+                            Once you have completed the course, or a certificate of completion has been issued, we cannot refund the course fee. This applies to the change of mind and employer requirements cases above. Your statutory consumer rights are not affected by this policy.
                         </p>
                     </div>
 
-                    <h2>Eligibility for Refunds:</h2>
-                    <p class="refund-text">
-                        We stand behind the quality and acceptance of our training. Refund requests are evaluated under the following conditions:
-                    </p>
-                    <ul class="refund-list">
-                        <li><strong>Employer Rejection Guarantee:</strong> Please confirm your employer’s training requirements before purchasing. If your employer confirms that our course will not meet their requirements, you may request a refund within 14 days of purchase, provided you have not completed the course and no certificate has been issued. This refund option does not apply after course completion or certificate issuance. Your statutory consumer rights remain unaffected.</li>
-                        <li><strong>Change Your Mind Refunds:</strong> You may request a refund within 14 days of purchase, provided you have not completed the course and no certificate has been issued. Your statutory consumer rights remain unaffected.</li>
-                        <li><strong>Completed Courses:</strong> Once a training module has been fully completed and a certificate of completion has been generated, refund requests can no longer be honored unless subject to the employer acceptance policy outlined above.</li>
-                        <li><strong>Duplicate Charges:</strong> In the event of a billing error or accidental duplicate payment processed through our secure payment provider (Stripe), a full refund will be issued immediately upon verification.</li>
-                    </ul>
+                    <div class="space-y-3">
+                        <h3 class="font-display font-bold text-xl text-textMain flex items-center">
+                            <span class="w-1.5 h-5 bg-emeraldPrimary rounded-full mr-3"></span>
+                            How to request a refund
+                        </h3>
+                        <p class="text-textMuted text-base leading-relaxed pl-4">
+                            Email us at
+                            <a href="mailto:info@ireland-safetycourse.com" class="text-emeraldPrimary font-semibold hover:underline">info@ireland-safetycourse.com</a>
+                            with your full name, the email address you registered with, your transaction reference and the reason for your request. If your request relates to your employer's requirements, please include what your employer told you. Approved refunds are paid back to the card you used to pay.
+                        </p>
+                    </div>
 
-                    <h2>How to Request a Refund:</h2>
-                    <p class="refund-text">
-                        To submit a refund or cancellation inquiry, please email our support team directly at
-                        <a href="mailto:info@ireland-safetycourse.com">info@ireland-safetycourse.com</a>
-                        with your full name, registered email address, transaction reference, and the reason for your request (including any details regarding employer rejection if applicable). Alternatively, you can also request a refund directly through our Live Chat support. All valid claims are processed back to your original payment card securely.
-                    </p>
-
-                    <h2>Processing Times:</h2>
-                    <p class="refund-text" style="margin-bottom: 0;">
-                        All refund requests must be submitted within our 14-day policy window. Once a refund is approved and processed by our team, please allow up to 5 to 10 business days for the funds to reflect on your card statement, depending heavily on your specific bank or card issuer's processing timelines.
-                    </p>
+                    <div class="space-y-3">
+                        <h3 class="font-display font-bold text-xl text-textMain flex items-center">
+                            <span class="w-1.5 h-5 bg-emeraldPrimary rounded-full mr-3"></span>
+                            Processing times
+                        </h3>
+                        <p class="text-textMuted text-base leading-relaxed pl-4 mb-0">
+                            Refund requests must be made within the 14-day period described above. After we approve a refund, please allow 5 to 10 business days for it to appear on your card statement, depending on your bank or card issuer.
+                        </p>
+                    </div>
 
                 </div>
+
             </div>
 
         </div>
