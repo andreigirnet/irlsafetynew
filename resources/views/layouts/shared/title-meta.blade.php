@@ -7,4 +7,4 @@
 <meta content="Techzaa" name="author" />
 
 <!-- App favicon -->
-<link rel = "icon" href ="{{asset('images/logo/flavicons.ico')}}" type = "image/x-icon">
+<link rel = "icon" href ="{{asset('/favicon.ico')}}" type = "image/x-icon">
