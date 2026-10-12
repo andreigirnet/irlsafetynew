@@ -58,7 +58,7 @@
                 <div class="relative z-10 space-y-6">
                     <a href="{{ url('/') }}" class="inline-flex items-center space-x-3 group">
                         <div class="w-10 h-10 rounded-xl bg-sageAccent flex items-center justify-center text-emeraldDark font-bold text-xl shadow-md">
-                            <i class="fa-solid fa-shield-halved"></i>
+                            <img src="{{ asset('images/logo/logolanding.webp') }}" class="rounded-xl"  alt="Ireland Safety Course Logo">
                         </div>
                         <span class="font-display font-bold text-xl tracking-tight text-white">Ireland Safety Course</span>
                     </a>
@@ -110,11 +110,7 @@
 
             
 
-                <div class="relative flex py-2 items-center mb-6">
-                    <div class="flex-grow border-t border-slate-200"></div>
-                    <span class="flex-shrink mx-4 text-xs font-semibold text-textMuted">Or log in with email</span>
-                    <div class="flex-grow border-t border-slate-200"></div>
-                </div>
+            
 
                 <!-- Login form -->
                 <form method="POST" action="{{ route('login') }}" class="space-y-4">

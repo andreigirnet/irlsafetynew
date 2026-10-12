@@ -2,9 +2,8 @@
     <header class="sticky top-0 z-50 bg-cardLight/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="{{ url('/') }}" class="flex items-center space-x-3 group">
-                <div class="w-10 h-10 rounded-xl bg-emeraldPrimary flex items-center justify-center text-white font-bold text-xl shadow-md shadow-emeraldPrimary/20 group-hover:bg-emeraldHover transition-colors">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
+                <img src="{{ asset('images/logo/logolanding.webp') }}" class="h-10 w-10" alt="Ireland Safety Course Logo">
+
                 <div>
                     <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-textMain group-hover:text-emeraldPrimary transition-colors block">Ireland Safety Course</span>
                     <span class="text-xs text-textMuted block tracking-wide">PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED</span>

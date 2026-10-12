@@ -53,7 +53,7 @@
                         </div>
 
                         <div class="p-6 sm:p-8">
-                            <span class="text-xs font-bold text-emeraldPrimary uppercase tracking-wider block mb-1">Available now</span>
+                            <span class="text-xs font-bold text-emeraldPrimary uppercase tracking-wider block mb-1">Online Training</span>
                             <h3 class="font-display font-bold text-2xl text-textMain mb-2">Manual Handling Training</h3>
                             <p class="text-textMuted text-sm mb-6">Online theory covering the spine, safe lifting principles and risk assessment, followed by a practical video review.</p>
 
