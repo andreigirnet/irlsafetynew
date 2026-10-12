@@ -17,10 +17,10 @@
                 <!-- Logo Dark -->
                 <span class="logo-dark" id="showNavPanel" style="display:flex;">
                     <span class="logo-lg" >
-                        <img src="{{asset('images/logo/logoLanding.png')}}" style="width: 60px; height: 60px;" alt="small logo">
+                        <img src="{{asset('images/logo/logolanding.png')}}" style="width: 60px; height: 60px;" alt="small logo">
                     </span>
                     <span class="logo-sm">
-                         <img src="{{asset('images/logo/logoLanding.png')}}" style="width: 50px; height: 50px" alt="small logo">
+                         <img src="{{asset('images/logo/logolanding.png')}}" style="width: 50px; height: 50px" alt="small logo">
                     </span>
                 </span>
             </div>
