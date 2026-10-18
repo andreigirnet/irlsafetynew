@@ -20,7 +20,7 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:title" content="Online Workplace Safety Training Ireland | {{ config('app.name') }}">
     <meta property="og:description" content="Online safety training operated by PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED (CRO 822301). Complete online theory modules and WhatsApp practical review for a certificate of completion.">
-    <meta property="og:image:alt" content="Ireland Safety Course - Online Safety Training">
+    <meta property="og:image:alt" content="Progressive Irish Safety - Online Safety Training">
     <meta property="og:image" content="{{ asset('images/metaImage.png') }}">
     
     {{-- Favicons --}}
@@ -192,7 +192,7 @@
             },
             5: {
                 title: "Record & Send Practical Video via WhatsApp",
-                desc: "Record a short practical video demonstrating correct lifting and handling technique, and send it directly via WhatsApp to +353899735295.",
+                desc: "Record a short practical video demonstrating correct lifting and handling technique, and send it directly via WhatsApp to {{ config('global.phone') }}.",
                 icon: "fa-video",
                 tag: "Step 5 of 7"
             },

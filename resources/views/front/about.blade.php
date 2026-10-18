@@ -10,7 +10,7 @@
                     About us
                 </h1>
                 <p class="text-lg text-textMuted leading-relaxed">
-                    Ireland Safety Course offers online manual handling training for individuals and workers across Ireland, at <span class="text-emeraldPrimary font-bold">ireland-safetycourse.com</span>.
+                    Progressive Irish Safety offers online manual handling training for individuals and workers across Ireland, at <span class="text-emeraldPrimary font-bold">progressive-irish-safety.ie</span>.
                 </p>
             </div>
 
@@ -26,7 +26,7 @@
                         </div>
                         <h2 class="font-display font-bold text-2xl text-textMain mb-4">Who we are</h2>
                         <p class="text-textMuted text-base leading-relaxed mb-4">
-                            Ireland Safety Course is an independent training provider operated by Progressive Velocity Fast Solutions Limited. We are not affiliated with, endorsed by, or an official representative of any government body or third-party brand.
+                            Progressive Irish Safety is an independent training provider operated by Progressive Velocity Fast Solutions Limited. We are not affiliated with, endorsed by, or an official representative of any government body or third-party brand.
                         </p>
                         <p class="text-textMuted text-base leading-relaxed mb-6">
                             Manual Handling is the course we currently offer. It covers safe lifting technique and workplace risk assessment through online theory slides, followed by a practical video that an instructor reviews.
@@ -82,7 +82,7 @@
                             <div class="bg-cardLight border border-slate-200 rounded-xl p-5 flex flex-col">
                                 <div class="w-8 h-8 rounded-lg bg-emeraldLight border border-emeraldBorder text-emeraldPrimary font-extrabold text-xs flex items-center justify-center mb-4">05</div>
                                 <h4 class="font-bold text-sm text-textMain mb-2">WhatsApp video</h4>
-                                <p class="text-xs text-textMuted leading-relaxed">Record your lift and send it to +353899735295.</p>
+                                <p class="text-xs text-textMuted leading-relaxed">Record your lift and send it to {{ config('global.phone') }}.</p>
                             </div>
                             <div class="bg-cardLight border border-slate-200 rounded-xl p-5 flex flex-col">
                                 <div class="w-8 h-8 rounded-lg bg-emeraldLight border border-emeraldBorder text-emeraldPrimary font-extrabold text-xs flex items-center justify-center mb-4">06</div>
@@ -121,11 +121,11 @@
                         <div class="bg-surfaceLight border border-slate-200 rounded-xl p-6 flex flex-col justify-center space-y-3 text-sm">
                             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-slate-200 pb-2.5 gap-1">
                                 <span class="text-textMuted">Phone / WhatsApp:</span>
-                                <a href="tel:+353899735295" class="font-bold text-emeraldPrimary hover:underline">+353899735295</a>
+                                <a href="tel:{{ config('global.phone') }}" class="font-bold text-emeraldPrimary hover:underline">{{ config('global.phone') }}</a>
                             </div>
                             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                                 <span class="text-textMuted">Email:</span>
-                                <a href="mailto:info@ireland-safetycourse.com" class="font-bold text-emeraldPrimary hover:underline">info@ireland-safetycourse.com</a>
+                                <a href="mailto:info@progressive-irish-safety.ie" class="font-bold text-emeraldPrimary hover:underline">info@progressive-irish-safety.ie</a>
                             </div>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                         <div class="space-y-2">
                             <h2 class="font-display font-bold text-2xl text-textMain">Policies and further information</h2>
                             <p class="text-textMuted text-sm sm:text-base leading-relaxed mb-0">
-                                Ireland Safety Course is operated by Progressive Velocity Fast Solutions Limited, registered in Ireland under company number 822301. Details of our services, the assessment process, payments and data handling are in our FAQs, Terms and Conditions, Refund Policy and Privacy Policy.
+                                Progressive Irish Safety is operated by Progressive Velocity Fast Solutions Limited, registered in Ireland under company number 822301. Details of our services, the assessment process, payments and data handling are in our FAQs, Terms and Conditions, Refund Policy and Privacy Policy.
                             </p>
                         </div>
                     </div>

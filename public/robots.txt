@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ireland-safetycourse.com/sitemap.xml
+Sitemap: https://progressive-irish-safety.ie/sitemap.xml

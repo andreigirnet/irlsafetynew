@@ -38,7 +38,7 @@
                         <h2 class="font-display font-bold text-2xl text-textMain tracking-tight">Privacy Policy & Data Protection</h2>
                         <p class="text-textMuted text-base leading-relaxed">
                             At <strong>{{ config('global.business_name') }}</strong> ("we," "our," or "us"), we are committed to safeguarding your privacy and ensuring that your personal data is protected. This Privacy Policy outlines how we collect, use, disclose, and protect information when you visit our website
-                            <a href="https://www.ireland-safetycourse.com/" target="_blank" class="text-emeraldPrimary font-semibold hover:underline">https://www.ireland-safetycourse.com/</a>
+                            <a href="https://www.progressive-irish-safety.ie/" target="_blank" class="text-emeraldPrimary font-semibold hover:underline">https://www.progressive-irish-safety.ie/</a>
                             and utilize our online training services.
                         </p>
 
@@ -46,7 +46,7 @@
                             <h3 class="font-bold text-textMain text-sm uppercase tracking-wider text-textMuted mb-2">Data Controller Contact:</h3>
                             <p class="text-textMain text-base font-medium mb-0">
                                 <strong>{{ config('global.business_name') }}</strong><br>
-                                Support Email: <a href="mailto:info@ireland-safetycourse.com" class="text-emeraldPrimary font-bold hover:underline">info@ireland-safetycourse.com</a>
+                                Support Email: <a href="mailto:info@progressive-irish-safety.ie" class="text-emeraldPrimary font-bold hover:underline">info@progressive-irish-safety.ie</a>
                             </p>
                         </div>
                     </div>
@@ -129,7 +129,7 @@
                             Request Data Removal (Right to be Forgotten)
                         </h3>
                         <p class="text-textMuted text-base leading-relaxed pl-4">
-                            If you wish to request the deletion or removal of your personal data from our active databases, please fill out the secure form below. We will process your request in accordance with applicable data protection regulations.
+                            If you wish to request the deletion or removal of your personal data from our active databases, please fill out the secure form below. We will process your request in accordance with applicable data protection regulations. Read above our privacy policy best practices we are following
                         </p>
 
                         <div class="bg-surfaceLight border border-slate-200 rounded-2xl p-6 sm:p-8">

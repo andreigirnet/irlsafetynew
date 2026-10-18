@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Recover Password | {{ config('app.name', 'Ireland Safety Course') }}</title>
+    <title>Recover Password | {{ config('app.name', 'Progressive Irish Safety') }}</title>
     
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -57,9 +57,9 @@
                 <div class="relative z-10 space-y-6">
                     <a href="{{ url('/') }}" class="inline-flex items-center space-x-3 group">
                         <div class="w-10 h-10 rounded-xl bg-sageAccent flex items-center justify-center text-emeraldDark font-bold text-xl shadow-md">
-                            <img src="{{ asset('images/logo/logolanding.webp') }}" class="rounded-xl"  alt="Ireland Safety Course Logo">
+                            <img src="{{ asset('images/logo/logolanding.webp') }}" class="rounded-xl"  alt="Progressive Irish Safety Logo">
                         </div>
-                        <span class="font-display font-bold text-xl tracking-tight text-white">Ireland Safety Course</span>
+                        <span class="font-display font-bold text-xl tracking-tight text-white">Progressive Irish Safety</span>
                     </a>
                     
                     <div class="space-y-3 pt-6">
@@ -73,7 +73,7 @@
 
                 <div class="relative z-10 pt-10 border-t border-emerald-800/60 mt-8 text-xs text-slate-300 space-y-2">
                     <p class="font-semibold text-white">Need Additional Help?</p>
-                    <p>Contact our support team directly at info@ireland-safetycourse.com or call +353899735295.</p>
+                    <p>Contact our support team directly at info@progressive-irish-safety.ie or call {{ config('global.phone') }}.</p>
                 </div>
             </div>
 

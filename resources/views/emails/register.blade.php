@@ -1,16 +1,16 @@
 <x-mail::message>
-    # Welcome to [ireland-safetycourse.com](https://www.ireland-safetycourse.com/)
+    # Welcome to [progressive-irish-safety.ie](https://www.progressive-irish-safety.ie/)
 
     Dear Customer,
 
     Welcome to our online training service and thank you for choosing our platform. This email is a confirmation that your registration has been successfully processed on our website:
 
-    [ireland-safetycourse.com](https://www.ireland-safetycourse.com/)
+    [progressive-irish-safety.ie](https://www.progressive-irish-safety.ie/)
 
     ### Getting Started
     You can access our website at any time to begin your training at your convenience. Simply log in using your email and password via the link below:
 
-    [ireland-safetycourse.com](https://www.ireland-safetycourse.com/)
+    [progressive-irish-safety.ie](https://www.progressive-irish-safety.ie/)
 
     ### Course Access & Certification
     * **Existing Users**: If you have already completed the course, you can still log in to review the course materials for free at any time.
@@ -23,14 +23,14 @@
     ### Account Support
     If you have forgotten your password, please use the reset link below. You will receive an automated password via email —please remember to check your spam or junk folders if it does not appear in your inbox.
 
-    [Reset Password Here](https://www.ireland-safetycourse.com/forgot-password)
+    [Reset Password Here](https://www.progressive-irish-safety.ie/forgot-password)
 
     ### Need Help?
     If you require any additional information or further assistance, please reach out to us:
-    * **Email**: info@ireland-safetycourse.com
+    * **Email**: info@progressive-irish-safety.ie
     * **Support**: Use the **Online Chat** on our website or contact us directly via our **WhatsApp Chat**.
 
     Kind regards,
-    **The Ireland Safety Course Team**
+    **The Progressive Irish Safety Team**
 
 </x-mail::message>

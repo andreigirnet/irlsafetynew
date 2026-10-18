@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'IrelandSafetyCourse'),
+    'name' => env('APP_NAME', 'progressive-irish-safety.ie'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://www.ireland-safetycourse.com/'),
+    'url' => env('APP_URL', 'https://www.progressive-irish-safety.ie/'),
 
     'asset_url' => env('ASSET_URL'),
 

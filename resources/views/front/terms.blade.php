@@ -19,7 +19,7 @@
                         <h2 class="font-display font-bold text-2xl text-textMain tracking-tight">Terms and Conditions</h2>
                         <p class="text-textMuted text-base leading-relaxed">
                             Welcome to Online Ireland Safety Training! These terms and conditions outline the rules and regulations for using our website at
-                            <a href="https://www.ireland-safetycourse.com/" target="_blank" class="text-emeraldPrimary font-semibold hover:underline">https://www.ireland-safetycourse.com/</a>.
+                            <a href="https://www.progressive-irish-safety.ie/" target="_blank" class="text-emeraldPrimary font-semibold hover:underline">https://www.progressive-irish-safety.ie/</a>.
                             By accessing this platform, you agree to comply with these terms. If you do not agree with any part of these terms, please discontinue use of our website immediately.
                         </p>
 
@@ -27,7 +27,7 @@
                             <h3 class="font-bold text-textMain text-sm uppercase tracking-wider text-textMuted mb-2">Company Information:</h3>
                             <p class="text-textMain text-base font-medium mb-0">
                                 <strong>Online Safety Courses</strong><br>
-                                Email: <a href="mailto:info@ireland-safetycourse.com" class="text-emeraldPrimary font-bold hover:underline">info@ireland-safetycourse.com</a><br>
+                                Email: <a href="mailto:info@progressive-irish-safety.ie" class="text-emeraldPrimary font-bold hover:underline">info@progressive-irish-safety.ie</a><br>
                                 Registered and licensed training provider.
                             </p>
                         </div>
@@ -70,7 +70,7 @@
                         </h3>
                         <p class="text-textMuted text-base leading-relaxed pl-4 mb-0">
                             If you have any questions or require support regarding these terms and conditions, please reach out to our team at
-                            <a href="mailto:info@ireland-safetycourse.com" class="text-emeraldPrimary font-semibold hover:underline">info@ireland-safetycourse.com</a>.
+                            <a href="mailto:info@progressive-irish-safety.ie" class="text-emeraldPrimary font-semibold hover:underline">info@progressive-irish-safety.ie</a>.
                         </p>
                     </div>
 

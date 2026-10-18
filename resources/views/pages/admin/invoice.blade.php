@@ -69,9 +69,9 @@
             </td>
             <td align="right" style="width: 40%;">
                 <h3 style="margin-left: 50px">Ireland</h3>
-                <h3 style="margin-left: 40px">Ireland Safety Course</h3>
+                <h3 style="margin-left: 40px">Progressive Irish Safety</h3>
                 <pre>
-                    www.ireland-safetycourse.com
+                    www.progressive-irish-safety.ie
                     PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED
                     51 Bracken Road
                     Dublin
@@ -114,7 +114,7 @@
     <table width="100%">
         <tr>
             <td align="left" style="width: 50%;">
-                &copy; {{ date('Y') }} Ireland Safety Course - All rights reserved.
+                &copy; {{ date('Y') }} Progressive Irish Safety - All rights reserved.
             </td>
         </tr>
     </table>

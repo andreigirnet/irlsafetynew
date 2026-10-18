@@ -27,7 +27,7 @@ class NotifyMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'IrelandSafetyCourse',
+            subject: 'progressive-irish-safety.ie',
         );
     }
 

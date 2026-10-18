@@ -2,10 +2,10 @@
     <header class="sticky top-0 z-50 bg-cardLight/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="{{ url('/') }}" class="flex items-center space-x-3 group">
-                <img src="{{ asset('images/logo/logolanding.webp') }}" class="h-10 w-10" alt="Ireland Safety Course Logo">
+                <img src="{{ asset('images/logo/logolanding.webp') }}" class="h-10 w-10" alt="Progressive Irish Safety Logo">
 
                 <div>
-                    <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-textMain group-hover:text-emeraldPrimary transition-colors block">Ireland Safety Course</span>
+                    <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-textMain group-hover:text-emeraldPrimary transition-colors block">Progressive Irish Safety</span>
                     <span class="text-xs text-textMuted block tracking-wide">PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED</span>
                 </div>
             </a>
@@ -23,9 +23,9 @@
                 </nav>
             
             <div class="hidden sm:flex items-center space-x-4">
-                <a href="tel:+353899735295" class="flex items-center space-x-2 text-xs text-textMuted bg-slate-100 px-3.5 py-2 rounded-lg border border-slate-200">
+                <a href="tel:{{ config('global.phone') }}" class="flex items-center space-x-2 text-xs text-textMuted bg-slate-100 px-3.5 py-2 rounded-lg border border-slate-200">
                     <i class="fa-solid fa-phone text-emeraldPrimary"></i>
-                    <span>+353899735295</span>
+                    <span>{{ config('global.phone') }}</span>
                 </a>
                 <a href="{{ url('/register') }}" class="bg-emeraldPrimary hover:bg-emeraldHover text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-md shadow-emeraldPrimary/20 hover:scale-105 active:scale-95 text-center">
                     Register
@@ -61,9 +61,9 @@
                 </a>
             </nav>
             <div class="pt-2 space-y-3">
-                <a href="tel:+353899735295" class="flex items-center justify-center space-x-2 text-xs text-textMain bg-slate-100 px-4 py-3 rounded-xl border border-slate-200 font-semibold">
+                <a href="tel:{{ config('global.phone') }}" class="flex items-center justify-center space-x-2 text-xs text-textMain bg-slate-100 px-4 py-3 rounded-xl border border-slate-200 font-semibold">
                     <i class="fa-solid fa-phone text-emeraldPrimary"></i>
-                    <span>+353899735295</span>
+                    <span>{{ config('global.phone') }}</span>
                 </a>
                 <a href="#course" onclick="toggleMobileMenu()" class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white py-3 rounded-xl font-semibold text-sm text-center shadow-md shadow-emeraldPrimary/20">
                     Enroll Now (€30)

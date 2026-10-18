@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, follow">
-    <title>Log in | {{ config('app.name', 'Ireland Safety Course') }}</title>
+    <title>Log in | {{ config('app.name', 'Progressive Irish Safety') }}</title>
 
     {{-- Tailwind CSS CDN --}}
     <script src="https://cdn.tailwindcss.com"></script>
@@ -58,9 +58,9 @@
                 <div class="relative z-10 space-y-6">
                     <a href="{{ url('/') }}" class="inline-flex items-center space-x-3 group">
                         <div class="w-10 h-10 rounded-xl bg-sageAccent flex items-center justify-center text-emeraldDark font-bold text-xl shadow-md">
-                            <img src="{{ asset('images/logo/logolanding.webp') }}" class="rounded-xl"  alt="Ireland Safety Course Logo">
+                            <img src="{{ asset('images/logo/logolanding.webp') }}" class="rounded-xl"  alt="Progressive Irish Safety Logo">
                         </div>
-                        <span class="font-display font-bold text-xl tracking-tight text-white">Ireland Safety Course</span>
+                        <span class="font-display font-bold text-xl tracking-tight text-white">Progressive Irish Safety</span>
                     </a>
 
                     <div class="space-y-3 pt-6">

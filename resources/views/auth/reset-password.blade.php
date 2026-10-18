@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create a New Password | {{ config('app.name', 'Ireland Safety Course') }}</title>
+    <title>Create a New Password | {{ config('app.name', 'Progressive Irish Safety') }}</title>
     
     {{-- Tailwind CSS CDN --}}
     <script src="https://cdn.tailwindcss.com"></script>
@@ -62,7 +62,7 @@
                         <div class="w-10 h-10 rounded-xl bg-sageAccent flex items-center justify-center text-emeraldDark font-bold text-xl shadow-md">
                             <i class="fa-solid fa-shield-halved"></i>
                         </div>
-                        <span class="font-display font-bold text-xl tracking-tight text-white">Ireland Safety Course</span>
+                        <span class="font-display font-bold text-xl tracking-tight text-white">Progressive Irish Safety</span>
                     </a>
                     
                     <div class="space-y-3 pt-6">

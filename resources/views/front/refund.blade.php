@@ -19,17 +19,17 @@
                         <h2 class="font-display font-bold text-2xl text-textMain tracking-tight">Refund and cancellation policy</h2>
                         <p class="text-textMuted text-base leading-relaxed">
                             This policy explains how refunds work for the online training course sold by <strong>{{ config('global.business_name') }}</strong> at
-                            <a href="https://www.ireland-safetycourse.com/" target="_blank" rel="noopener noreferrer" class="text-emeraldPrimary font-semibold hover:underline">https://www.ireland-safetycourse.com/</a>.
+                            <a href="https://www.progressive-irish-safety.ie/" target="_blank" rel="noopener noreferrer" class="text-emeraldPrimary font-semibold hover:underline">https://www.progressive-irish-safety.ie/</a>.
                             Please read the conditions below before you buy.
                         </p>
 
                         <div class="bg-surfaceLight border border-slate-200 rounded-xl p-6 mt-6">
                             <h3 class="font-bold text-textMain text-sm mb-2">Who to contact about refunds</h3>
                             <p class="text-textMain text-base font-medium mb-0 leading-relaxed">
-                                <strong>Progressive Velocity Fast Solutions Limited</strong> (trading as Ireland Safety Course)<br>
+                                <strong>Progressive Velocity Fast Solutions Limited</strong> (trading as Progressive Irish Safety)<br>
                                 Company number (CRO): 822301<br>
                                 Registered address: 51 Bracken Road, Dublin, D18 CV48, Ireland<br>
-                                Email: <a href="mailto:info@ireland-safetycourse.com" class="text-emeraldPrimary font-bold hover:underline">info@ireland-safetycourse.com</a>
+                                Email: <a href="mailto:info@progressive-irish-safety.ie" class="text-emeraldPrimary font-bold hover:underline">info@progressive-irish-safety.ie</a>
                             </p>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                         </h3>
                         <p class="text-textMuted text-base leading-relaxed pl-4">
                             Email us at
-                            <a href="mailto:info@ireland-safetycourse.com" class="text-emeraldPrimary font-semibold hover:underline">info@ireland-safetycourse.com</a>
+                            <a href="mailto:info@progressive-irish-safety.ie" class="text-emeraldPrimary font-semibold hover:underline">info@progressive-irish-safety.ie</a>
                             with your full name, the email address you registered with, your transaction reference and the reason for your request. If your request relates to your employer's requirements, please include what your employer told you. Approved refunds are paid back to the card you used to pay.
                         </p>
                     </div>

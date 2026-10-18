@@ -28,12 +28,12 @@
 
                     <div class="bg-surfaceLight border border-slate-200 rounded-xl p-6">
                         <span class="font-bold text-textMain block mb-1 text-xs uppercase tracking-wider text-textMuted">Email Us</span>
-                        <a href="mailto:info@ireland-safetycourse.com" class="text-base font-bold text-emeraldPrimary hover:underline break-all">info@ireland-safetycourse.com</a>
+                        <a href="mailto:info@progressive-irish-safety.ie" class="text-base font-bold text-emeraldPrimary hover:underline break-all">info@progressive-irish-safety.ie</a>
                     </div>
 
                     <div class="bg-surfaceLight border border-slate-200 rounded-xl p-6">
                         <span class="font-bold text-textMain block mb-1 text-xs uppercase tracking-wider text-textMuted">Call Us / WhatsApp</span>
-                        <a href="tel:+353899735295" class="text-base font-bold text-emeraldPrimary hover:underline">+353899735295</a>
+                        <a href="tel:{{ config('global.phone') }}" class="text-base font-bold text-emeraldPrimary hover:underline">{{ config('global.phone') }}</a>
                     </div>
 
                     <div class="bg-surfaceLight border border-slate-200 rounded-xl p-6">

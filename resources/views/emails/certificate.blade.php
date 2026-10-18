@@ -1,5 +1,5 @@
 <div style="width: 100%;">
-    <div style="color: #2d3748; font-weight: 600; font-size: 20px">Ireland-safetycourse.com</div>
+    <div style="color: #2d3748; font-weight: 600; font-size: 20px">progressive-irish-safety.ie</div>
 </div>
 <div style="width: 100%; ">
     <div style="color: #2d3748; font-weight: 600;margin-top: 20px">Great job! You finished the Manual Handling Course successfully!🏆😊 </div>
@@ -13,6 +13,6 @@ If you received the message in your SPAM folder, please click "Report as not spa
 
 <br>
         Kind Regards <br>
-        Ireland-safetycourse.com
+        progressive-irish-safety.ie
     </div>
 </div>

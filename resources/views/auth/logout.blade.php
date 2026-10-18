@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Signed Out | {{ config('app.name', 'Ireland Safety Course') }}</title>
+    <title>Signed Out | {{ config('app.name', 'Progressive Irish Safety') }}</title>
     
     {{-- Tailwind CSS CDN --}}
     <script src="https://cdn.tailwindcss.com"></script>

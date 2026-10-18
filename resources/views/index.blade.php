@@ -18,7 +18,7 @@
                     <div class="isc-modal-header-row">
                         <div>
                             <div class="isc-modal-title">Hi there! 👋</div>
-                            <p class="isc-modal-subtitle">It's <a href="{{route('home')}}">IrelandSafetyCourse.com</a> Training Centre here.</p>
+                            <p class="isc-modal-subtitle">It's <a href="{{route('home')}}">progressive-irish-safety.ie</a> Training Centre here.</p>
                         </div>
                         <div class="isc-modal-cro-pill">
                             <svg class="isc-modal-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -38,7 +38,7 @@
                     <div class="isc-modal-footer-flex">
                         <div class="isc-modal-signature">
                             <p>Best regards,</p>
-                            <p class="isc-modal-team">The Ireland Safety Course Team</p>
+                            <p class="isc-modal-team">The Progressive Irish Safety Team</p>
                         </div>
                         <!-- Fixed using $el.closest('.isc-modal-overlay').remove() to guarantee  removal upon dynamic injection -->
                         <button type="button" @click="$el.closest('.isc-modal-overlay').remove()" class="adminButtonModal" id="understoodButton">UNDERSTOOD</button>
@@ -55,7 +55,7 @@
                 <span class="gradient-text">{{env('APP_NAME')}}</span>
             </h2>
             <p class="brand-description">
-                IrelandSafetyCourse  <strong>LIMITED CRO REGISTERED - Operating under Irish law </strong>. Leader in accessible health and safety materials. We offer compliant online training and exceptional service to a global clientele via our seamless digital platform. <strong>Best Prices</strong> on market guarantee
+                progressive-irish-safety.ie  <strong>LIMITED CRO REGISTERED - Operating under Irish law </strong>. Leader in accessible health and safety materials. We offer compliant online training and exceptional service to a global clientele via our seamless digital platform. <strong>Best Prices</strong> on market guarantee
             </p>
         </div>
     </div>

@@ -29,7 +29,7 @@
             <button class="button-toggle-menu" style="display: flex; width: auto; align-items: center; column-gap: 5px">
 {{--                <i class="ri-arrow-left-circle-fill desktopShowNav"></i>--}}
 {{--                <i class="ri-menu-unfold-fill mobileHideNav"></i>--}}
-                <span id="hideText" style="font-size: 22px; font-weight: 600"> Ireland Safety Course</span>
+                <span id="hideText" style="font-size: 22px; font-weight: 600"> Progressive Irish Safety</span>
             </button>
 
 

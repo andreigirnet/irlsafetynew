@@ -10,7 +10,7 @@
 
                     <div class="clearfix">
                         <div class="float-start mb-3">
-                            <img src="/images/logo/logomain.png" alt="Ireland Safety Course" height="45">
+                            <img src="/images/logo/logomain.png" alt="Progressive Irish Safety" height="45">
                         </div>
                         <div class="float-end">
                             <h4 class="m-0 d-print-none">Invoice</h4>
@@ -44,7 +44,7 @@
                                 <b>IRLTECHSAFETY LIMITED</b><br>
                                 51 Bracken Road<br>
                                 Dublin, D18 CV48<br>
-                                Email: info@irelandsafetycourse.ie
+                                Email: info@progressive-irish-safety.ie.ie
                             </address>
                         </div> </div>
                     <div class="row">
@@ -78,7 +78,7 @@
                             <div class="clearfix pt-3">
                                 <h6 class="text-muted fs-14">Notes:</h6>
                                 <small>
-                                    Thank you for choosing <b>Ireland Safety Course</b>.
+                                    Thank you for choosing <b>Progressive Irish Safety</b>.
                                     Digital certificates are issued upon successful completion of the course.
                                     You have 3 years of free access to your course content and digital credentials.
                                 </small>

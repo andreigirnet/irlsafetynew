@@ -6,7 +6,7 @@
                         <div class="w-8 h-8 rounded-lg bg-emeraldPrimary flex items-center justify-center text-white font-bold text-sm shadow-sm">
                             <i class="fa-solid fa-shield-halved"></i>
                         </div>
-                        <span class="font-display font-bold text-textMain text-lg">Ireland Safety Course</span>
+                        <span class="font-display font-bold text-textMain text-lg">Progressive Irish Safety</span>
                     </div>
                     <p class="text-xs text-textMuted leading-relaxed">
                         Professional online workplace safety training operator committed to factual clarity and rigorous practical verification.
@@ -16,6 +16,7 @@
                     <h4 class="font-semibold text-textMain mb-4">Active Course</h4>
                     <ul class="space-y-2 text-xs">
                         <li><a href="#course" class="hover:text-emeraldPrimary transition-colors">Manual Handling Training (€30)</a></li>
+                        <li><a href="{{route('front.verify')}}" class="hover:text-emeraldPrimary transition-colors">Verify Certificate</a></li>
                     </ul>
                 </div>
                 <div>
@@ -35,7 +36,7 @@
                         <span class="block font-medium text-textMain">PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED</span>
                         <span class="block">CRO Number: 822301</span>
                         <span class="block">51 Bracken Road, Dublin, D18 CV48 Ireland</span>
-                        <span class="block">Phone: +353899735295</span>
+                        <span class="block">Phone: {{ config('global.phone') }}</span>
                     </p>
                 </div>
             </div>
