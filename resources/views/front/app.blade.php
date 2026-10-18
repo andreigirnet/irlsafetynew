@@ -67,7 +67,22 @@
     {{-- Scripts --}}
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
-
+    <script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.store('cart', {
+            items: JSON.parse(localStorage.getItem('cart') || '[]'),
+            save() { localStorage.setItem('cart', JSON.stringify(this.items)) },
+            addItem(product) {
+                let existing = this.items.find(i => i.id === product.id)
+                if(existing){ existing.quantity += product.quantity } 
+                else { this.items.push(product) }
+                this.save()
+            },
+            // ... rest of your methods
+        })
+    })
+</script>
+    <script src="{{asset('js/cart.js')}}"></script>
     <meta name="google-site-verification" content="LzejX2Dd-6oj32ZQRq5981tz74cTlalGjMXEwe6ZeiI"/>
 
     <style>
@@ -153,7 +168,7 @@
         }
     </style>
 </head>
-<body class="bg-surfaceLight text-textMain font-sans antialiased selection:bg-emeraldPrimary selection:text-white">
+<body class="bg-surfaceLight text-textMain font-sans antialiased selection:bg-emeraldPrimary selection:text-white" x-data>
 
     <!-- Navigation Bar -->
     @include('frontIncludes.nav')

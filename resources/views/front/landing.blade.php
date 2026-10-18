@@ -80,9 +80,10 @@
                                     <span class="text-xs text-textMuted block">Price</span>
                                     <span class="font-display font-extrabold text-3xl text-textMain">€30</span>
                                 </div>
-                                <a href="{{ url('/register') }}" class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md shadow-emeraldPrimary/20 text-center">
-                                    Register and enrol
-                                </a>
+                               <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })" 
+                                    class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md shadow-emeraldPrimary/20 text-center cursor-pointer">
+                                Add to Cart (€30)
+                            </button>
                             </div>
                         </div>
                     </div>
@@ -93,38 +94,37 @@
 
     <!-- Course Section -->
     <section class="py-16 bg-white border-b border-slate-200" id="course">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-textMain mb-4">Our course</h2>
-                <p class="text-textMuted">
-                    Progressive Irish Safety is an independent training provider operated by Progressive Velocity Fast Solutions Limited. We are not affiliated with, endorsed by, or an official representative of any government body or third-party brand.
-                </p>
-            </div>
-
-            <div class="max-w-md mx-auto hero-course-card">
-                <div class="card-image-container">
-                    <img src="{{ asset('/images/lifting.webp') }}" alt="Manual handling lifting technique" class="hero-course-img">
-                    <div class="image-gradient-overlay"></div>
-                    <div class="floating-price-tag">
-                        <span class="currency">€</span>30
-                    </div>
-                </div>
-
-                <div class="p-6 sm:p-8">
-                    <h3 class="font-display font-bold text-xl text-textMain mb-2">Manual Handling Training</h3>
-                    <p class="text-textMuted text-sm mb-6">Online theory slides, a theory test, and a practical video reviewed by an instructor.</p>
-
-                    <ul class="space-y-2.5 text-sm text-textMain mb-8">
-                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Register an account and pay online</span></li>
-                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Study on mobile, tablet or computer</span></li>
-                        <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Send your practical video on WhatsApp: {{ config('global.phone') }}</span></li>
-                    </ul>
-
-                    <a href="{{ url('/register') }}" class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg shadow-emeraldPrimary/20 text-center">
-                        Register and enrol (€30)
-                    </a>
+        <div class="w-[90%] max-w-lg mx-auto bg-cardLight rounded-2xl shadow-xl overflow-hidden border border-slate-200">    <!-- Fixed Image Container -->
+            <div class="relative w-full h-48 overflow-hidden bg-slate-100">
+                <img src="{{ asset('/images/lifting.webp') }}" 
+                    alt="Manual handling lifting technique" 
+                    class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                
+                <!-- Gradient Overlay for Contrast -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+                
+                <!-- Floating Price Tag -->
+                <div class="absolute bottom-3 right-3 z-10 bg-emeraldPrimary text-white font-bold px-3 py-1.5 rounded-xl shadow-lg flex items-center gap-0.5 text-sm">
+                    <span class="currency">€</span>30
                 </div>
             </div>
+
+            <div class="p-6 sm:p-8">
+                <h3 class="font-display font-bold text-xl text-textMain mb-2">Manual Handling Training</h3>
+                <p class="text-textMuted text-sm mb-6">Online theory slides, a theory test, and a practical video reviewed by an instructor.</p>
+
+                <ul class="space-y-2.5 text-sm text-textMain mb-8">
+                    <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Register an account and pay online</span></li>
+                    <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Study on mobile, tablet or computer</span></li>
+                    <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Send your practical video on WhatsApp: {{ config('global.phone') }}</span></li>
+                </ul>
+
+                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })" 
+                        class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg shadow-emeraldPrimary/20 text-center cursor-pointer">
+                    Add to Cart (€30)
+                </button>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -193,9 +193,10 @@
                     <h4 class="font-display text-xl font-bold text-textMain">Liked the demo? Complete the full course now</h4>
                     <p class="text-textMuted text-sm">Enrol today for €30 to get full access to all course materials, theory test, and instructor video review.</p>
                 </div>
-                <a href="{{ url('/register') }}" class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-emeraldPrimary/20 whitespace-nowrap text-center">
-                    Register and enrol now (€30)
-                </a>
+                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })" 
+                        class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-emeraldPrimary/20 whitespace-nowrap text-center cursor-pointer">
+                    Add to Cart (€30)
+                </button>
             </div>
         </div>
     </section>
