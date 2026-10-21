@@ -35,7 +35,8 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->route('home');
+        // return redirect()->route('home');
+        return redirect()->route('checkout.index');
     }
 
     /**

@@ -10,15 +10,13 @@
             </div>
         </a>
         
-        <!-- Desktop Navigation -->
+        <!-- Desktop Navigation (Visible on all pages) -->
         <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-textMuted">
-            @if(request()->is('/'))
-            <a href="#course" class="hover:text-emeraldPrimary transition-colors">Active Course</a>
-            <a href="#workflow" class="hover:text-emeraldPrimary transition-colors">Step-by-Step Process</a>
-            <a href="#faq" class="hover:text-emeraldPrimary transition-colors">FAQ</a>
-            <a href="#contact" class="hover:text-emeraldPrimary transition-colors">Support</a>
-            <a href="{{route('front.about')}}" class="hover:text-emeraldPrimary transition-colors">About us</a>
-            @endif
+            <a href="{{ url('/#course') }}" class="hover:text-emeraldPrimary transition-colors">Active Course</a>
+            <a href="{{ route('front.corporate') }}" class="hover:text-emeraldPrimary transition-colors">Team Training</a>
+            <a href="{{ url('/#faq') }}" class="hover:text-emeraldPrimary transition-colors">FAQ</a>
+            <a href="{{ route('front.contact') }}" class="hover:text-emeraldPrimary transition-colors">Contact</a>
+            <a href="{{ route('front.about') }}" class="hover:text-emeraldPrimary transition-colors">About us</a>
         </nav>
         
         <!-- Desktop Right Actions -->
@@ -27,7 +25,6 @@
             <!-- Desktop Cart Wrapper & Dropdown Trigger -->
             <div class="relative" @click.outside="cartOpen = false">
                 <button @click="cartOpen = !cartOpen" class="relative p-3 text-textMuted hover:text-emeraldPrimary transition-colors focus:outline-none flex items-center justify-center">
-                    <!-- Cart Image Container (Explicitly sized larger for mobile) -->
                     <div class="relative w-8 h-8 sm:w-6 sm:h-6 flex items-center justify-center">
                         <img src="{{ asset('images/icons/cartSingle.png') }}" class="w-full h-full object-contain" alt="Cart">
                         
@@ -35,7 +32,7 @@
                         <div class="absolute -top-2 -right-2 z-10" x-cloak>
                             <template x-if="$store.cart.cartTotalQty() > 0">
                                 <span class="bg-emeraldPrimary text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md animate__animated animate__bounceIn"
-                                    x-text="$store.cart.cartTotalQty()">
+                                      x-text="$store.cart.cartTotalQty()">
                                 </span>
                             </template>
                         </div>
@@ -57,17 +54,15 @@
         <!-- Mobile Right Action Area -->
         <div class="flex items-center space-x-3 sm:hidden">
             
-                    <div class="relative" @click.outside="cartOpen = false">
+            <div class="relative" @click.outside="cartOpen = false">
                 <button @click="cartOpen = !cartOpen" class="relative p-2 text-textMuted hover:text-emeraldPrimary transition-colors focus:outline-none flex items-center justify-center">
-                    <!-- Cart Image Container (10x10 on mobile, 6x6 on desktop) -->
                     <div class="relative w-10 h-10 sm:w-6 sm:h-6 flex items-center justify-center">
                         <img src="{{ asset('images/icons/cartSingle.png') }}" class="w-full h-full object-contain" alt="Cart">
                         
-                        <!-- Positioned Badge Counter -->
                         <div class="absolute -top-1 -right-1 sm:-top-1.5 sm:-right-1.5 z-10" x-cloak>
                             <template x-if="$store.cart.cartTotalQty() > 0">
                                 <span class="bg-emeraldPrimary text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md animate__animated animate__bounceIn"
-                                    x-text="$store.cart.cartTotalQty()">
+                                      x-text="$store.cart.cartTotalQty()">
                                 </span>
                             </template>
                         </div>
@@ -152,20 +147,24 @@
     <!-- Mobile Drawer Navigation Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-cardLight border-b border-slate-200 px-6 py-6 space-y-4 shadow-xl">
         <nav class="flex flex-col space-y-3 font-medium text-textMain">
-            <a href="#course" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
+            <a href="{{ url('/#course') }}" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
                 <span>Active Course</span>
                 <i class="fa-solid fa-chevron-right text-xs text-textMuted"></i>
             </a>
-            <a href="#workflow" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
+            <a href="{{ url('/#workflow') }}" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
                 <span>Step-by-Step Process</span>
                 <i class="fa-solid fa-chevron-right text-xs text-textMuted"></i>
             </a>
-            <a href="#faq" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
+            <a href="{{ url('/#faq') }}" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
                 <span>FAQ</span>
                 <i class="fa-solid fa-chevron-right text-xs text-textMuted"></i>
             </a>
-            <a href="#contact" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
-                <span>Support</span>
+            <a href="{{ route('front.contact') }}" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
+                <span>Contact</span>
+                <i class="fa-solid fa-chevron-right text-xs text-textMuted"></i>
+            </a>
+            <a href="{{ route('front.about') }}" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
+                <span>About us</span>
                 <i class="fa-solid fa-chevron-right text-xs text-textMuted"></i>
             </a>
         </nav>
@@ -174,8 +173,8 @@
                 <i class="fa-solid fa-phone text-emeraldPrimary"></i>
                 <span>{{ config('global.phone') }}</span>
             </a>
-            <a href="#course" onclick="toggleMobileMenu()" class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white py-3 rounded-xl font-semibold text-sm text-center shadow-md shadow-emeraldPrimary/20">
-                Enroll Now (€30)
+            <a href="{{ url('/register') }}" onclick="toggleMobileMenu()" class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white py-3 rounded-xl font-semibold text-sm text-center shadow-md shadow-emeraldPrimary/20">
+                Register Now (€30)
             </a>
         </div>
     </div>

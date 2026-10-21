@@ -47,7 +47,7 @@ Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallba
     Route::get('/privacy', function(){return view("front.privacy");})->name('front.privacy');
     Route::post('/privacy/data-removal', [PrivacyController::class, 'handleDataRemoval'])->name('privacy.data-removal.submit');
     Route::get('/refund', function(){return view("front.refund");})->name('front.refund');
-
+    Route::get('/corporate-training', function(){return view("front.corporate");})->name('front.corporate');
 
 Route::get('/product/{product:slug}/info', [App\Http\Controllers\ProductController::class, 'show'])->name('front.product');
     Route::get('/infoPdf', function(){

@@ -53,6 +53,7 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
         Session::flash('created', 'created');
-        return redirect(RouteServiceProvider::HOME);
+        // return redirect(RouteServiceProvider::HOME);
+        return redirect()->route('checkout.index');
     }
 }
