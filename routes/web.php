@@ -238,27 +238,13 @@ Route::get('/generate-sitemap', function () {
     // Static pages
     $sitemap->add(Url::create(route('frontHome')));
     $sitemap->add(Url::create(route('terms')));
-    $sitemap->add(Url::create(route('front.products')));
     $sitemap->add(Url::create(route('front.team')));
     $sitemap->add(Url::create(route('front.contact')));
-    $sitemap->add(Url::create(route('front.faq')));
-    $sitemap->add(Url::create(route('front.consulting')));
     $sitemap->add(Url::create(route('front.verify')));
     $sitemap->add(Url::create(route('front.cookies')));
-    $sitemap->add(Url::create(route('front.blog')));
+ 
 
-    $sitemap->add(Url::create(route('front.manual.handling')));
-    $sitemap->add(Url::create(route('front.working.at.heights')));
-    $sitemap->add(Url::create(route('front.abrasive.wheels')));
-    $sitemap->add(Url::create(route('front.fire.warden.fire.marshal')));
-    $sitemap->add(Url::create(route('front.fire.extinguisher')));
-    $sitemap->add(Url::create(route('front.asbestos.awareness')));
-    $sitemap->add(Url::create(route('front.emergency.first.aid.workplace')));
-    $sitemap->add(Url::create(route('front.office.health.safety.training')));
-    $sitemap->add(Url::create(route('front.ppe')));
-    $sitemap->add(Url::create(route('front.haccp.catering.retail.level.1.2')));
-    $sitemap->add(Url::create(route('front.working.in.confined.spaces')));
-    $sitemap->add(Url::create(route('front.fire.safety.training')));
+
 
 
     // Products (dynamic)
