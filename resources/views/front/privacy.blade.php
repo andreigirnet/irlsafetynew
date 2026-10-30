@@ -5,11 +5,12 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="bg-cardLight border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
-                
+
                 <!-- Header Banner -->
                 <div class="bg-[#022C22] text-white p-8 sm:p-12 relative border-b border-emerald-800">
                     <h1 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight mb-2">Privacy Policy</h1>
                     <p class="text-slate-300 text-sm sm:text-base">{{ config('global.business_name') }}</p>
+                    <p class="text-slate-400 text-xs mt-2">Last updated: 29 October 2026</p>
                 </div>
 
                 <!-- Session Feedback Alerts -->
@@ -38,14 +39,16 @@
                         <h2 class="font-display font-bold text-2xl text-textMain tracking-tight">Privacy Policy & Data Protection</h2>
                         <p class="text-textMuted text-base leading-relaxed">
                             At <strong>{{ config('global.business_name') }}</strong> ("we," "our," or "us"), we are committed to safeguarding your privacy and ensuring that your personal data is protected. This Privacy Policy outlines how we collect, use, disclose, and protect information when you visit our website
-                            <a href="https://www.progressive-irish-safety.ie/" target="_blank" class="text-emeraldPrimary font-semibold hover:underline">https://www.progressive-irish-safety.ie/</a>
-                            and utilize our online training services.
+                            <a href="https://www.progressive-irish-safety.ie/" target="_blank" rel="noopener noreferrer" class="text-emeraldPrimary font-semibold hover:underline">https://www.progressive-irish-safety.ie/</a>
+                            and use our online training services.
                         </p>
 
                         <div class="bg-surfaceLight border border-slate-200 rounded-xl p-6 mt-6">
-                            <h3 class="font-bold text-textMain text-sm uppercase tracking-wider text-textMuted mb-2">Data Controller Contact:</h3>
+                            <h3 class="font-bold text-sm uppercase tracking-wider text-textMuted mb-2">Data Controller Contact:</h3>
                             <p class="text-textMain text-base font-medium mb-0">
                                 <strong>{{ config('global.business_name') }}</strong><br>
+                                Company number (CRO): 822301<br>
+                                51 Bracken Road, Dublin, D18 CV48, Ireland<br>
                                 Support Email: <a href="mailto:info@progressive-irish-safety.ie" class="text-emeraldPrimary font-bold hover:underline">info@progressive-irish-safety.ie</a>
                             </p>
                         </div>
@@ -57,13 +60,14 @@
                             Information We Collect:
                         </h3>
                         <p class="text-textMuted text-base leading-relaxed pl-4">
-                            We may collect personal information that you voluntarily provide to us when registering for a course, purchasing services, participating in practical assessments, or contacting support. This includes:
+                            We may collect personal information that you voluntarily provide to us when registering for a course, purchasing services, taking the theory test, uploading your practical assessment video, or contacting support. This includes:
                         </p>
                         <ul class="space-y-2 pl-4 text-textMuted text-base">
-                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span><strong>Identity Data:</strong> Full name and contact credentials.</span></li>
+                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span><strong>Identity Data:</strong> Full name and account credentials.</span></li>
                             <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span><strong>Contact Information:</strong> Email address and telephone number.</span></li>
                             <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span><strong>Transaction & Payment Data:</strong> Details regarding course purchases (processed securely through encrypted payment gateways).</span></li>
-                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span><strong>Assessment & Media Data:</strong> Practical session recordings, video assessments, photographs, or chat logs are submitted via WhatsApp (<a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" class="text-emeraldPrimary underline">WhatsApp Privacy Policy</a>).</span></li>
+                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span><strong>Assessment & Media Data:</strong> Your theory test results and the practical assessment video that you upload directly in your account on our platform.</span></li>
+                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span><strong>Support Communications:</strong> Messages you send us through our live chat, by email or by telephone when you ask for help. This includes the chat messages themselves and any details you choose to enter, such as your name or email address. Our live chat is provided by a third-party service provider that processes this information on our behalf.</span></li>
                         </ul>
                     </div>
 
@@ -73,12 +77,13 @@
                             How We Use Your Information:
                         </h3>
                         <p class="text-textMuted text-base leading-relaxed pl-4">
-                            The information we collect is utilized for business and educational purposes, including:
+                            The information we collect is used for business and educational purposes, including:
                         </p>
                         <ul class="space-y-2 pl-4 text-textMuted text-base">
-                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span>Processing your course registration, verifying practical competency via video assessments, and issuing certificates of completion.</span></li>
+                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span>Processing your course registration, verifying practical competency through video assessment, and issuing certificates of completion.</span></li>
+                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span>Providing support and responding to your enquiries.</span></li>
                             <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span>Fulfilling accounting and regulatory tax obligations.</span></li>
-                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span>Improving website performance and advertising relevance.</span></li>
+                            <li class="flex items-start"><span class="text-emeraldPrimary font-bold mr-2">•</span><span>Improving website performance and the relevance of our advertising.</span></li>
                         </ul>
                     </div>
 
@@ -88,7 +93,7 @@
                             Data Sharing and Disclosure:
                         </h3>
                         <p class="text-textMuted text-base leading-relaxed pl-4">
-                            We do not sell, trade or rent your personal information or assessment videos. We use service providers for payment processing, website hosting and assessment communications. We use WhatsApp to receive practical assessment videos and communicate assessment feedback. When you submit a video, we receive your video, telephone number, any visible profile information and accompanying messages. The messaging provider also processes information in accordance with its own privacy policy. Deleting a video from devices and systems under our control does not necessarily delete information retained by the messaging provider or copies stored on your device.
+                            We do not sell, trade or rent your personal information or assessment videos. We use service providers for payment processing and website hosting, and your uploaded video is stored on our platform, which is hosted by our hosting provider. Only our instructors and authorised staff can view your assessment video, and we use it solely to assess your technique. If you use our live chat for support, our live chat provider processes your chat messages on our behalf.
                         </p>
                     </div>
 
@@ -98,7 +103,7 @@
                             Your Data Protection Rights:
                         </h3>
                         <p class="text-textMuted text-base leading-relaxed pl-4">
-                            Depending on your jurisdiction (such as the GDPR framework in Europe), you have rights regarding your personal data, including the right to access, correct, or request deletion of your personal information stored on our systems. You can submit a request below.
+                            Depending on your jurisdiction (such as the GDPR framework in Europe), you have rights regarding your personal data, including the right to access, correct, or request deletion of your personal information stored on our systems. You can submit a request using the form below or by emailing us. If you are unhappy with how we handle your data, you also have the right to lodge a complaint with the Data Protection Commission in Ireland (<a href="https://www.dataprotection.ie" target="_blank" rel="noopener noreferrer" class="text-emeraldPrimary underline">dataprotection.ie</a>).
                         </p>
                     </div>
 
@@ -108,7 +113,7 @@
                             Assessment Video Data:
                         </h3>
                         <p class="text-textMuted text-base leading-relaxed pl-4">
-                            Practical video tests submitted via WhatsApp for grading and course completion. The video is retained only until the practical assessment has been reviewed and completed. After the assessment is completed, the video will be deleted from our devices and systems where it is under our control. We retain the assessment result and certification records separately where necessary.
+                            The practical assessment video is uploaded by you directly in your account on our platform for grading and course completion. The video is retained only until the practical assessment has been reviewed and completed. After the assessment is completed, the video is deleted from our platform and systems. We retain the assessment result and certification records separately where necessary. Please film only yourself and make sure no other people are visible in your video.
                         </p>
                     </div>
 
@@ -129,7 +134,7 @@
                             Request Data Removal (Right to be Forgotten)
                         </h3>
                         <p class="text-textMuted text-base leading-relaxed pl-4">
-                            If you wish to request the deletion or removal of your personal data from our active databases, please fill out the secure form below. We will process your request in accordance with applicable data protection regulations. Read above our privacy policy best practices we are following
+                            If you wish to request the deletion or removal of your personal data from our active databases, please fill out the secure form below. We will process your request in accordance with applicable data protection regulations. Please read the sections above to see how we handle your data.
                         </p>
 
                         <div class="bg-surfaceLight border border-slate-200 rounded-2xl p-6 sm:p-8">

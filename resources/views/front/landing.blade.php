@@ -12,7 +12,7 @@
                         Online Manual Handling Training in <span class="text-emeraldPrimary">Ireland</span>
                     </h1>
                     <p class="text-lg text-textMuted max-w-2xl leading-relaxed">
-                        Progressive Irish Safety is an independent training provider operated by Progressive Velocity Fast Solutions Limited. We are not affiliated with, endorsed by, or an official representative of any government body or third-party brand.
+                        Complete your manual handling training online at your own pace: theory slides, an online test, and a short practical video that you upload in your account for instructor review.
                     </p>
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
                         <a href="{{ url('/register') }}" class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-8 py-4 rounded-xl shadow-xl shadow-emeraldPrimary/25 text-center transition-all hover:scale-105">
@@ -31,7 +31,7 @@
                             Flat price
                         </div>
                         <div>
-                            <span class="block font-bold text-textMain text-lg">Online + WhatsApp</span>
+                            <span class="block font-bold text-textMain text-lg">Online upload</span>
                             Practical assessment
                         </div>
                         <div>
@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="flex items-center space-x-3">
                                     <i class="fa-solid fa-circle-check text-emeraldPrimary"></i>
-                                    <span>Practical lifting video sent via WhatsApp</span>
+                                    <span>Upload your practical lifting video in your account</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
                                     <i class="fa-solid fa-circle-check text-emeraldPrimary"></i>
@@ -80,10 +80,10 @@
                                     <span class="text-xs text-textMuted block">Price</span>
                                     <span class="font-display font-extrabold text-3xl text-textMain">€30</span>
                                 </div>
-                               <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })" 
-                                    class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md shadow-emeraldPrimary/20 text-center cursor-pointer">
-                                Add to Cart (€30)
-                            </button>
+                                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })"
+                                        class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md shadow-emeraldPrimary/20 text-center cursor-pointer">
+                                    Add to Cart (€30)
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -94,15 +94,16 @@
 
     <!-- Course Section -->
     <section class="py-16 bg-white border-b border-slate-200" id="course">
-        <div class="w-[90%] max-w-lg mx-auto bg-cardLight rounded-2xl shadow-xl overflow-hidden border border-slate-200">    <!-- Fixed Image Container -->
+        <div class="w-[90%] max-w-lg mx-auto bg-cardLight rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+            <!-- Fixed Image Container -->
             <div class="relative w-full h-48 overflow-hidden bg-slate-100">
-                <img src="{{ asset('/images/lifting.webp') }}" 
-                    alt="Manual handling lifting technique" 
+                <img src="{{ asset('/images/lifting.webp') }}"
+                    alt="Manual handling lifting technique"
                     class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
-                
+
                 <!-- Gradient Overlay for Contrast -->
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
-                
+
                 <!-- Floating Price Tag -->
                 <div class="absolute bottom-3 right-3 z-10 bg-emeraldPrimary text-white font-bold px-3 py-1.5 rounded-xl shadow-lg flex items-center gap-0.5 text-sm">
                     <span class="currency">€</span>30
@@ -116,15 +117,14 @@
                 <ul class="space-y-2.5 text-sm text-textMain mb-8">
                     <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Register an account and pay online</span></li>
                     <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Study on mobile, tablet or computer</span></li>
-                    <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Send your practical video on WhatsApp: {{ config('global.phone') }}</span></li>
+                    <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Upload your practical video directly in your account</span></li>
                 </ul>
 
-                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })" 
+                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })"
                         class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg shadow-emeraldPrimary/20 text-center cursor-pointer">
                     Add to Cart (€30)
                 </button>
             </div>
-        </div>
         </div>
     </section>
 
@@ -161,9 +161,9 @@
                     <!-- Right: Content & Bullets -->
                     <div class="flex flex-col justify-center space-y-4">
                         <h2 id="slide-title" class="font-display text-2xl font-extrabold text-textMain tracking-tight">INTRODUCTION</h2>
-                        
+
                         <p id="slide-content" class="text-textMuted text-base leading-relaxed whitespace-pre-line"></p>
-                        
+
                         <ul id="slide-bullets" class="space-y-2 text-textMain">
                             <!-- Bullets injected dynamically via JS -->
                         </ul>
@@ -193,7 +193,7 @@
                     <h4 class="font-display text-xl font-bold text-textMain">Liked the demo? Complete the full course now</h4>
                     <p class="text-textMuted text-sm">Enrol today for €30 to get full access to all course materials, theory test, and instructor video review.</p>
                 </div>
-                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })" 
+                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })"
                         class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-emeraldPrimary/20 whitespace-nowrap text-center cursor-pointer">
                     Add to Cart (€30)
                 </button>
@@ -232,7 +232,7 @@
                 </button>
                 <button onclick="setWorkflowStep(5)" id="step-btn-5" class="workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight/70 border-slate-200 text-textMuted hover:border-slate-300">
                     <span class="text-xs font-bold text-textMuted block mb-1">STEP 05</span>
-                    <span class="font-semibold text-xs block">WhatsApp video</span>
+                    <span class="font-semibold text-xs block">Upload video</span>
                 </button>
                 <button onclick="setWorkflowStep(6)" id="step-btn-6" class="workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight/70 border-slate-200 text-textMuted hover:border-slate-300">
                     <span class="text-xs font-bold text-textMuted block mb-1">STEP 06</span>
@@ -277,12 +277,15 @@
                     <p class="text-textMuted leading-relaxed">
                         The certificate is a private certificate of completion issued by Progressive Velocity Fast Solutions Limited. It shows that you completed our training. It is not a State qualification, and whether it meets the requirements of a particular workplace is for the employer to decide.
                     </p>
+                    <p class="text-textMuted text-sm leading-relaxed">
+                        Progressive Irish Safety is an independent training provider. We are not affiliated with, endorsed by, or an official representative of any government body or third-party brand.
+                    </p>
                     <div class="space-y-4 pt-2">
                         <div class="flex items-start space-x-3">
                             <div class="w-6 h-6 rounded-full bg-emeraldLight text-emeraldPrimary flex items-center justify-center text-xs mt-1 shrink-0 border border-emeraldBorder"><i class="fa-solid fa-check"></i></div>
                             <div>
                                 <h4 class="font-semibold text-textMain">When it is issued</h4>
-                                <p class="text-textMuted text-sm">After you pass the online theory test and an instructor approves your WhatsApp practical video. It is not issued automatically.</p>
+                                <p class="text-textMuted text-sm">After you pass the online theory test and an instructor approves your uploaded practical video. It is not issued automatically.</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-3">
@@ -296,7 +299,7 @@
                             <div class="w-6 h-6 rounded-full bg-emeraldLight text-emeraldPrimary flex items-center justify-center text-xs mt-1 shrink-0 border border-emeraldBorder"><i class="fa-solid fa-check"></i></div>
                             <div>
                                 <h4 class="font-semibold text-textMain">Questions</h4>
-                                <p class="text-textMuted text-sm">Call or message us on WhatsApp at {{ config('global.phone') }}.</p>
+                                <p class="text-textMuted text-sm">Call us on {{ config('global.phone') }} or use our live chat.</p>
                             </div>
                         </div>
                     </div>
@@ -318,8 +321,14 @@
                                 <span class="text-textMuted">Registered address</span>
                                 <span class="font-medium text-textMain text-right">51 Bracken Road, Dublin, D18 CV48, Ireland</span>
                             </div>
+                            @if(config('global.email'))
+                            <div class="flex justify-between py-2 border-b border-slate-100">
+                                <span class="text-textMuted">Email</span>
+                                <span class="font-medium text-textMain text-right"><a href="mailto:{{ config('global.email') }}" class="text-emeraldPrimary underline">{{ config('global.email') }}</a></span>
+                            </div>
+                            @endif
                             <div class="flex justify-between py-2">
-                                <span class="text-textMuted">Phone / WhatsApp</span>
+                                <span class="text-textMuted">Phone</span>
                                 <span class="font-medium text-textMain text-right">{{ config('global.phone') }}</span>
                             </div>
                         </div>
@@ -337,137 +346,115 @@
                 <p class="text-textMuted">Answers about the course, the practical video and the certificate.</p>
             </div>
 
-<div class="space-y-4">
-    <!-- FAQ 1 -->
-    <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <button onclick="toggleFaq(1)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
-            <span>How does the practical video work?</span>
-            <i id="faq-icon-1" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
-        </button>
-        <div id="faq-content-1" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
-            After you pass the online theory test, record a short video of yourself lifting an object using the technique shown in the course slides. Send it on WhatsApp to {{ config('global.phone') }}. An instructor reviews it and replies with the result. Please film only yourself and make sure no other people are visible.
-        </div>
-    </div>
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(1)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>How does the practical video work?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        As soon as you pass the online theory test, you upload your practical video directly in your account. Record a short video of yourself lifting an object using the technique shown in the course slides, then upload it on the platform from your phone or computer. An instructor reviews it and posts the result in your account. Please film only yourself and make sure no other people are visible.
+                    </div>
+                </div>
 
-    <!-- FAQ 2 -->
-    <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <button onclick="toggleFaq(2)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
-            <span>When will I receive my certificate?</span>
-            <i id="faq-icon-2" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
-        </button>
-        <div id="faq-content-2" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
-            Your certificate of completion is issued after you pass the theory test and an instructor approves your practical video. It is not issued automatically.
-        </div>
-    </div>
+                <!-- FAQ 2 -->
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(2)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>When will I receive my certificate?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        Your certificate of completion is issued after you pass the theory test and an instructor approves your practical video. It is not issued automatically.
+                    </div>
+                </div>
 
-    <!-- FAQ 3 -->
-    <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <button onclick="toggleFaq(3)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
-            <span>What kind of certificate is it?</span>
-            <i id="faq-icon-3" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
-        </button>
-        <div id="faq-content-3" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
-            It is a private certificate of completion issued by Progressive Velocity Fast Solutions Limited. It is not a State-accredited qualification. If your employer needs a specific type of training or certificate, please check with them before you enrol.
-        </div>
-    </div>
+                <!-- FAQ 3 -->
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(3)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>What kind of certificate is it?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        It is a private certificate of completion issued by Progressive Velocity Fast Solutions Limited. It is not a State-accredited qualification. If your employer needs a specific type of training or certificate, please check with them before you enrol.
+                    </div>
+                </div>
 
-    <!-- FAQ 4 -->
-    <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <button onclick="toggleFaq(4)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
-            <span>How much does the course cost?</span>
-            <i id="faq-icon-4" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
-        </button>
-        <div id="faq-content-4" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
-            The course costs €30. There are no hidden fees and no subscription.
-        </div>
-    </div>
+                <!-- FAQ 4 -->
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(4)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>How much does the course cost?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        The course costs €30. There are no hidden fees and no subscription.
+                    </div>
+                </div>
 
-    <!-- FAQ 5 -->
-    <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <button onclick="toggleFaq(5)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
-            <span>What happens to my practical video?</span>
-            <i id="faq-icon-5" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
-        </button>
-        <div id="faq-content-5" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
-            Videos are sent by WhatsApp, a service provided by Meta. We review your video to assess your technique, and delete it from our devices and systems once the assessment is complete. A copy may remain in your own chat history, which you can delete yourself. Our Privacy Policy, linked in the footer, has the full details.
-        </div>
-    </div>
+                <!-- FAQ 5 -->
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(5)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>What happens to my practical video?</span>
+                        <i id="faq-icon-5" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-5" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        Your video is uploaded to your account on our platform. Only our instructors can view it, and we use it solely to assess your technique. We delete it once the assessment is complete. Our Privacy Policy, linked in the footer, has the full details.
+                    </div>
+                </div>
 
-    <!-- FAQ 6 -->
-    <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <button onclick="toggleFaq(6)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
-            <span>Who runs Progressive Irish Safety?</span>
-            <i id="faq-icon-6" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
-        </button>
-        <div id="faq-content-6" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
-            Progressive Irish Safety is an independent training provider operated by Progressive Velocity Fast Solutions Limited. We are not affiliated with, endorsed by, or an official representative of any government body or third-party brand. Company number (CRO) 822301, registered address 51 Bracken Road, Dublin, D18 CV48, Ireland.
-        </div>
-    </div>
+                <!-- FAQ 6 -->
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(6)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>Who runs Progressive Irish Safety?</span>
+                        <i id="faq-icon-6" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-6" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        Progressive Irish Safety is an independent training provider operated by Progressive Velocity Fast Solutions Limited. We are not affiliated with, endorsed by, or an official representative of any government body or third-party brand. Company number (CRO) 822301, registered address 51 Bracken Road, Dublin, D18 CV48, Ireland.
+                    </div>
+                </div>
 
-    <!-- FAQ 7 -->
-    <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <button onclick="toggleFaq(7)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
-            <span>How long does it take to get the certificate after the practical test?</span>
-            <i id="faq-icon-7" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
-        </button>
-        <div id="faq-content-7" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
-            You will get the certificate the same day after you pass the practical test. The certificate is valid for 3 years.
-        </div>
-    </div>
+                <!-- FAQ 7 -->
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(7)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>How long does it take to get the certificate after the practical test?</span>
+                        <i id="faq-icon-7" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-7" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        An instructor reviews your uploaded video and, once it is approved, your certificate is available to download in your account.
+                    </div>
+                </div>
 
-    <!-- FAQ 8 -->
-    <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <button onclick="toggleFaq(8)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
-            <span>What if I don't pass on the first try?</span>
-            <i id="faq-icon-8" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
-        </button>
-        <div id="faq-content-8" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
-            You have unlimited attempts to pass the theory test. In case of a practical test failure, you get personalized feedback from our instructor to make sure you succeed on your next try.
-        </div>
-    </div>
+                <!-- FAQ 8 -->
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(8)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>What if I don't pass on the first try?</span>
+                        <i id="faq-icon-8" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-8" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        You have unlimited attempts to pass the theory test. If your practical video is not approved, you get personalised feedback from our instructor so you can succeed on your next try.
+                    </div>
+                </div>
 
-    <!-- FAQ 9 -->
-    <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <button onclick="toggleFaq(9)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
-            <span>What do I need for the practical video test?</span>
-            <i id="faq-icon-9" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
-        </button>
-        <div id="faq-content-9" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
-            All you need is a phone or laptop camera, a small amount of clear floor space, and a box or similar household item to lift safely. Heavy weights aren't necessary—the goal is simply to demonstrate proper technique rather than lift a real workload. You can easily complete your assessment at home.
-        </div>
-    </div>
+                <!-- FAQ 9 -->
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(9)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>What do I need for the practical video test?</span>
+                        <i id="faq-icon-9" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-9" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        All you need is a phone or laptop camera, a small amount of clear floor space, and a box or similar household item to lift safely. Heavy weights aren't necessary. The goal is simply to demonstrate proper technique rather than lift a real workload. You can complete the whole assessment at home and upload it straight from your phone or computer.
+                    </div>
+                </div>
 
-    <!-- FAQ 10 -->
-    <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
-        <button onclick="toggleFaq(10)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
-            <span>How do I verify if the certificate is valid?</span>
-            <i id="faq-icon-10" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
-        </button>
-        <div id="faq-content-10" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
-            To verify the certificate, follow this link: <a href="{{ route('front.verify') }}" class="text-emeraldPrimary font-semibold underline">Verify Certificate</a>. You will need your unique ID found on the certificate in order to check its validity.
-        </div>
-    </div>
-</div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="py-20 bg-white border-b border-slate-200" id="contact">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center space-y-6">
-                <h2 class="font-display text-3xl sm:text-4xl font-bold text-textMain">Need help enrolling or sending your video?</h2>
-                <p class="text-textMuted">
-                    Call us or message us on WhatsApp.
-                </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                    <a href="tel:{{ config('global.phone') }}" class="w-full sm:w-auto bg-surfaceLight hover:bg-slate-100 border border-slate-200 text-textMain font-semibold px-8 py-4 rounded-xl flex items-center justify-center space-x-3 transition-all shadow-sm">
-                        <i class="fa-solid fa-phone text-emeraldPrimary"></i>
-                        <span>{{ config('global.phone') }}</span>
-                    </a>
-                    <a href="https://wa.me/353899735295" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-8 py-4 rounded-xl flex items-center justify-center space-x-3 transition-all shadow-lg shadow-emerald-600/20">
-                        <i class="fa-brands fa-whatsapp text-xl"></i>
-                        <span>Chat on WhatsApp</span>
-                    </a>
+                <!-- FAQ 10 -->
+                <div class="bg-cardLight border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                    <button onclick="toggleFaq(10)" class="w-full p-6 text-left flex items-center justify-between font-semibold text-textMain hover:text-emeraldPrimary transition-colors">
+                        <span>How do I verify if the certificate is valid?</span>
+                        <i id="faq-icon-10" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
+                    </button>
+                    <div id="faq-content-10" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
+                        To verify the certificate, follow this link: <a href="{{ route('front.verify') }}" class="text-emeraldPrimary font-semibold underline">Verify Certificate</a>. You will need the unique ID found on the certificate in order to check its validity.
+                    </div>
                 </div>
             </div>
         </div>
@@ -479,7 +466,7 @@
             "slide_1": {
                 "img": "{{ asset('images/curs/step1/1.webp') }}",
                 "title": "INTRODUCTION",
-                "content": "Manual handling tasks occur wherever people are at work.\nEvery time we use our bodies to move an object we are in the process of manual handling, whether we are in an office, factory, warehouse, shop or any other environment for work.",
+                "content": "Manual handling tasks occur wherever people are at work.\nEvery time we use our bodies to move an object we are manual handling, whether we are in an office, factory, warehouse, shop or any other work environment.",
                 "bullets": []
             },
             "slide_2": {
@@ -487,7 +474,7 @@
                 "title": "COURSE OBJECTIVES",
                 "content": "",
                 "bullets": [
-                    "To highlight the dangers of back pain, how they are caused and what you can do to prevent these dangers.",
+                    "To highlight the dangers of back pain, how it is caused and what you can do to prevent it.",
                     "To encourage you to evaluate your manual handling tasks.",
                     "To demonstrate good manual handling techniques.",
                     "To increase your awareness of manual handling habits."
@@ -498,23 +485,23 @@
                 "title": "WHAT IS MANUAL HANDLING?",
                 "content": "",
                 "bullets": [
-                    "Manual handling is approved in any case where human strength is necessary.",
-                    "This is not limited to lifting or carrying a load or just moving a heavy load.",
-                    "Manual handling means using the body to exert the force of lifting, lowering, pushing, pulling, carrying, moving, holding, restraining or to fix a load.",
-                    "The load can be inanimate, for example a box, a painting, for example a person or an animal."
+                    "Manual handling applies in any situation where human strength is needed to move a load.",
+                    "It is not limited to lifting or carrying a heavy load.",
+                    "Manual handling means using the body to exert force to lift, lower, push, pull, carry, move, hold or restrain a load.",
+                    "The load can be an inanimate object, such as a box or a painting, or a living one, such as a person or an animal."
                 ]
             },
             "slide_4": {
                 "img": "{{ asset('images/curs/step1/4.webp') }}",
                 "title": "MANUAL HANDLING TASKS",
-                "content": "Some examples of manual handling tasks daily include:",
+                "content": "Some examples of everyday manual handling tasks include:",
                 "bullets": [
                     "picking up paper boxes",
                     "carrying a shopping bag",
                     "pushing a stroller",
                     "unloading a car",
                     "stacking shelves",
-                    "raising a child",
+                    "lifting a child",
                     "moving furniture"
                 ]
             },
@@ -523,9 +510,9 @@
                 "title": "INJURIES CAUSED BY INCORRECT MANUAL HANDLING",
                 "content": "",
                 "bullets": [
-                    "Manual handling tasks are the cause of a large number of workplace injuries each year. Improper manual handling tasks can cause hand, arm and neck injuries.",
+                    "Manual handling is the cause of a large number of workplace injuries each year. Improper manual handling can cause hand, arm and neck injuries.",
                     "Accidentally dropping loads can also injure the legs. However, most manual handling injuries affect the back.",
-                    "The resulting injury can be a cut or bruise, but more commonly it is a muscle strain or ligament trauma."
+                    "The resulting injury can be a cut or bruise, but more commonly it is a muscle strain or ligament injury."
                 ]
             },
             "slide_6": {
@@ -534,10 +521,10 @@
                 "content": "What are my responsibilities regarding manual handling at work? As an employee, you must:",
                 "bullets": [
                     "Cooperate with your employer in manual handling matters.",
-                    "Not engage in behavior that could endanger yourself or others.",
+                    "Not engage in behaviour that could endanger yourself or others.",
                     "Use mechanical devices correctly.",
                     "Report hazardous work activities and any workplace defects, systems or equipment.",
-                    "Tell your employer about any physical deficiencies that could create risks."
+                    "Tell your employer about any physical conditions that could create risks."
                 ]
             },
             "slide_7": {
@@ -545,8 +532,8 @@
                 "title": "SUMMARY",
                 "content": "",
                 "bullets": [
-                    "Manual handling is identified when human force is required to move an object and covers activities that involve lifting, transporting, lowering, pushing or pulling a load.",
-                    "A large percentage of reported workplace injuries are related to manual activities handling.",
+                    "Manual handling is any activity where human force is used to move an object, including lifting, transporting, lowering, pushing or pulling a load.",
+                    "A large percentage of reported workplace injuries are related to manual handling activities.",
                     "Most injuries from manual handling tasks affect the back."
                 ]
             }
@@ -564,7 +551,7 @@
 
             document.getElementById('slide-img').src = data.img;
             document.getElementById('slide-title').innerText = data.title;
-            
+
             const contentEl = document.getElementById('slide-content');
             contentEl.innerText = data.content;
             contentEl.style.display = data.content ? 'block' : 'none';
@@ -575,7 +562,13 @@
                 data.bullets.forEach(bullet => {
                     const li = document.createElement('li');
                     li.className = 'flex items-start gap-2 text-sm md:text-base';
-                    li.innerHTML = `<span class="text-emeraldPrimary font-bold mt-0.5">•</span> <span>${bullet}</span>`;
+                    const dot = document.createElement('span');
+                    dot.className = 'text-emeraldPrimary font-bold mt-0.5';
+                    dot.textContent = '•';
+                    const text = document.createElement('span');
+                    text.textContent = bullet;
+                    li.appendChild(dot);
+                    li.appendChild(text);
                     bulletsEl.appendChild(li);
                 });
                 bulletsEl.style.display = 'block';
@@ -651,14 +644,14 @@
                 tag: "Step 4 of 7"
             },
             5: {
-                title: "Record and send your practical video",
-                desc: "Record a short video of yourself lifting an object with the technique shown in the course, and send it on WhatsApp to {{ config('global.phone') }}.",
-                icon: "fa-video",
+                title: "Record and upload your practical video",
+                desc: "Right after the theory test, record a short video of yourself lifting an object with the technique shown in the course, and upload it directly in your account.",
+                icon: "fa-cloud-arrow-up",
                 tag: "Step 5 of 7"
             },
             6: {
                 title: "Wait for the instructor's review",
-                desc: "An instructor reviews your practical video and your theory test result. Certificates are not issued automatically.",
+                desc: "An instructor reviews your uploaded video and your theory test result. Certificates are not issued automatically.",
                 icon: "fa-user-check",
                 tag: "Step 6 of 7"
             },
@@ -697,6 +690,18 @@
                 content.classList.add('hidden');
                 icon.style.transform = 'rotate(0deg)';
             }
+        }
+
+        // Opens the live chat widget. Works with common providers; keep only the one you use.
+        function openLiveChat() {
+            try {
+                if (window.Tawk_API && typeof Tawk_API.maximize === 'function') { Tawk_API.maximize(); return; }
+                if (window.$crisp) { $crisp.push(['do', 'chat:open']); return; }
+                if (typeof window.Intercom === 'function') { Intercom('show'); return; }
+                if (window.tidioChatApi) { tidioChatApi.open(); return; }
+                if (typeof window.LiveChatWidget !== 'undefined') { LiveChatWidget.call('maximize'); return; }
+            } catch (e) { /* fall through */ }
+            window.location.href = 'mailto:info@progressive-irish-safety.ie';
         }
 
         document.addEventListener('DOMContentLoaded', () => {

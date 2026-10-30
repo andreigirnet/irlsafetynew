@@ -508,7 +508,7 @@
                             <h3>How to Complete Your Assessment</h3>
 
                             <div class="intro-box">
-                                <strong>Two options</strong> for self-assessment to earn your 3-year certificate.
+                                <strong>Practical Assessment Submission</strong> to earn your 3-year certificate.
                             </div>
 
                             <div class="steps-grid">
@@ -522,7 +522,7 @@
                                 </div>
                                 <div class="step">
                                     <span class="step-num">3</span>
-                                    <p>Send your video via WhatsApp with your <strong>Name</strong> and <strong>Email</strong> to <strong>+353 {{config('app.telephone')}}</strong> for instructor evaluation.</p>
+                                    <p>Upload your video below with your details. <strong>Wait for instructor approval (up to 1 hour)</strong>, after which your certificate will be generated and available!</p>
                                 </div>
                             </div>
 
@@ -539,54 +539,103 @@
                             </div>
 
                             <div class="support-note">
-                                <em>*Move load from floor to surface and back. Need help? Our team responds promptly during business hours.</em>
+                                <em>*Move load from floor to surface and back. Need help? Our team responds promptly during business hours, leave a message in the live chat.</em>
                             </div>
                         </div>
-{{--                        <div class="completion-card">--}}
-{{--                            <div class="icon-header">--}}
-{{--                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00a86b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">--}}
-{{--                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>--}}
-{{--                                    <polyline points="7 10 12 15 17 10"></polyline>--}}
-{{--                                    <line x1="12" y1="15" x2="12" y2="3"></line>--}}
-{{--                                </svg>--}}
-{{--                                <h4>Ready to Download?</h4>--}}
-{{--                            </div>--}}
 
-{{--                            <button class="download-btn">Download Certificate</button>--}}
+                        <!-- Video Upload Form for Instructor Evaluation -->
+            <div class="upload-card-wrapper">
+                
+                <!-- Section Header -->
+                <div class="upload-header">
+                    <div class="upload-icon-box">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <div>
+                        <h4 class="upload-title">Upload Your Practical Assessment Video</h4>
+                        <p class="upload-desc">
+                            Record yourself performing the lift and upload the file below. Once reviewed and approved by our instructor (typically within 1 hour), your certificate will unlock automatically.
+                        </p>
+                    </div>
+                </div>
 
-{{--                            <p class="helper-text">--}}
-{{--                                Check your <strong>spam or junk folder</strong> if you don't see it in your inbox immediately.--}}
-{{--                            </p>--}}
+            <!-- Upload Form -->
+            <form 
+                action="{{ route('practical.video.upload') }}" 
+                method="POST" 
+                enctype="multipart/form-data"
+                x-data="{ uploading: false, fileName: '' }"
+                @submit="uploading = true"
+            >
+                @csrf
+                <!-- Pass the unique package row ID -->
+                <input type="hidden" name="package_id" value="{{ $packagesOwnedByUser[0]->id }}">
 
-{{--                            <div class="footer-note">--}}
-{{--                                <p>Access your training portal anytime using your email and password to review course content or download files again.</p>--}}
-{{--                                <hr>--}}
-{{--                                <p>Need help? <strong>Please get in touch!</strong></p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-                        <form
-                            x-data="{ isSubmitting: false }"
-                            x-bind:action="`/certificate/create/${packageId}`"
-                            method="POST"
-                            x-show="showProgressBar === false"
-                            @submit="isSubmitting = true"
-                            class="formButtonFinal"
+                <!-- Drag & Drop / File Input Box -->
+                <div style="position: relative;">
+                    <label class="upload-dropzone">
+                        
+                        <!-- Default State Icon & Text -->
+                        <div class="dropzone-inner" x-show="!fileName">
+                            <div class="dropzone-small-icon">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                            </div>
+                            <span class="dropzone-text">
+                                Click to browse or drag & drop your video
+                            </span>
+                            <span class="dropzone-hint">
+                                MP4, MOV, AVI, WMV or WEBM (Max size: 100MB)
+                            </span>
+                        </div>
+
+                        <!-- File Selected State -->
+                        <div class="dropzone-inner" x-show="fileName" style="display: none;">
+                            <div class="dropzone-small-icon" style="background-color: #d1fae5; color: #047857;">
+                                <i class="fa-solid fa-file-video"></i>
+                            </div>
+                            <span class="file-name-display" x-text="fileName"></span>
+                            <span class="file-pill">Click to change file</span>
+                        </div>
+
+                        <!-- Hidden Native File Input -->
+                        <input 
+                            type="file" 
+                            name="practical_video" 
+                            accept="video/mp4,video/quicktime,video/x-msvideo,video/webm" 
+                            required
+                            @change="fileName = $event.target.files[0] ? $event.target.files[0].name : ''"
+                            class="upload-native-input"
                         >
-                            @csrf
-                            <input type="hidden" name="userId" value="{{auth()->user()->id}}">
-                            <input type="hidden" name="productId" x-bind:value="productId">
+                    </label>
+                </div>
 
-                            <button
-                                type="submit"
-                                class="btn-certificate"
-                                x-bind:disabled="isSubmitting"
-                            >
-                                <!-- Loading Spinner -->
-                                <div x-show="isSubmitting" class="spinner"></div>
+                @error('practical_video')
+                    <div class="upload-error-box">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>{{ $message }}</span>
+                    </div>
+                @enderror
 
-                                <span x-text="isSubmitting ? 'Generating...' : 'Get Certificate'"></span>
-                            </button>
-                        </form>
+                <!-- Uploading Loading Feedback State -->
+                <div x-show="uploading" class="upload-loading-box" style="display: none;">
+                    <div class="spinner-circle"></div>
+                    <div>
+                        <strong style="display: block;">Uploading your video securely...</strong>
+                        <span style="font-size: 11px; opacity: 0.85;">Please keep this page open until the upload completes.</span>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button 
+                    type="submit" 
+                    class="upload-submit-btn"
+                    x-bind:disabled="uploading"
+                >
+                    <i class="fa-solid fa-paper-plane" x-show="!uploading"></i>
+                    <span x-text="uploading ? 'Uploading Video...' : 'Submit Video for Instructor Review'"></span>
+                </button>
+            </form>
+        </div>
                     </div>
                 </template>
                 <template x-if="productId === '2'">

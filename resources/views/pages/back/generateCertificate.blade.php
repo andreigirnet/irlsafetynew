@@ -18,31 +18,31 @@
         }
         #id{
             position: absolute;
-            bottom: 26.4%;
-            left: 37%;
+            bottom: 7%;
+            left: 26%;
             font-weight: 600;
-            font-size: 13px;
+            font-size: 17px;
         }
         #valid{
             position: absolute;
-            bottom: 32%;
-            left: 35.5%;
+            bottom: 19.5%;
+            left: 26%;
             font-weight: 600;
-            font-size: 13px;
+            font-size: 17px;
         }
         #expiration{
             position: absolute;
-            bottom: 29%;
-            left: 34.5%;
+            bottom: 13%;
+            left: 25%;
             font-weight: 600;
-            font-size: 13px;
+            font-size: 17px;
         }
         #container{
             position: relative;
         }
         #holder{
             position: absolute;
-            top: 29%;
+            top: 35%;
             width: 100%;
             text-align: center;
             font-size: 50px;

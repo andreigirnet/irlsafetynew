@@ -6,13 +6,13 @@
             <img src="{{ asset('images/logo/logolanding.webp') }}" class="h-10 w-10" alt="Progressive Irish Safety Logo">
             <div>
                 <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-textMain group-hover:text-emeraldPrimary transition-colors block">Progressive Irish Safety</span>
-                <span class="text-xs text-textMuted block tracking-wide">PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED</span>
+                
             </div>
         </a>
         
         <!-- Desktop Navigation (Visible on all pages) -->
         <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-textMuted">
-            <a href="{{ url('/#course') }}" class="hover:text-emeraldPrimary transition-colors">Active Course</a>
+            <a href="{{ url('/#course') }}" class="hover:text-emeraldPrimary transition-colors">Course</a>
             <a href="{{ route('front.corporate') }}" class="hover:text-emeraldPrimary transition-colors">Team Training</a>
             <a href="{{ url('/#faq') }}" class="hover:text-emeraldPrimary transition-colors">FAQ</a>
             <a href="{{ route('front.contact') }}" class="hover:text-emeraldPrimary transition-colors">Contact</a>
@@ -40,9 +40,8 @@
                 </button>
             </div>
             <!-- Phone -->
-            <a href="tel:{{ config('global.phone') }}" class="flex items-center space-x-2 text-xs text-textMuted bg-slate-100 px-3.5 py-2 rounded-lg border border-slate-200">
-                <i class="fa-solid fa-phone text-emeraldPrimary"></i>
-                <span>{{ config('global.phone') }}</span>
+            <a href="{{ url('/login') }}" class="bg-white hover:bg-emerald-50 text-emeraldPrimary border border-emeraldPrimary px-5 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-sm hover:shadow-md hover:scale-105 active:scale-95 text-center inline-flex items-center justify-center">
+                Login
             </a>
 
             <!-- Register -->
@@ -169,12 +168,11 @@
             </a>
         </nav>
         <div class="pt-2 space-y-3">
-            <a href="tel:{{ config('global.phone') }}" class="flex items-center justify-center space-x-2 text-xs text-textMain bg-slate-100 px-4 py-3 rounded-xl border border-slate-200 font-semibold">
-                <i class="fa-solid fa-phone text-emeraldPrimary"></i>
-                <span>{{ config('global.phone') }}</span>
+            <a href="{{ url('/login') }}" onclick="toggleMobileMenu()" class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white py-3 rounded-xl font-semibold text-sm text-center shadow-md shadow-emeraldPrimary/20">
+                Login
             </a>
             <a href="{{ url('/register') }}" onclick="toggleMobileMenu()" class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white py-3 rounded-xl font-semibold text-sm text-center shadow-md shadow-emeraldPrimary/20">
-                Register Now (€30)
+                Register Now
             </a>
         </div>
     </div>

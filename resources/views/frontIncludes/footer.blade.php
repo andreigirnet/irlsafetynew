@@ -24,7 +24,7 @@
                     <ul class="space-y-2 text-xs">
                         <li><a href="#workflow" class="hover:text-emeraldPrimary transition-colors">Step-by-Step Process</a></li>
                         <li><a href="#faq" class="hover:text-emeraldPrimary transition-colors">Frequently Asked Questions</a></li>
-                        <li><a href="#contact" class="hover:text-emeraldPrimary transition-colors">Support & WhatsApp</a></li>
+                        <li><a href="{{route('front.contact')}}" class="hover:text-emeraldPrimary transition-colors">Contact</a></li>
                         <li><a href="{{route('front.privacy')}}" class="hover:text-emeraldPrimary transition-colors">Privacy Policy</a></li>
                         <li><a href="{{route('terms')}}" class="hover:text-emeraldPrimary transition-colors">Terms&Conditions</a></li>
                         <li><a href="{{route('front.refund')}}" class="hover:text-emeraldPrimary transition-colors">Refund Policy</a></li>

@@ -69,6 +69,7 @@
                 <th class="hiddenRows">Purchase Date</th>
                 <th>Course Name</th>
                 <th>Status</th>
+                <th>Practical Video</th> <!-- Added Video Column Header -->
                 <th>Certificate</th>
                 <th class="hiddenRows">Expiration Date</th>
                 <th>Generate Certificate</th>
@@ -96,6 +97,21 @@
                         <td class="hiddenRows">{{$package->created_at}}</td>
                         <td>{{$package->course_name}}</td>
                         <td>{{$package->status}}</td>
+                        
+                        <!-- Added Video Column Cell -->
+                        <td>
+                            @if(!empty($package->video_path))
+                                <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 4px;">
+                                    <a href="{{ asset('storage/' . $package->video_path) }}" target="_blank" style="background: #10b981; color: white; padding: 5px 10px; border-radius: 6px; text-decoration: none; font-size: 11px; font-weight: bold;">
+                                        ▶ View Video
+                                    </a>
+                                    <span style="font-size: 10px; text-transform: uppercase; color: #64748b; font-weight: bold;">({{ $package->video_status ?? 'pending' }})</span>
+                                </div>
+                            @else
+                                <span style="color: #94a3b8; font-size: 12px; font-style: italic;">No video</span>
+                            @endif
+                        </td>
+
                         @if($package->certificate_id !== null)
                             <td><a href="{{route('certificate.download', $package->certificate_id)}}"><img class="invoiceLink" src="{{asset('images/icons/pdf.png')}}" alt=""></a></td>
                         @else
@@ -120,48 +136,43 @@
                         @else
                             <td>Course not completed</td>
                         @endif
-                                @if($package->certificate_id !== null)
-                                    <td><form
-                                            action="{{ route('certificate.email', $package->certificate_id) }}"
-                                            method="POST"
-                                            x-data="{ isSending: false }"
-                                            @submit="isSending = true"
-                                            style="margin: 0;"
+                            @if($package->certificate_id !== null)
+                                <td><form
+                                        action="{{ route('certificate.email', $package->certificate_id) }}"
+                                        method="POST"
+                                        x-data="{ isSending: false }"
+                                        @submit="isSending = true"
+                                        style="margin: 0;"
+                                    >
+                                        @csrf
+                                        <button
+                                            type="submit"
+                                            title="Email Certificate"
+                                            style="background: none; border: none; cursor: pointer; padding: 0; color: #10b981; display: flex; align-items: center;"
+                                            x-bind:disabled="isSending"
+                                            x-bind:style="isSending ? 'opacity: 0.5; cursor: not-allowed;' : ''"
                                         >
-                                            @csrf
-                                            <button
-                                                type="submit"
-                                                title="Email Certificate"
-                                                style="background: none; border: none; cursor: pointer; padding: 0; color: #10b981; display: flex; align-items: center;"
-                                                x-bind:disabled="isSending"
-                                                x-bind:style="isSending ? 'opacity: 0.5; cursor: not-allowed;' : ''"
-                                            >
-                                                <!-- Envelope Icon (shows when not sending) -->
-                                                <svg x-show="!isSending" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                                    <polyline points="22,6 12,13 2,6"></polyline>
-                                                </svg>
+                                            <!-- Envelope Icon (shows when not sending) -->
+                                            <svg x-show="!isSending" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                                <polyline points="22,6 12,13 2,6"></polyline>
+                                            </svg>
 
-                                                <!-- Loading Spinner (shows when sending) -->
-                                                <svg x-show="isSending" style="display: none; width: 24px; height: 24px; animation: spin 1s linear infinite;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" stroke-linecap="round" style="opacity: 0.25;"></circle>
-                                                    <path d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
-                                                </svg>
-                                            </button>
-                                        </form></td>
-                                @else
-                                    <td>Course not completed</td>
-                                @endif
+                                            <!-- Loading Spinner (shows when sending) -->
+                                            <svg x-show="isSending" style="display: none; width: 24px; height: 24px; animation: spin 1s linear infinite;" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" stroke-linecap="round" style="opacity: 0.25;"></circle>
+                                                <path d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+                                            </svg>
+                                        </button>
+                                    </form></td>
+                            @else
+                                <td>Course not completed</td>
+                            @endif
                     </tr>
                 @endforeach
             @else
                 <td>No packages owned by this user</td>
             @endif
-            {{--        <tr class="active-row">--}}
-            {{--            <td>Melissa</td>--}}
-            {{--            <td>5150</td>--}}
-            {{--        </tr>--}}
-            {{--        <!-- and so on... -->--}}
             </tbody>
         </table>
 
@@ -229,11 +240,6 @@
             @else
                 <td>No employees owned by this user</td>
             @endif
-            {{--        <tr class="active-row">--}}
-            {{--            <td>Melissa</td>--}}
-            {{--            <td>5150</td>--}}
-            {{--        </tr>--}}
-            {{--        <!-- and so on... -->--}}
             </tbody>
         </table>
     </div>

@@ -56,9 +56,16 @@
                         <h3 class="font-display font-bold text-xl text-textMain">Our Location</h3>
                     </div>
 
-                    <p class="text-textMuted text-sm leading-relaxed">
-                        Our registered office is conveniently located in Sandyford Business Park, Dublin. While our safety courses are completed fully online for maximum flexibility, our administrative and corporate headquarters are based at the address below:
-                    </p>
+                
+
+                    <!-- Office Photo Preview -->
+                    <div class="w-full h-64 sm:h-80 rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative bg-slate-100">
+                        <img 
+                            src="{{ asset('images/location.png') }}" 
+                            alt="Progressive Irish Safety Office Location Building" 
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
 
                     <!-- Responsive Google Maps Embed Wrapper -->
                     <div class="w-full h-80 rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative bg-slate-100">

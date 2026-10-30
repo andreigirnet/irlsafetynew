@@ -6,6 +6,7 @@ use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\PrivacyController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\SocialiteController;
+use App\Http\Controllers\PracticalVideoController;
 use App\Models\Blog;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
@@ -110,7 +111,8 @@ Route::get('/product/{product:slug}/info', [App\Http\Controllers\ProductControll
 require __DIR__ . '/auth.php';
 Route::group(['middleware'=>'auth'], function () {
     Route::get('/dashboard', [\App\Http\Controllers\AdminDashboardController::class,'simpleUserIndex'])->name('home');
-
+    Route::post('/practical-video/upload', [PracticalVideoController::class, 'store'])->name('practical.video.upload');
+    Route::get('/package/{id}/upload-video', [PracticalVideoController::class, 'showUploadForm'])->name('package.upload.form');
 
     Route::get('/profile',[App\Http\Controllers\ProfileController::class,'show'])->name('admin.en.profile');
     Route::put('/profile/store/image',[App\Http\Controllers\ProfileController::class,'storeImage'])->name('store.profileImg');

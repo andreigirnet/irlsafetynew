@@ -29,7 +29,7 @@
                             Progressive Irish Safety is an independent training provider operated by Progressive Velocity Fast Solutions Limited. We are not affiliated with, endorsed by, or an official representative of any government body or third-party brand.
                         </p>
                         <p class="text-textMuted text-base leading-relaxed mb-6">
-                            Manual Handling is the course we currently offer. It covers safe lifting technique and workplace risk assessment through online theory slides, followed by a practical video that an instructor reviews.
+                            Manual Handling is the course we currently offer. It covers safe lifting technique and workplace risk assessment through online theory slides, followed by a practical video that you upload and an instructor reviews.
                         </p>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-surfaceLight p-6 rounded-xl border border-slate-200">
@@ -53,7 +53,7 @@
                     </div>
                     <h2 class="font-display font-bold text-2xl text-textMain mb-4">How the course works</h2>
                     <p class="text-textMuted text-base leading-relaxed mb-8">
-                        You register an account, buy the course for €30, complete the online theory slides and pass the theory test. You then send a practical lifting video on WhatsApp for an instructor to review. Your certificate of completion is issued once the instructor approves your video. It is not issued automatically.
+                        You register an account, buy the course for €30, complete the online theory slides and pass the theory test. You then upload a practical lifting video directly in your account for an instructor to review. Your certificate of completion is issued once the instructor approves your video.
                     </p>
 
                     <div class="bg-surfaceLight border border-slate-200 rounded-xl p-6">
@@ -81,8 +81,8 @@
                             </div>
                             <div class="bg-cardLight border border-slate-200 rounded-xl p-5 flex flex-col">
                                 <div class="w-8 h-8 rounded-lg bg-emeraldLight border border-emeraldBorder text-emeraldPrimary font-extrabold text-xs flex items-center justify-center mb-4">05</div>
-                                <h4 class="font-bold text-sm text-textMain mb-2">WhatsApp video</h4>
-                                <p class="text-xs text-textMuted leading-relaxed">Record your lift and send it to {{ config('global.phone') }}.</p>
+                                <h4 class="font-bold text-sm text-textMain mb-2">Upload video</h4>
+                                <p class="text-xs text-textMuted leading-relaxed">Record your lift and upload it directly in your account.</p>
                             </div>
                             <div class="bg-cardLight border border-slate-200 rounded-xl p-5 flex flex-col">
                                 <div class="w-8 h-8 rounded-lg bg-emeraldLight border border-emeraldBorder text-emeraldPrimary font-extrabold text-xs flex items-center justify-center mb-4">06</div>
@@ -108,7 +108,7 @@
                         </div>
                         <h2 class="font-display font-bold text-2xl text-textMain mb-4">Contact us</h2>
                         <p class="text-textMuted text-base leading-relaxed mb-6">
-                            Call, message us on WhatsApp, or email us if you need help enrolling or sending your video.
+                            Call, message us on WhatsApp, or email us if you need help enrolling or uploading your video.
                         </p>
                     </div>
 
@@ -121,7 +121,7 @@
                         <div class="bg-surfaceLight border border-slate-200 rounded-xl p-6 flex flex-col justify-center space-y-3 text-sm">
                             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-slate-200 pb-2.5 gap-1">
                                 <span class="text-textMuted">Phone / WhatsApp:</span>
-                                <a href="tel:{{ config('global.phone') }}" class="font-bold text-emeraldPrimary hover:underline">{{ config('global.phone') }}</a>
+                                <a href="tel:{{ preg_replace('/[^+\d]/', '', config('global.phone')) }}" class="font-bold text-emeraldPrimary hover:underline">{{ config('global.phone') }}</a>
                             </div>
                             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                                 <span class="text-textMuted">Email:</span>

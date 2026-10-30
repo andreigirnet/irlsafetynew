@@ -18,6 +18,8 @@ return new class extends Migration
             $table->text('course_name')->nullable();
             $table->text('status')->nullable();
             $table->boolean('paidToTrainer')->nullable()->default(0);
+            $table->string('video_path')->nullable(); 
+            $table->string('video_status')->default('not_submitted');
             $table->foreignId('certificate_id')->nullable()->constrained('certificates')->cascadeOnDelete()->cascadeOnUpdate();;
             $table->timestamps();
         });
