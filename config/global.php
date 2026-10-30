@@ -5,5 +5,5 @@ return [
     'business_name' => "PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED",
     'business_number' => '822301',
     'business_address' => '51 Bracken Road, Dublin, D18 CV48 Ireland',
-    'phone' => '0755888787'
+    'phone' => '0899416667'
 ];
