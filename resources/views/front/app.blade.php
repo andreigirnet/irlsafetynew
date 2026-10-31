@@ -167,6 +167,15 @@
             border: 1px solid #A7F3D0;
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18547639106"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18547639106');
+</script>
 </head>
 <body class="bg-surfaceLight text-textMain font-sans antialiased selection:bg-emeraldPrimary selection:text-white" x-data>
 

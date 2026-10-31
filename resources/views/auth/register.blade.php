@@ -45,6 +45,19 @@
     <style>
         [x-cloak] { display: none !important; }
     </style>
+    Install manually Recommended
+Below is the Google tag for this container. Copy and paste it as high in the <head> element on every page of your website. Add it only once per page.
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18547639106"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18547639106');
+</script>
+If you have end users in the European Economic Area (EEA), set up consent mode so that you can continue to benefit from ads personalization and measurement.
+
 </head>
 
 <body class="h-full font-sans antialiased text-textMain bg-surfaceLight flex flex-col justify-between selection:bg-emeraldPrimary selection:text-white">
