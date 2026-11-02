@@ -97,7 +97,8 @@
     @endsection
 
     @vite(['resources/js/layout.js', 'resources/js/main.js'])
-    <script id="chatway" async="true" src="https://cdn.chatway.app/widget.js?id=FCKWCyQL7PYg"></script>
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8856b824-d842-4a7d-9cfc-d49471eb15a9";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
     <!-- <script src="https://cdn.tiny.cloud/1/8htcs2m2n03rmg8dbr9dhfupzckkc16co1pzuf80yst8q9tj/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script> -->
 
         <!-- <script src="{{asset('js/prevent.js')}}"></script> -->
