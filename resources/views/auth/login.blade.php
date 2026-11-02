@@ -267,7 +267,7 @@
                 <!-- Register redirect -->
                 <div class="mt-8 pt-6 border-t border-slate-100 text-center text-sm text-textMuted">
                     Don't have an account? <a href="{{ route('register') }}" class="font-bold text-emeraldPrimary hover:underline ml-1">Create an account</a>
-                    <p class="text-xs mt-2">Creating an account does not cost anything. The course costs €30.</p>
+                    <p class="text-xs mt-2">Creating an account does not cost anything.</p>
                 </div>
 
                 <!-- Support -->

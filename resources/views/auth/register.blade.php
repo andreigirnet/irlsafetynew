@@ -99,7 +99,7 @@
 
                 <div class="mb-6">
                     <h1 class="font-display text-2xl sm:text-3xl font-extrabold text-textMain tracking-tight">Create an account</h1>
-                    <p class="text-textMuted text-sm mt-1">Creating an account does not cost anything. The course costs €30, which you pay after you register.</p>
+                    <p class="text-textMuted text-sm mt-1">Creating an account does not cost anything.</p>
                 </div>
 
                 <!-- Session success alert -->
