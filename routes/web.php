@@ -182,7 +182,6 @@ Route::get('/generate-sitemap', function () {
     $sitemap->add(Url::create(route('front.contact')));
     $sitemap->add(Url::create(route('front.corporate')));
     $sitemap->add(Url::create(route('front.cookies')));
-    $sitemap->add(Url::create(route('front.faq')));
     $sitemap->add(Url::create(route('front.privacy')));
     $sitemap->add(Url::create(route('front.refund')));
     $sitemap->add(Url::create(route('terms')));
