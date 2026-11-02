@@ -272,8 +272,7 @@
 
                 <!-- Support -->
                 <div class="mt-4 text-center text-xs text-textMuted">
-                    Need help? Message us on
-                    <a href="https://wa.me/0899416667" target="_blank" rel="noopener noreferrer" class="text-emeraldPrimary font-semibold hover:underline">WhatsApp</a>
+                    Need help? Message us on Live Chat
                 </div>
 
             </div>

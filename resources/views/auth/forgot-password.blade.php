@@ -82,7 +82,7 @@
 
                 <div class="relative z-10 pt-10 border-t border-emerald-800/60 mt-8 text-xs text-slate-300 space-y-2">
                     <p class="font-semibold text-white">Need Additional Help?</p>
-                    <p>Contact our support team directly at info@progressive-irish-safety.ie or call {{ config('global.phone') }}.</p>
+                    <p>Message us on Live Chat</p>
                 </div>
             </div>
 
