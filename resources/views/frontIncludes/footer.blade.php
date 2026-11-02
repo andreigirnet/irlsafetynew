@@ -13,9 +13,9 @@
                     </p>
                 </div>
                 <div>
-                    <h4 class="font-semibold text-textMain mb-4">Active Course</h4>
+                    <h4 class="font-semibold text-textMain mb-4">Certificate</h4>
                     <ul class="space-y-2 text-xs">
-                        <li><a href="#course" class="hover:text-emeraldPrimary transition-colors">Manual Handling Training (€30)</a></li>
+                    
                         <li><a href="{{route('front.verify')}}" class="hover:text-emeraldPrimary transition-colors">Verify Certificate</a></li>
                     </ul>
                 </div>

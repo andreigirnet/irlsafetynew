@@ -145,12 +145,18 @@
             },
             
             addCorporatePackageToCart() {
-                $store.cart.addItem({
-                    id: 1,
-                    name: 'Manual Handling Training (Corporate Course x' + this.qty + ')',
-                    price: this.unitPrice,
+                // Ensure proper unit price: €30 if under 10, €27 if 10 or more
+                let correctUnitPrice = this.qty >= 10 ? 27.00 : this.unitPrice;
+
+                Alpine.store('cart').addItem({
+                    id: 1, 
+                    name: 'Manual Handling Training',
+                    price: correctUnitPrice,
                     quantity: this.qty
                 });
+
+                // Trigger cart drawer to open
+                window.dispatchEvent(new CustomEvent('open-cart'));
             }
         }
     }

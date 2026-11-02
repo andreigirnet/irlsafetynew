@@ -166,6 +166,7 @@
             color: #047857;
             border: 1px solid #A7F3D0;
         }
+        [x-cloak] { display: none !important; }
     </style>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18547639106"></script>
@@ -263,5 +264,135 @@
             }
         }
     </script>
+<!-- Cookie Consent Banner Component -->
+    <div x-data="cookieConsent()">
+        
+        <!-- Bottom Banner Notification -->
+        <div x-show="visible" x-cloak class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-emeraldDark/95 backdrop-blur-md border-t border-emeraldPrimary/30 shadow-2xl text-white transition-all duration-300">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-4">
+                
+                <!-- Description -->
+                <div class="text-sm text-slate-200">
+                    <p class="font-semibold text-white mb-1"><i class="fa-solid fa-cookie-bite text-sageAccent mr-2"></i> We value your privacy</p>
+                    We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. You can choose your preferences below. Read our <a href="{{route('front.privacy')}}" class="underline text-sageAccent hover:text-emeraldLight">Privacy Policy</a> for more details.
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap items-center gap-3 shrink-0">
+                    <button @click="openSettings()" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-slate-300 bg-slate-800 hover:bg-slate-700 rounded-lg border border-slate-700 transition">
+                        Preferences
+                    </button>
+                    <button @click="rejectAll()" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-slate-700 hover:bg-slate-600 rounded-lg transition">
+                        Reject All
+                    </button>
+                    <button @click="acceptAll()" class="px-5 py-2 text-xs font-semibold uppercase tracking-wider text-emeraldDark bg-sageAccent hover:bg-emerald-400 font-bold rounded-lg transition shadow-md">
+                        Accept All
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Preferences Modal (Now safely separated and centered on the full screen) -->
+        <div x-show="settingsOpen" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+            <div @click.outside="settingsOpen = false" class="bg-cardLight text-textMain rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-bold font-display text-emeraldPrimary">Cookie Preferences</h3>
+                    <button @click="settingsOpen = false" class="text-textMuted hover:text-textMain"><i class="fa-solid fa-xmark text-lg"></i></button>
+                </div>
+                
+                <p class="text-xs text-textMuted mb-6">Manage how we use cookies on this site. Essential cookies cannot be disabled as they are required for basic site functionality.</p>
+
+                <div class="space-y-4 text-sm">
+                    <!-- Essential / Necessary -->
+                    <div class="flex items-start justify-between p-3 bg-surfaceLight rounded-xl border border-slate-200">
+                        <div>
+                            <span class="font-semibold block text-textMain">Essential Cookies</span>
+                            <span class="text-xs text-textMuted">Required for core functionality, security, and session management.</span>
+                        </div>
+                        <input type="checkbox" checked disabled class="mt-1 accent-emeraldPrimary cursor-not-allowed">
+                    </div>
+
+                    <!-- Analytics -->
+                    <div class="flex items-start justify-between p-3 bg-surfaceLight rounded-xl border border-slate-200">
+                        <div>
+                            <span class="font-semibold block text-textMain">Analytics & Performance</span>
+                            <span class="text-xs text-textMuted">Helps us understand how visitors interact with the website (e.g., Google Analytics).</span>
+                        </div>
+                        <input type="checkbox" x-model="preferences.analytics" class="mt-1 w-4 h-4 accent-emeraldPrimary rounded cursor-pointer">
+                    </div>
+
+                    <!-- Marketing -->
+                    <div class="flex items-start justify-between p-3 bg-surfaceLight rounded-xl border border-slate-200">
+                        <div>
+                            <span class="font-semibold block text-textMain">Marketing & Advertising</span>
+                            <span class="text-xs text-textMuted">Used to track visitors across websites to display relevant ads (e.g., Google Ads).</span>
+                        </div>
+                        <input type="checkbox" x-model="preferences.marketing" class="mt-1 w-4 h-4 accent-emeraldPrimary rounded cursor-pointer">
+                    </div>
+                </div>
+
+                <div class="mt-6 flex justify-end gap-3">
+                    <button @click="settingsOpen = false" class="px-4 py-2 text-xs font-semibold text-textMuted hover:text-textMain">Cancel</button>
+                    <button @click="savePreferences()" class="px-5 py-2 text-xs font-semibold text-white bg-emeraldPrimary hover:bg-emeraldHover rounded-lg transition shadow">Save Preferences</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function cookieConsent() {
+            return {
+                visible: false,
+                settingsOpen: false,
+                preferences: {
+                    analytics: true,
+                    marketing: true
+                },
+                init() {
+                    const saved = localStorage.getItem('cookie_consent');
+                    if (!saved) {
+                        this.visible = true;
+                    } else {
+                        this.applyConsent(JSON.parse(saved));
+                    }
+                },
+                acceptAll() {
+                    const consent = { essential: true, analytics: true, marketing: true, timestamp: new Date().toISOString() };
+                    localStorage.setItem('cookie_consent', JSON.stringify(consent));
+                    this.applyConsent(consent);
+                    this.visible = false;
+                },
+                rejectAll() {
+                    const consent = { essential: true, analytics: false, marketing: false, timestamp: new Date().toISOString() };
+                    localStorage.setItem('cookie_consent', JSON.stringify(consent));
+                    this.applyConsent(consent);
+                    this.visible = false;
+                },
+                openSettings() {
+                    this.settingsOpen = true;
+                },
+                savePreferences() {
+                    const consent = { essential: true, analytics: this.preferences.analytics, marketing: this.preferences.marketing, timestamp: new Date().toISOString() };
+                    localStorage.setItem('cookie_consent', JSON.stringify(consent));
+                    this.applyConsent(consent);
+                    this.settingsOpen = false;
+                    this.visible = false;
+                },
+                applyConsent(consent) {
+                    if (typeof gtag === 'function') {
+                        gtag('consent', 'update', {
+                            'analytics_storage': consent.analytics ? 'granted' : 'denied',
+                            'ad_storage': consent.marketing ? 'granted' : 'denied'
+                        });
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8856b824-d842-4a7d-9cfc-d49471eb15a9";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
 </body>
 </html>

@@ -38,11 +38,8 @@ Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallba
     })->name('frontHome');
     Route::get('/terms', function(){return view("front.terms");})->name('terms');
     Route::get('/about-us', function(){return view("front.about");})->name('front.about');
-    Route::get('/products', function(){return view("front.products");})->name('front.products');
-    Route::get('/team', function(){return view("front.teamTraining");})->name('front.team');
     Route::get('/contact', function(){return view("front.contact");})->name('front.contact');
     Route::get('/faq', function(){return view("front.faq");})->name('front.faq');
-//    Route::get('/consulting', function(){return view("front.consulting");})->name('front.consulting');
     Route::get('/verify/certificate', function(){return view("front.verify");})->name('front.verify');
     Route::get('/cookies', function(){return view("front.cookies");})->name('front.cookies');
     Route::get('/privacy', function(){return view("front.privacy");})->name('front.privacy');
@@ -50,63 +47,6 @@ Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallba
     Route::get('/refund', function(){return view("front.refund");})->name('front.refund');
     Route::get('/corporate-training', function(){return view("front.corporate");})->name('front.corporate');
 
-Route::get('/product/{product:slug}/info', [App\Http\Controllers\ProductController::class, 'show'])->name('front.product');
-    Route::get('/infoPdf', function(){
-      $path = "pdf/info.pdf";
-      return response()->download($path, 'info.pdf');
-    })->name('infoPdf');
-    Route::get('/manual-handing', function () {
-        return view('front.manual-handling');
-    })->name('front.manual.handling');
-    Route::get('/working-at-heights', function () {
-        return view('front.working-at-heights');
-    })->name('front.working.at.heights');
-
-    Route::get('/abrasive-wheels', function () {
-        return view('front.abrasive-wheels');
-    })->name('front.abrasive.wheels');
-
-    Route::get('/fire-warden-fire-marshal', function () {
-        return view('front.fire-warden-fire-marshal');
-    })->name('front.fire.warden.fire.marshal');
-
-    Route::get('/fire-extinguisher', function () {
-        return view('front.fire-extinguisher');
-    })->name('front.fire.extinguisher');
-
-    Route::get('/asbestos-awareness', function () {
-        return view('front.asbestos-awareness');
-    })->name('front.asbestos.awareness');
-
-    Route::get('/emergency-first-aid-at-workplace', function () {
-        return view('front.emergency-first-aid-at-workplace');
-    })->name('front.emergency.first.aid.workplace');
-
-    Route::get('/office-health-safety-training', function () {
-        return view('front.office-health-safety-training');
-    })->name('front.office.health.safety.training');
-
-    Route::get('/ppe', function () {
-        return view('front.ppe');
-    })->name('front.ppe');
-
-    Route::get('/haccp-for-catering-and-retail-level-1-2', function () {
-        return view('front.haccp-for-catering-and-retail-level-1-2');
-    })->name('front.haccp.catering.retail.level.1.2');
-
-    Route::get('/working-in-confined-spaces', function () {
-        return view('front.working-in-confined-spaces');
-    })->name('front.working.in.confined.spaces');
-
-    Route::get('/fire-safety-training', function () {
-        return view('front.fire-safety-training');
-    })->name('front.fire.safety.training');
-
-
-
-    Route::get('/blogs', [App\Http\Controllers\BlogController::class, 'index'])->name('front.blog');
-    Route::get('/blog/{slug}', [App\Http\Controllers\BlogController::class, 'show'])->name('front.show.blog');
-    Route::post('/verify-certificate', [CertificateController::class, 'verify'])->name('certificate.verify');
 
 require __DIR__ . '/auth.php';
 Route::group(['middleware'=>'auth'], function () {
@@ -232,38 +172,21 @@ Route::get('/buttons', function(){return view("ui.grid");});
 Route::get('/login/google', [SocialiteController::class, 'redirectToGoogle'])->name('google');
 Route::get('/login/google/callback', [SocialiteController::class, 'handleGoogleCallback']);
 
-
 Route::get('/generate-sitemap', function () {
 
     $sitemap = Sitemap::create();
 
     // Static pages
     $sitemap->add(Url::create(route('frontHome')));
-    $sitemap->add(Url::create(route('terms')));
-    $sitemap->add(Url::create(route('front.team')));
+    $sitemap->add(Url::create(route('front.about')));
     $sitemap->add(Url::create(route('front.contact')));
-    $sitemap->add(Url::create(route('front.verify')));
+    $sitemap->add(Url::create(route('front.corporate')));
     $sitemap->add(Url::create(route('front.cookies')));
- 
-
-
-
-
-    // Products (dynamic)
-    Product::all()->each(function ($product) use ($sitemap) {
-        $sitemap->add(
-            Url::create(route('front.product', $product->slug))
-                ->setLastModificationDate($product->updated_at)
-        );
-    });
-
-    // Blogs (dynamic)
-    Blog::all()->each(function ($blog) use ($sitemap) {
-        $sitemap->add(
-            Url::create(route('front.show.blog', $blog->slug))
-                ->setLastModificationDate($blog->updated_at)
-        );
-    });
+    $sitemap->add(Url::create(route('front.faq')));
+    $sitemap->add(Url::create(route('front.privacy')));
+    $sitemap->add(Url::create(route('front.refund')));
+    $sitemap->add(Url::create(route('terms')));
+    $sitemap->add(Url::create(route('front.verify')));
 
     $sitemap->writeToFile(public_path('sitemap.xml'));
 

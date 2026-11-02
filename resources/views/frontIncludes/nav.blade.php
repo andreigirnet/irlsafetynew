@@ -23,22 +23,76 @@
         <div class="hidden sm:flex items-center space-x-4">
             
             <!-- Desktop Cart Wrapper & Dropdown Trigger -->
-            <div class="relative" @click.outside="cartOpen = false">
-                <button @click="cartOpen = !cartOpen" class="relative p-3 text-textMuted hover:text-emeraldPrimary transition-colors focus:outline-none flex items-center justify-center">
-                    <div class="relative w-8 h-8 sm:w-6 sm:h-6 flex items-center justify-center">
-                        <img src="{{ asset('images/icons/cartSingle.png') }}" class="w-full h-full object-contain" alt="Cart">
-                        
-                        <!-- Scaled Badge Counter -->
-                        <div class="absolute -top-2 -right-2 z-10" x-cloak>
-                            <template x-if="$store.cart.cartTotalQty() > 0">
-                                <span class="bg-emeraldPrimary text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md animate__animated animate__bounceIn"
-                                      x-text="$store.cart.cartTotalQty()">
-                                </span>
-                            </template>
-                        </div>
-                    </div>
-                </button>
+<div class="relative" x-data="{ cartOpen: false }" @click.outside="cartOpen = false">
+    
+    <!-- Trigger Button -->
+    <button @click="cartOpen = !cartOpen" class="relative p-3 text-textMuted hover:text-emeraldPrimary transition-colors focus:outline-none flex items-center justify-center">
+        <div class="relative w-8 h-8 sm:w-6 sm:h-6 flex items-center justify-center">
+            <img src="{{ asset('images/icons/cartSingle.png') }}" class="w-full h-full object-contain" alt="Cart">
+            
+            <!-- Scaled Badge Counter -->
+            <div class="absolute -top-2 -right-2 z-10" x-cloak>
+                <template x-if="$store.cart.cartTotalQty() > 0">
+                    <span class="bg-emeraldPrimary text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md animate__animated animate__bounceIn"
+                          x-text="$store.cart.cartTotalQty()">
+                    </span>
+                </template>
             </div>
+        </div>
+    </button>
+
+    <!-- Cart Dropdown Panel -->
+    <div x-show="cartOpen" x-cloak 
+         class="absolute right-0 mt-2 w-80 sm:w-96 bg-cardLight border border-slate-200 rounded-2xl shadow-2xl p-4 z-50 text-textMain">
+        
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-3">
+            <h3 class="font-display font-bold text-sm">Your Cart</h3>
+            <button @click="cartOpen = false" class="text-textMuted hover:text-textMain"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <!-- Cart Items List -->
+        <div class="space-y-3 max-h-64 overflow-y-auto pr-1">
+            <template x-if="$store.cart.items.length === 0">
+                <div class="text-center py-6 text-textMuted text-xs">
+                    Your cart is empty
+                </div>
+            </template>
+
+            <!-- IMPORTANT: :key="item.id" prevents DOM destruction bugs -->
+            <template x-for="item in $store.cart.items" :key="item.id">
+                <div class="flex items-center justify-between gap-3 py-2 border-b border-slate-100">
+                    <div class="flex-1">
+                        <h4 class="text-xs font-semibold text-textMain" x-text="item.name"></h4>
+                        <span class="text-xs text-textMuted">€<span x-text="item.price.toFixed(2)"></span> each</span>
+                    </div>
+
+                    <!-- Quantity Controls with @click.stop to prevent drawer closing -->
+                    <div class="flex items-center gap-1.5 shrink-0">
+                        <button @click.stop="$store.cart.decrementQty(item.id)" class="w-6 h-6 bg-slate-100 hover:bg-slate-200 text-textMain rounded-md flex items-center justify-center font-bold text-xs transition cursor-pointer">-</button>
+                        <span class="text-xs font-semibold w-5 text-center" x-text="item.quantity"></span>
+                        <button @click.stop="$store.cart.incrementQty(item.id)" class="w-6 h-6 bg-slate-100 hover:bg-slate-200 text-textMain rounded-md flex items-center justify-center font-bold text-xs transition cursor-pointer">+</button>
+                    </div>
+
+                    <!-- Remove Item -->
+                    <button @click.stop="$store.cart.removeItem(item.id)" class="text-rose-400 hover:text-rose-600 p-1">
+                        <i class="fa-solid fa-trash-can text-xs"></i>
+                    </button>
+                </div>
+            </template>
+        </div>
+
+        <!-- Cart Footer / Total -->
+        <div class="pt-3 mt-3 border-t border-slate-100">
+            <div class="flex justify-between items-center text-sm font-bold mb-3">
+                <span>Subtotal:</span>
+                <span class="text-emeraldPrimary">€<span x-text="$store.cart.cartSubTotal().toFixed(2)"></span></span>
+            </div>
+            <a href="/checkout" class="block w-full text-center bg-emeraldPrimary hover:bg-emeraldHover text-white py-2.5 rounded-xl text-xs font-bold transition shadow">
+                Proceed to Checkout
+            </a>
+        </div>
+    </div>
+</div>
             <!-- Phone -->
             <a href="{{ url('/login') }}" class="bg-white hover:bg-emerald-50 text-emeraldPrimary border border-emeraldPrimary px-5 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-sm hover:shadow-md hover:scale-105 active:scale-95 text-center inline-flex items-center justify-center">
                 Login
