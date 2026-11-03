@@ -4,8 +4,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6">
-                    <div class="inline-flex items-center space-x-2 bg-emeraldLight border border-emeraldBorder px-3.5 py-1.5 rounded-full text-xs font-semibold text-emeraldPrimary">
-                        <span class="w-2 h-2 rounded-full bg-sageAccent"></span>
+                    <div class="inline-flex items-center space-x-2 bg-emerald-50 border border-transparent [background:linear-gradient(white,white)_padding-box,linear-gradient(to_right,#169b62,#3b82f6,#ff8833)_border-box] px-3.5 py-1.5 rounded-full text-xs font-semibold text-emerald-800 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-[#169b62] animate-pulse"></span>
                         <span>Online theory + practical video review</span>
                     </div>
                     <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-textMain tracking-tight leading-tight">
@@ -25,65 +25,113 @@
                     <p class="text-sm text-textMuted">
                         Already registered? <a href="{{ url('/login') }}" class="text-emeraldPrimary font-semibold underline">Log in</a>
                     </p>
-                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-200 text-sm text-textMuted">
-                        <div>
-                            <span class="block font-bold text-textMain text-lg">€{{config('global.course_price')}}</span>
-                            Flat price
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 pt-8 border-t border-slate-200/80 text-sm">
+    
+                        <!-- Price Card -->
+                        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100/50 p-4 sm:p-5 border border-slate-200/60 shadow-sm transition-all duration-300 hover:shadow-md hover:border-indigo-200">
+                            <div class="absolute top-0 right-0 -mt-2 -mr-2 w-16 h-16 bg-indigo-500/5 rounded-full blur-xl group-hover:bg-indigo-500/10 transition-all"></div>
+                            <span class="text-xs font-semibold tracking-wider uppercase text-indigo-600 mb-1 block">Price</span>
+                            <span class="block font-extrabold text-slate-900 text-2xl sm:text-3xl tracking-tight mb-0.5">€{{config('global.course_price')}}</span>
+                            <span class="text-xs text-slate-500 font-medium">Flat price • No hidden fees</span>
                         </div>
-                        <div>
-                            <span class="block font-bold text-textMain text-lg">Online upload</span>
-                            Practical assessment
+
+                        <!-- Practical Assessment Card -->
+                        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100/50 p-4 sm:p-5 border border-slate-200/60 shadow-sm transition-all duration-300 hover:shadow-md hover:border-indigo-200">
+                            <div class="absolute top-0 right-0 -mt-2 -mr-2 w-16 h-16 bg-emerald-500/5 rounded-full blur-xl group-hover:bg-emerald-500/10 transition-all"></div>
+                            <span class="text-xs font-semibold tracking-wider uppercase text-emerald-600 mb-1 block">Format</span>
+                            <span class="block font-extrabold text-slate-900 text-lg sm:text-xl tracking-tight mb-0.5 flex items-center gap-1.5">
+                                <svg class="w-5 h-5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                                Online
+                            </span>
+                            <span class="text-xs text-slate-500 font-medium">Practical assessment</span>
                         </div>
-                        <div>
-                            <span class="block font-bold text-textMain text-lg">Instructor review</span>
-                            Before certificate
+
+                        <!-- Instructor Review Card -->
+                        <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100/50 p-4 sm:p-5 border border-slate-200/60 shadow-sm transition-all duration-300 hover:shadow-md hover:border-indigo-200">
+                            <div class="absolute top-0 right-0 -mt-2 -mr-2 w-16 h-16 bg-amber-500/5 rounded-full blur-xl group-hover:bg-amber-500/10 transition-all"></div>
+                            <span class="text-xs font-semibold tracking-wider uppercase text-amber-600 mb-1 block">Validation</span>
+                            <span class="block font-extrabold text-slate-900 text-lg sm:text-xl tracking-tight mb-0.5 flex items-center gap-1.5">
+                                <svg class="w-5 h-5 text-amber-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                                Instructor review
+                            </span>
+                            <span class="text-xs text-slate-500 font-medium">Before certificate</span>
                         </div>
+
                     </div>
                 </div>
                 <!-- Hero Card -->
                 <div class="lg:col-span-5 flex justify-center">
-                    <div class="hero-course-card w-full max-w-md sm:max-w-lg lg:max-w-none">
-                        <div class="card-image-container">
-                            <img src="{{ asset('images/lifting.webp') }}" alt="Person lifting a box using manual handling technique" class="hero-course-img">
-                            <div class="image-gradient-overlay"></div>
-                            <div class="floating-price-tag">
-                                <span class="currency">€</span>{{config('global.course_price')}}
+                    <div class="group relative w-full max-w-md sm:max-w-lg lg:max-w-none rounded-3xl bg-white border border-slate-200/80 shadow-xl shadow-slate-200/50 transition-all duration-300 hover:shadow-2xl hover:border-emerald-500/30 overflow-hidden">
+                        
+                        <!-- Top Conversion Badge -->
+                        <div class="absolute top-4 right-4 z-20">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-700 border border-amber-500/20 shadow-xs backdrop-blur-md">
+                                <i class="fa-solid fa-star text-[10px] text-amber-500"></i>
+                                Most Popular
+                            </span>
+                        </div>
+
+                        <!-- Image Container -->
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="{{ asset('images/lifting.webp') }}" alt="Person lifting a box using manual handling technique" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent"></div>
+                            
+                            <!-- Floating Price Tag -->
+                            <div class="absolute bottom-4 left-4 z-10 flex items-baseline gap-1 bg-white/90 backdrop-blur-md px-3.5 py-1.5 rounded-2xl shadow-lg border border-white/40">
+                                <span class="text-xs font-bold text-emerald-600">€</span>
+                                <span class="font-display font-black text-xl text-slate-900 tracking-tight">{{config('global.course_price')}}</span>
+                                <span class="text-[10px] text-slate-500 font-medium ml-0.5">Flat Fee</span>
                             </div>
                         </div>
 
+                        <!-- Content Body -->
                         <div class="p-6 sm:p-8">
-                            <span class="text-xs font-bold text-emeraldPrimary uppercase tracking-wider block mb-1">Online Training</span>
-                            <h3 class="font-display font-bold text-2xl text-textMain mb-2">Manual Handling Training</h3>
-                            <p class="text-textMuted text-sm mb-6">Online theory covering the spine, safe lifting principles and risk assessment, followed by a practical video review.</p>
+                            <span class="text-xs font-extrabold text-emerald-600 uppercase tracking-widest block mb-1.5">Online Certification</span>
+                            <h3 class="font-display font-extrabold text-2xl text-slate-900 mb-2.5 tracking-tight group-hover:text-emerald-700 transition-colors">Manual Handling Training</h3>
+                            <p class="text-slate-600 text-sm mb-6 leading-relaxed">Online theory covering the spine, safe lifting principles and risk assessment, followed by a practical video review.</p>
 
-                            <div class="space-y-3 mb-8 text-sm text-textMain">
+                            <!-- Feature Checklist with Custom Icon Bullets -->
+                            <div class="space-y-3.5 mb-8 text-sm text-slate-700 font-medium">
                                 <div class="flex items-center space-x-3">
-                                    <i class="fa-solid fa-circle-check text-emeraldPrimary"></i>
+                                    <div class="w-6 h-6 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-check text-emerald-600 text-xs"></i>
+                                    </div>
                                     <span>Self-paced online theory slides</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
-                                    <i class="fa-solid fa-circle-check text-emeraldPrimary"></i>
-                                    <span>Online theory test</span>
+                                    <div class="w-6 h-6 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-check text-emerald-600 text-xs"></i>
+                                    </div>
+                                    <span>Instant online theory test</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
-                                    <i class="fa-solid fa-circle-check text-emeraldPrimary"></i>
-                                    <span>Upload your practical lifting video in your account</span>
+                                    <div class="w-6 h-6 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-check text-emerald-600 text-xs"></i>
+                                    </div>
+                                    <span>Upload your practical lifting video easily</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
-                                    <i class="fa-solid fa-circle-check text-emeraldPrimary"></i>
-                                    <span>Certificate of completion after instructor approval</span>
+                                    <div class="w-6 h-6 rounded-full bg-emerald-50 flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-check text-emerald-600 text-xs"></i>
+                                    </div>
+                                    <span>Official certificate after instructor approval</span>
                                 </div>
                             </div>
 
+                            <!-- Footer / Action Area -->
                             <div class="flex items-center justify-between pt-6 border-t border-slate-100">
                                 <div>
-                                    <span class="text-xs text-textMuted block">Price</span>
-                                    <span class="font-display font-extrabold text-3xl text-textMain">€{{config('global.course_price')}}</span>
+                                    <span class="text-xs text-slate-400 font-medium block">Total Price</span>
+                                    <div class="flex items-baseline gap-1">
+                                        <span class="font-display font-black text-3xl text-slate-900 tracking-tight">€{{config('global.course_price')}}</span>
+                                        <span class="text-xs text-slate-500 font-normal">incl. VAT</span>
+                                    </div>
                                 </div>
-                                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: {{ (float) config('global.course_price') }}, quantity: 1 })"
-                                        class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md shadow-emeraldPrimary/20 text-center cursor-pointer">
-                                    Add to Cart (€{{config('global.course_price')}})
-                                </button>
+                                <a href="{{ route('register') }}" 
+                                    class="relative group/btn overflow-hidden bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold px-7 py-3.5 rounded-2xl transition-all duration-300 shadow-lg shadow-emerald-600/25 hover:shadow-emerald-600/40 hover:-translate-y-0.5 text-center cursor-pointer inline-flex items-center gap-2">
+                                    <span>Start Now</span>
+                                    <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover/btn:translate-x-1"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -94,7 +142,7 @@
 
     <!-- Course Section -->
     <section class="py-16 bg-white border-b border-slate-200" id="course">
-        <div class="w-[90%] max-w-lg mx-auto bg-cardLight rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+        <div class="hidden lg:block w-[90%] max-w-lg mx-auto bg-cardLight rounded-2xl shadow-xl overflow-hidden border border-slate-200">
             <!-- Fixed Image Container -->
             <div class="relative w-full h-48 overflow-hidden bg-slate-100">
                 <img src="{{ asset('/images/lifting.webp') }}"

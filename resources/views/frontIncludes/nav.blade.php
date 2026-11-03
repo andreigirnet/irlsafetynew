@@ -44,8 +44,7 @@
 
             <a href="/register" 
             class="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-4 py-2 rounded-xl font-semibold text-sm transition-all shadow-md shadow-orange-500/20 flex items-center gap-1.5 cursor-pointer">
-                <span>Start Now</span>
-                <i class="fa-solid fa-bolt text-xs"></i>
+                <span>Register</span>
             </a>
         </div>
 
@@ -66,12 +65,11 @@
                 </div>
             </button>
 
-            <!-- Mobile Quick Start Button -->
-            <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 27, quantity: 1 }); cartOpen = true;" 
-                    class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-2.5 py-1.5 rounded-lg font-bold text-xs shadow-sm flex items-center gap-1 cursor-pointer">
-                <span>Start</span>
-                <i class="fa-solid fa-bolt text-[9px]"></i>
-            </button>
+           <a href="/register" 
+            @click.prevent="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 27, quantity: 1 }); cartOpen = true; window.location.href='/register';" 
+            class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-2.5 py-1.5 rounded-lg font-bold text-xs shadow-sm flex items-center gap-1 cursor-pointer no-underline">
+                <span>Register</span>
+            </a>
 
             <!-- Mobile Menu Toggle Button -->
             <button onclick="toggleMobileMenu()" aria-label="Toggle Mobile Menu" class="w-9 h-9 rounded-lg bg-slate-100 border border-slate-200 flex items-center justify-center text-textMain text-base focus:outline-none cursor-pointer">
