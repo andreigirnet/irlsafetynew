@@ -1,4 +1,4 @@
-```blade
+
 @extends('layouts.horizontal', [
     'title' => 'Traffic Monitor',
     'mode' => $mode ?? '',
@@ -183,4 +183,3 @@
     </div>
 
 @endsection
-```
