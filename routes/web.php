@@ -46,7 +46,7 @@ Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallba
     Route::post('/privacy/data-removal', [PrivacyController::class, 'handleDataRemoval'])->name('privacy.data-removal.submit');
     Route::get('/refund', function(){return view("front.refund");})->name('front.refund');
     Route::get('/corporate-training', function(){return view("front.corporate");})->name('front.corporate');
-
+    Route::post('/verify-certificate', [CertificateController::class, 'verify'])->name('certificate.verify');
 
 require __DIR__ . '/auth.php';
 Route::group(['middleware'=>'auth'], function () {
