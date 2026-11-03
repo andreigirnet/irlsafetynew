@@ -53,7 +53,6 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
         Session::flash('created', 'created');
-        // return redirect(RouteServiceProvider::HOME);
-        return redirect()->route('basket.index');
+        return redirect(RouteServiceProvider::HOME);
     }
 }
