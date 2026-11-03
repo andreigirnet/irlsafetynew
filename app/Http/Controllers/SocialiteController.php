@@ -31,7 +31,7 @@ class SocialiteController extends Controller
                 ]);
             }
             Auth::login($localUser);
-            return redirect('/home');
+            return redirect('/dashboard');
         } catch (\Exception $e) {
             return redirect('/login')->withErrors('Google login failed. Please try again.');
         }
