@@ -1,16 +1,15 @@
-<header class="sticky top-0 z-50 bg-cardLight/90 backdrop-blur-md border-b border-slate-200 shadow-sm" x-data="{ cartOpen: false }">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<header class="sticky top-0 z-50 bg-cardLight/95 backdrop-blur-md border-b border-slate-200 shadow-sm" x-data="{ cartOpen: false }">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between relative">
         
         <!-- Logo -->
-        <a href="{{ url('/') }}" class="flex items-center space-x-3 group">
-            <img src="{{ asset('images/logo/logolanding.webp') }}" class="h-10 w-10" alt="Progressive Irish Safety Logo">
-            <div>
-                <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-textMain group-hover:text-emeraldPrimary transition-colors block">Progressive Irish Safety</span>
-                
+        <a href="{{ url('/') }}" class="flex items-center space-x-2 group min-w-0">
+            <img src="{{ asset('images/logo/logolanding.webp') }}" class="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0" alt="Progressive Irish Safety Logo">
+            <div class="min-w-0">
+                <span class="font-display font-bold text-sm sm:text-xl tracking-tight text-textMain group-hover:text-emeraldPrimary transition-colors truncate block">Progressive Irish Safety</span>
             </div>
         </a>
         
-        <!-- Desktop Navigation (Visible on all pages) -->
+        <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-textMuted">
             <a href="{{ url('/#course') }}" class="hover:text-emeraldPrimary transition-colors">Course</a>
             <a href="{{ route('front.corporate') }}" class="hover:text-emeraldPrimary transition-colors">Team Training</a>
@@ -20,102 +19,18 @@
         </nav>
         
         <!-- Desktop Right Actions -->
-        <div class="hidden sm:flex items-center space-x-4">
+        <div class="hidden sm:flex items-center space-x-3">
             
-            <!-- Desktop Cart Wrapper & Dropdown Trigger -->
-<div class="relative" x-data="{ cartOpen: false }" @click.outside="cartOpen = false">
-    
-    <!-- Trigger Button -->
-    <button @click="cartOpen = !cartOpen" class="relative p-3 text-textMuted hover:text-emeraldPrimary transition-colors focus:outline-none flex items-center justify-center">
-        <div class="relative w-8 h-8 sm:w-6 sm:h-6 flex items-center justify-center">
-            <img src="{{ asset('images/icons/cartSingle.png') }}" class="w-full h-full object-contain" alt="Cart">
-            
-            <!-- Scaled Badge Counter -->
-            <div class="absolute -top-2 -right-2 z-10" x-cloak>
-                <template x-if="$store.cart.cartTotalQty() > 0">
-                    <span class="bg-emeraldPrimary text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md animate__animated animate__bounceIn"
-                          x-text="$store.cart.cartTotalQty()">
-                    </span>
-                </template>
-            </div>
-        </div>
-    </button>
-
-    <!-- Cart Dropdown Panel -->
-    <div x-show="cartOpen" x-cloak 
-         class="absolute right-0 mt-2 w-80 sm:w-96 bg-cardLight border border-slate-200 rounded-2xl shadow-2xl p-4 z-50 text-textMain">
-        
-        <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-3">
-            <h3 class="font-display font-bold text-sm">Your Cart</h3>
-            <button @click="cartOpen = false" class="text-textMuted hover:text-textMain"><i class="fa-solid fa-xmark"></i></button>
-        </div>
-
-        <!-- Cart Items List -->
-        <div class="space-y-3 max-h-64 overflow-y-auto pr-1">
-            <template x-if="$store.cart.items.length === 0">
-                <div class="text-center py-6 text-textMuted text-xs">
-                    Your cart is empty
-                </div>
-            </template>
-
-            <!-- IMPORTANT: :key="item.id" prevents DOM destruction bugs -->
-            <template x-for="item in $store.cart.items" :key="item.id">
-                <div class="flex items-center justify-between gap-3 py-2 border-b border-slate-100">
-                    <div class="flex-1">
-                        <h4 class="text-xs font-semibold text-textMain" x-text="item.name"></h4>
-                        <span class="text-xs text-textMuted">€<span x-text="item.price.toFixed(2)"></span> each</span>
-                    </div>
-
-                    <!-- Quantity Controls with @click.stop to prevent drawer closing -->
-                    <div class="flex items-center gap-1.5 shrink-0">
-                        <button @click.stop="$store.cart.decrementQty(item.id)" class="w-6 h-6 bg-slate-100 hover:bg-slate-200 text-textMain rounded-md flex items-center justify-center font-bold text-xs transition cursor-pointer">-</button>
-                        <span class="text-xs font-semibold w-5 text-center" x-text="item.quantity"></span>
-                        <button @click.stop="$store.cart.incrementQty(item.id)" class="w-6 h-6 bg-slate-100 hover:bg-slate-200 text-textMain rounded-md flex items-center justify-center font-bold text-xs transition cursor-pointer">+</button>
-                    </div>
-
-                    <!-- Remove Item -->
-                    <button @click.stop="$store.cart.removeItem(item.id)" class="text-rose-400 hover:text-rose-600 p-1">
-                        <i class="fa-solid fa-trash-can text-xs"></i>
-                    </button>
-                </div>
-            </template>
-        </div>
-
-        <!-- Cart Footer / Total -->
-        <div class="pt-3 mt-3 border-t border-slate-100">
-            <div class="flex justify-between items-center text-sm font-bold mb-3">
-                <span>Subtotal:</span>
-                <span class="text-emeraldPrimary">€<span x-text="$store.cart.cartSubTotal().toFixed(2)"></span></span>
-            </div>
-            <a href="/checkout" class="block w-full text-center bg-emeraldPrimary hover:bg-emeraldHover text-white py-2.5 rounded-xl text-xs font-bold transition shadow">
-                Proceed to Checkout
-            </a>
-        </div>
-    </div>
-</div>
-            <!-- Phone -->
-            <a href="{{ url('/login') }}" class="bg-white hover:bg-emerald-50 text-emeraldPrimary border border-emeraldPrimary px-5 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-sm hover:shadow-md hover:scale-105 active:scale-95 text-center inline-flex items-center justify-center">
-                Login
-            </a>
-
-            <!-- Register -->
-            <a href="{{ url('/register') }}" class="bg-emeraldPrimary hover:bg-emeraldHover text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all shadow-md shadow-emeraldPrimary/20 hover:scale-105 active:scale-95 text-center">
-                Register
-            </a>
-        </div>
-
-        <!-- Mobile Right Action Area -->
-        <div class="flex items-center space-x-3 sm:hidden">
-            
+            <!-- Desktop Cart Wrapper & Trigger -->
             <div class="relative" @click.outside="cartOpen = false">
-                <button @click="cartOpen = !cartOpen" class="relative p-2 text-textMuted hover:text-emeraldPrimary transition-colors focus:outline-none flex items-center justify-center">
-                    <div class="relative w-10 h-10 sm:w-6 sm:h-6 flex items-center justify-center">
+                <button @click="cartOpen = !cartOpen" class="relative p-2.5 text-textMuted hover:text-emeraldPrimary transition-colors focus:outline-none flex items-center justify-center cursor-pointer">
+                    <div class="relative w-6 h-6 flex items-center justify-center">
                         <img src="{{ asset('images/icons/cartSingle.png') }}" class="w-full h-full object-contain" alt="Cart">
                         
-                        <div class="absolute -top-1 -right-1 sm:-top-1.5 sm:-right-1.5 z-10" x-cloak>
+                        <div class="absolute -top-2 -right-2 z-10" x-cloak>
                             <template x-if="$store.cart.cartTotalQty() > 0">
-                                <span class="bg-emeraldPrimary text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md animate__animated animate__bounceIn"
-                                      x-text="$store.cart.cartTotalQty()">
+                                <span class="bg-emeraldPrimary text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full shadow-md"
+                                    x-text="$store.cart.cartTotalQty()">
                                 </span>
                             </template>
                         </div>
@@ -123,15 +38,49 @@
                 </button>
             </div>
 
+            <a href="{{ url('/login') }}" class="bg-white hover:bg-emerald-50 text-emeraldPrimary border border-emeraldPrimary px-4 py-2 rounded-xl font-semibold text-sm transition-all shadow-sm">
+                Login
+            </a>
+
+            <!-- Quick Start Now Action -->
+            <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 27, quantity: 1 }); cartOpen = true;" 
+                    class="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-4 py-2 rounded-xl font-semibold text-sm transition-all shadow-md shadow-orange-500/20 flex items-center gap-1.5 cursor-pointer">
+                <span>Start Now</span>
+                <i class="fa-solid fa-bolt text-xs"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Right Action Area -->
+        <div class="flex items-center space-x-1.5 sm:hidden">
+            <!-- Mobile Cart Button -->
+            <button @click="cartOpen = !cartOpen" class="relative p-2 bg-slate-100 rounded-lg text-textMain hover:text-emeraldPrimary transition-colors focus:outline-none flex items-center justify-center cursor-pointer">
+                <div class="relative w-5 h-5 flex items-center justify-center">
+                    <img src="{{ asset('images/icons/cartSingle.png') }}" class="w-full h-full object-contain" alt="Cart">
+                    
+                    <div class="absolute -top-1 -right-1 z-10" x-cloak>
+                        <template x-if="$store.cart.cartTotalQty() > 0">
+                            <span class="bg-emeraldPrimary text-white text-[9px] font-bold w-3.5 h-3.5 flex items-center justify-center rounded-full shadow-md"
+                                x-text="$store.cart.cartTotalQty()">
+                            </span>
+                        </template>
+                    </div>
+                </div>
+            </button>
+
+            <!-- Mobile Quick Start Button -->
+            <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 27, quantity: 1 }); cartOpen = true;" 
+                    class="bg-gradient-to-r from-amber-500 to-orange-600 text-white px-2.5 py-1.5 rounded-lg font-bold text-xs shadow-sm flex items-center gap-1 cursor-pointer">
+                <span>Start</span>
+                <i class="fa-solid fa-bolt text-[9px]"></i>
+            </button>
+
             <!-- Mobile Menu Toggle Button -->
-            <button onclick="toggleMobileMenu()" aria-label="Toggle Mobile Menu" class="w-10 h-10 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center text-textMain text-lg focus:outline-none">
+            <button onclick="toggleMobileMenu()" aria-label="Toggle Mobile Menu" class="w-9 h-9 rounded-lg bg-slate-100 border border-slate-200 flex items-center justify-center text-textMain text-base focus:outline-none cursor-pointer">
                 <i id="mobile-menu-icon" class="fa-solid fa-bars"></i>
             </button>
         </div>
-    </div>
 
-    <!-- SHARED CART POPOVER DROPDOWN (Controlled by header's cartOpen state) -->
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- 🛒 SINGLE UNIFIED CART DROPDOWN PANEL -->
         <div x-show="cartOpen" x-cloak @click.outside="cartOpen = false"
              x-transition:enter="transition ease-out duration-200"
              x-transition:enter-start="opacity-0 scale-95 translate-y-1"
@@ -139,15 +88,13 @@
              x-transition:leave="transition ease-in duration-150"
              x-transition:leave-start="opacity-100 scale-100 translate-y-0"
              x-transition:leave-end="opacity-0 scale-95 translate-y-1"
-             class="absolute right-4 sm:right-16 top-0 w-[calc(100vw-2rem)] sm:w-96 bg-white rounded-2xl shadow-2xl border border-slate-200 p-4 z-50 text-left">
+             class="absolute right-4 top-16 w-[calc(100vw-2rem)] sm:w-96 bg-white rounded-2xl shadow-2xl border border-slate-200 p-4 z-50 text-left">
             
-            <!-- Popover Header -->
             <div class="flex justify-between items-center pb-3 border-b border-slate-100 mb-3">
                 <h3 class="font-display font-bold text-sm text-textMain">Cart Summary</h3>
-                <button @click="cartOpen = false" class="text-slate-400 hover:text-slate-600 text-sm font-bold">&times;</button>
+                <button @click="cartOpen = false" class="text-slate-400 hover:text-slate-600 text-sm font-bold cursor-pointer">&times;</button>
             </div>
 
-            <!-- Popover Body (Items List) -->
             <div class="max-h-64 overflow-y-auto space-y-2.5 pr-1">
                 <template x-if="$store.cart.items.length === 0">
                     <p class="text-slate-400 text-xs text-center py-6">Your cart is empty.</p>
@@ -160,24 +107,21 @@
                             <p class="text-[11px] text-emeraldPrimary font-bold">€<span x-text="item.price"></span></p>
                         </div>
                         
-                        <!-- Quantity Controls -->
                         <div class="flex items-center space-x-1.5 bg-white border border-slate-200 rounded-lg px-1 py-0.5">
                             <button @click="$store.cart.updateQty(item.id, Math.max(1, item.quantity - 1))" 
-                                    class="w-5 h-5 flex items-center justify-center text-slate-600 hover:bg-slate-100 rounded text-xs">-</button>
+                                    class="w-5 h-5 flex items-center justify-center text-slate-600 hover:bg-slate-100 rounded text-xs cursor-pointer">-</button>
                             <span class="text-xs font-bold w-4 text-center" x-text="item.quantity"></span>
                             <button @click="$store.cart.updateQty(item.id, item.quantity + 1)" 
-                                    class="w-5 h-5 flex items-center justify-center text-slate-600 hover:bg-slate-100 rounded text-xs">+</button>
+                                    class="w-5 h-5 flex items-center justify-center text-slate-600 hover:bg-slate-100 rounded text-xs cursor-pointer">+</button>
                         </div>
 
-                        <!-- Remove -->
-                        <button @click="$store.cart.removeItem(item.id)" class="text-slate-300 hover:text-red-500 text-xs p-1 transition-colors">
+                        <button @click="$store.cart.removeItem(item.id)" class="text-slate-300 hover:text-red-500 text-xs p-1 transition-colors cursor-pointer">
                             <i class="fa-solid fa-trash-can"></i>
                         </button>
                     </div>
                 </template>
             </div>
 
-            <!-- Popover Footer -->
             <template x-if="$store.cart.items.length > 0">
                 <div class="pt-3 mt-3 border-t border-slate-100 space-y-2">
                     <div class="flex justify-between text-xs text-slate-600">
@@ -189,44 +133,80 @@
                         <span class="text-emeraldPrimary">€<span x-text="$store.cart.cartTotal(10)"></span></span>
                     </div>
 
-                    <a href="{{ url('/cart') }}" @click="cartOpen = false" class="block w-full text-center bg-emeraldPrimary hover:bg-emeraldHover text-white py-2.5 rounded-xl font-semibold text-xs transition shadow-sm">
-                        View Full Cart & Checkout
+                    <a href="{{ url('/checkout') }}" @click="cartOpen = false" class="block w-full text-center bg-emeraldPrimary hover:bg-emeraldHover text-white py-2.5 rounded-xl font-semibold text-xs transition shadow-sm">
+                        Proceed to Checkout
                     </a>
                 </div>
             </template>
         </div>
+
+    </div>
+
+    <!-- ⚡ BLACK FRIDAY SUBNAV BANNER -->
+    <div class="bg-gradient-to-r from-emeraldDark via-[#064e3b] to-emeraldDark text-white px-3 py-2 sm:py-2.5 border-t border-emerald-900/50 shadow-inner" 
+         x-data="blackFridayCountdown('2026-11-30T23:59:59')">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-2 text-xs sm:text-sm">
+            
+            <div class="flex items-center gap-1.5 sm:gap-2 font-medium truncate">
+                <span class="bg-gradient-to-r from-amber-500 to-orange-600 text-white font-extrabold uppercase px-1.5 py-0.5 rounded text-[9px] sm:text-xs tracking-wider shadow shrink-0 animate-pulse">
+                    Black Friday
+                </span>
+                <span class="truncate flex items-center gap-1.5">
+                    <span class="line-through text-red-400 font-bold text-base sm:text-lg">€45</span> 
+                    <strong class="text-orange-400 font-black text-xl sm:text-2xl drop-shadow">€27</strong>
+                </span>
+            </div>
+
+            <div class="flex items-center gap-2 shrink-0">
+                <!-- Desktop Full Timer -->
+                <div class="hidden sm:flex items-center gap-1 bg-black/30 px-2.5 py-1 rounded-md border border-white/10 text-xs font-mono">
+                    <span class="text-orange-400 font-bold" x-text="days">00</span>d :
+                    <span class="text-orange-400 font-bold" x-text="hours">00</span>h :
+                    <span class="text-orange-400 font-bold" x-text="minutes">00</span>m :
+                    <span class="text-orange-400 font-bold" x-text="seconds">00</span>s
+                </div>
+
+                <!-- Mobile Days Only Timer -->
+                <div class="flex sm:hidden items-center gap-1 bg-black/30 px-2 py-1 rounded-md border border-white/10 text-[11px] font-mono">
+                    <span class="text-orange-400 font-bold" x-text="days + 'd left'">00d left</span>
+                </div>
+                
+                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 27, quantity: 1 }); cartOpen = true;" 
+                        class="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 text-white font-bold px-2.5 sm:px-4 py-1.5 rounded-lg text-xs shadow transition-all active:scale-95 inline-flex items-center gap-1 cursor-pointer">
+                    <span>Start Now</span>
+                    <i class="fa-solid fa-arrow-right text-[9px]"></i>
+                </button>
+            </div>
+
+        </div>
     </div>
 
     <!-- Mobile Drawer Navigation Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-cardLight border-b border-slate-200 px-6 py-6 space-y-4 shadow-xl">
-        <nav class="flex flex-col space-y-3 font-medium text-textMain">
-            <a href="{{ url('/#course') }}" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
-                <span>Active Course</span>
+    <div id="mobile-menu" class="hidden md:hidden bg-cardLight border-b border-slate-200 px-5 py-5 space-y-3 shadow-xl">
+        <nav class="flex flex-col space-y-1.5 font-medium text-textMain text-sm">
+            <a href="{{ url('/#course') }}" onclick="toggleMobileMenu()" class="py-2.5 border-b border-slate-100 hover:text-emeraldPrimary flex items-center justify-between">
+                <span>Course Overview</span>
                 <i class="fa-solid fa-chevron-right text-xs text-textMuted"></i>
             </a>
-            <a href="{{ url('/#workflow') }}" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
-                <span>Step-by-Step Process</span>
+            <a href="{{ route('front.corporate') }}" onclick="toggleMobileMenu()" class="py-2.5 border-b border-slate-100 hover:text-emeraldPrimary flex items-center justify-between">
+                <span>Team Training</span>
                 <i class="fa-solid fa-chevron-right text-xs text-textMuted"></i>
             </a>
-            <a href="{{ url('/#faq') }}" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
+            <a href="{{ url('/#faq') }}" onclick="toggleMobileMenu()" class="py-2.5 border-b border-slate-100 hover:text-emeraldPrimary flex items-center justify-between">
                 <span>FAQ</span>
                 <i class="fa-solid fa-chevron-right text-xs text-textMuted"></i>
             </a>
-            <a href="{{ route('front.contact') }}" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
-                <span>Contact</span>
-                <i class="fa-solid fa-chevron-right text-xs text-textMuted"></i>
-            </a>
-            <a href="{{ route('front.about') }}" onclick="toggleMobileMenu()" class="py-2 border-b border-slate-100 hover:text-emeraldPrimary transition-colors flex items-center justify-between">
-                <span>About us</span>
+            <a href="{{ route('front.contact') }}" onclick="toggleMobileMenu()" class="py-2.5 border-b border-slate-100 hover:text-emeraldPrimary flex items-center justify-between">
+                <span>Contact Us</span>
                 <i class="fa-solid fa-chevron-right text-xs text-textMuted"></i>
             </a>
         </nav>
-        <div class="pt-2 space-y-3">
-            <a href="{{ url('/login') }}" onclick="toggleMobileMenu()" class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white py-3 rounded-xl font-semibold text-sm text-center shadow-md shadow-emeraldPrimary/20">
+        <div class="pt-2 space-y-2">
+            <a href="{{ url('/login') }}" onclick="toggleMobileMenu()" class="block w-full bg-slate-100 text-textMain py-2.5 rounded-xl font-semibold text-xs text-center">
                 Login
             </a>
-            <a href="{{ url('/register') }}" onclick="toggleMobileMenu()" class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white py-3 rounded-xl font-semibold text-sm text-center shadow-md shadow-emeraldPrimary/20">
-                Register Now
+            <a href="{{ url('/register') }}" onclick="toggleMobileMenu()" class="block w-full bg-emeraldPrimary text-white py-2.5 rounded-xl font-semibold text-xs text-center shadow-md">
+                Register Account
             </a>
         </div>
     </div>
@@ -246,4 +226,39 @@
             icon.classList.add('fa-bars');
         }
     }
+
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('blackFridayCountdown', (expiryDate) => ({
+            days: '00',
+            hours: '00',
+            minutes: '00',
+            seconds: '00',
+            init() {
+                const targetTime = new Date(expiryDate).getTime();
+                
+                setInterval(() => {
+                    const now = new Date().getTime();
+                    const diff = targetTime - now;
+
+                    if (diff <= 0) {
+                        this.days = '00';
+                        this.hours = '00';
+                        this.minutes = '00';
+                        this.seconds = '00';
+                        return;
+                    }
+
+                    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                    const s = Math.floor((diff % (1000 * 60)) / 1000);
+
+                    this.days = String(d).padStart(2, '0');
+                    this.hours = String(h).padStart(2, '0');
+                    this.minutes = String(m).padStart(2, '0');
+                    this.seconds = String(s).padStart(2, '0');
+                }, 1000);
+            }
+        }));
+    });
 </script>

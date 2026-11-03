@@ -67,35 +67,8 @@
     <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-5xl w-full bg-cardLight border border-slate-200 rounded-3xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12">
 
-            <!-- Left info panel -->
-            <div class="lg:col-span-5 bg-gradient-to-br from-emeraldDark to-emerald-900 text-white p-8 sm:p-12 flex flex-col justify-between relative overflow-hidden">
-                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#10B981_1px,transparent_1px)] [background-size:16px_16px]"></div>
-
-                <div class="relative z-10 space-y-6">
-                    <a href="{{ url('/') }}" class="inline-flex items-center space-x-3 group">
-                        <div class="w-10 h-10 rounded-xl bg-sageAccent flex items-center justify-center text-emeraldDark font-bold text-xl shadow-md">
-                            <img src="{{ asset('images/logo/logolanding.webp') }}" class="rounded-xl" alt="Progressive Irish Safety Logo">
-                        </div>
-                        <span class="font-display font-bold text-xl tracking-tight text-white">Progressive Irish Safety</span>
-                    </a>
-
-                    <div class="space-y-3 pt-6">
-                        <span class="bg-emerald-800/80 text-emerald-200 border border-emerald-700 text-xs font-semibold px-3 py-1 rounded-full inline-block">Learning portal</span>
-                        <h2 class="font-display text-3xl font-extrabold tracking-tight">Create your account</h2>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            Register to open your dashboard. From there you can complete the online theory slides, take the theory test, and send your practical video on WhatsApp for instructor review.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="relative z-10 pt-10 border-t border-emerald-800/60 mt-8 text-xs text-slate-300 space-y-2">
-                    <p class="font-semibold text-white">How certification works</p>
-                    <p>A certificate of completion is issued after you pass the online theory test and an instructor approves your practical video.</p>
-                </div>
-            </div>
-
-            <!-- Right registration form panel -->
-            <div class="lg:col-span-7 p-8 sm:p-12 bg-cardLight flex flex-col justify-center">
+            <!-- Right registration form panel (Appears FIRST on mobile using order-1) -->
+            <div class="lg:col-span-7 p-8 sm:p-12 bg-cardLight flex flex-col justify-center order-1 lg:order-2">
 
                 <div class="mb-6">
                     <h1 class="font-display text-2xl sm:text-3xl font-extrabold text-textMain tracking-tight">Create an account</h1>
@@ -123,6 +96,25 @@
                         </ul>
                     </div>
                 @endif
+
+                <!-- Google Socialite Login Button & Divider -->
+                <div class="mb-6">
+                    <a href="{{ route('google') }}" class="w-full flex items-center justify-center gap-3 bg-white hover:bg-slate-50 text-textMain border border-slate-200 font-semibold py-3.5 px-4 rounded-xl transition-all shadow-sm hover:shadow group cursor-pointer">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24">
+                            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+                            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.13 0-5.78-2.11-6.73-4.96H1.18v3.15C3.15 21.33 7.22 24 12 24z"/>
+                            <path fill="#FBBC05" d="M5.27 14.24c-.25-.72-.38-1.49-.38-2.24s.13-1.52.38-2.24V6.6H1.18C.43 8.13 0 9.87 0 11.7c0 1.83.43 3.57 1.18 5.1l4.09-2.56z"/>
+                            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.22 0 3.15 2.67 1.18 6.6l4.09 3.15c.95-2.85 3.6-4.96 6.73-4.96z"/>
+                        </svg>
+                        <span class="text-sm">Sign up with Google</span>
+                    </a>
+
+                    <div class="relative flex py-4 items-center">
+                        <div class="flex-grow border-t border-slate-200"></div>
+                        <span class="flex-shrink mx-4 text-xs text-textMuted uppercase tracking-wider">Or register with email</span>
+                        <div class="flex-grow border-t border-slate-200"></div>
+                    </div>
+                </div>
 
                 <!-- Registration form with Conditional Inline Cart Summary Box -->
                 <form method="POST" action="{{ route('register') }}" class="space-y-4" x-data>
@@ -223,6 +215,33 @@
                     Need help? Message us on Live Chat
                 </div>
 
+            </div>
+
+            <!-- Left info panel (Appears SECOND on mobile using order-2) -->
+            <div class="lg:col-span-5 bg-gradient-to-br from-emeraldDark to-emerald-900 text-white p-8 sm:p-12 flex flex-col justify-between relative overflow-hidden order-2 lg:order-1">
+                <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#10B981_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
+                <div class="relative z-10 space-y-6">
+                    <a href="{{ url('/') }}" class="inline-flex items-center space-x-3 group">
+                        <div class="w-10 h-10 rounded-xl bg-sageAccent flex items-center justify-center text-emeraldDark font-bold text-xl shadow-md">
+                            <img src="{{ asset('images/logo/logolanding.webp') }}" class="rounded-xl" alt="Progressive Irish Safety Logo">
+                        </div>
+                        <span class="font-display font-bold text-xl tracking-tight text-white">Progressive Irish Safety</span>
+                    </a>
+
+                    <div class="space-y-3 pt-6">
+                        <span class="bg-emerald-800/80 text-emerald-200 border border-emerald-700 text-xs font-semibold px-3 py-1 rounded-full inline-block">Learning portal</span>
+                        <h2 class="font-display text-3xl font-extrabold tracking-tight">Create your account</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Register to open your dashboard. From there you can complete the online theory slides, take the theory test, and send your practical video on WhatsApp for instructor review.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative z-10 pt-10 border-t border-emerald-800/60 mt-8 text-xs text-slate-300 space-y-2">
+                    <p class="font-semibold text-white">How certification works</p>
+                    <p>A certificate of completion is issued after you pass the online theory test and an instructor approves your practical video.</p>
+                </div>
             </div>
 
         </div>
