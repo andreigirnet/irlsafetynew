@@ -151,9 +151,13 @@
                 <span class="bg-gradient-to-r from-amber-500 to-orange-600 text-white font-extrabold uppercase px-1.5 py-0.5 rounded text-[9px] sm:text-xs tracking-wider shadow shrink-0 animate-pulse">
                     Black Friday
                 </span>
+
                 <span class="truncate flex items-center gap-1.5">
                     <span class="line-through text-red-400 font-bold text-base sm:text-lg">€45</span> 
                     <strong class="text-orange-400 font-black text-xl sm:text-2xl drop-shadow">€27</strong>
+                </span>
+                <span class="hidden lg:inline-block text-xs text-slate-300 font-normal border-l border-emerald-700/60 pl-2.5 ml-1">
+                    The sale is available only this November
                 </span>
             </div>
 
