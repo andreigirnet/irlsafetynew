@@ -1,5 +1,10 @@
 document.addEventListener('alpine:init', () => {
     Alpine.store('cart', {
+
+        // CHANGE PRICES HERE
+        regularPrice: 27.00,
+        discountedPrice: 24.00,
+
         items: JSON.parse(localStorage.getItem('cart') || '[]'),
 
         save() {
@@ -40,18 +45,18 @@ document.addEventListener('alpine:init', () => {
             }
         },
 
-        // Automatically adjusts price between €30 (retail) and €27 (bulk 10+ discount)
         recalculatePrices() {
             this.items.forEach(item => {
                 if (item.id === 1 || item.id === 'corporate-manual-handling') {
-                    // If quantity is 10 or more, apply 10% discount (€27), otherwise regular €30
-                    item.price = item.quantity >= 10 ? 27.00 : 30.00;
+                    item.price = item.quantity >= 10
+                        ? this.discountedPrice
+                        : this.regularPrice;
                 }
             });
         },
 
         cartSubTotal(){
-            this.recalculatePrices(); // Ensure prices match quantities before summing
+            this.recalculatePrices();
             return this.items.reduce((sum,i)=>sum + i.price * i.quantity, 0)
         },
 

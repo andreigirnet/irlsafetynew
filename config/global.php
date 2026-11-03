@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'course_price' => 30,
+    'course_price' => 27,
     'business_name' => "PROGRESSIVE VELOCITY FAST SOLUTIONS LIMITED",
     'business_number' => '822301',
     'business_address' => '51 Bracken Road, Dublin, D18 CV48 Ireland',

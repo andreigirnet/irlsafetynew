@@ -16,7 +16,7 @@
                     </p>
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
                         <a href="{{ url('/register') }}" class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-8 py-4 rounded-xl shadow-xl shadow-emeraldPrimary/25 text-center transition-all hover:scale-105">
-                            Register and enrol (€30)
+                            Register and enrol (€{{config('global.course_price')}})
                         </a>
                         <a href="#workflow" class="bg-cardLight hover:bg-slate-100 text-textMain font-semibold px-8 py-4 rounded-xl border border-slate-200 text-center transition-all shadow-sm">
                             See how it works
@@ -27,7 +27,7 @@
                     </p>
                     <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-200 text-sm text-textMuted">
                         <div>
-                            <span class="block font-bold text-textMain text-lg">€30</span>
+                            <span class="block font-bold text-textMain text-lg">€{{config('global.course_price')}}</span>
                             Flat price
                         </div>
                         <div>
@@ -47,7 +47,7 @@
                             <img src="{{ asset('images/lifting.webp') }}" alt="Person lifting a box using manual handling technique" class="hero-course-img">
                             <div class="image-gradient-overlay"></div>
                             <div class="floating-price-tag">
-                                <span class="currency">€</span>30
+                                <span class="currency">€</span>{{config('global.course_price')}}
                             </div>
                         </div>
 
@@ -78,11 +78,11 @@
                             <div class="flex items-center justify-between pt-6 border-t border-slate-100">
                                 <div>
                                     <span class="text-xs text-textMuted block">Price</span>
-                                    <span class="font-display font-extrabold text-3xl text-textMain">€30</span>
+                                    <span class="font-display font-extrabold text-3xl text-textMain">€{{config('global.course_price')}}</span>
                                 </div>
-                                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })"
+                                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: {{ (float) config('global.course_price') }}, quantity: 1 })"
                                         class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md shadow-emeraldPrimary/20 text-center cursor-pointer">
-                                    Add to Cart (€30)
+                                    Add to Cart (€{{config('global.course_price')}})
                                 </button>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
 
                 <!-- Floating Price Tag -->
                 <div class="absolute bottom-3 right-3 z-10 bg-emeraldPrimary text-white font-bold px-3 py-1.5 rounded-xl shadow-lg flex items-center gap-0.5 text-sm">
-                    <span class="currency">€</span>30
+                    <span class="currency">€</span>{{config('global.course_price')}}
                 </div>
             </div>
 
@@ -120,9 +120,9 @@
                     <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emeraldPrimary text-xs"></i><span>Upload your practical video directly in your account</span></li>
                 </ul>
 
-                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })"
+                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: {{ (float) config('global.course_price') }}, quantity: 1 })"
                         class="block w-full bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold py-3.5 rounded-xl transition-all shadow-lg shadow-emeraldPrimary/20 text-center cursor-pointer">
-                    Add to Cart (€30)
+                    Add to Cart (€{{config('global.course_price')}})
                 </button>
             </div>
         </div>
@@ -191,11 +191,11 @@
             <div class="mt-8 bg-cardLight border border-slate-200 rounded-2xl p-8 shadow-md flex flex-col sm:flex-row items-center justify-between gap-6">
                 <div class="space-y-1 text-center sm:text-left">
                     <h4 class="font-display text-xl font-bold text-textMain">Liked the demo? Complete the full course now</h4>
-                    <p class="text-textMuted text-sm">Enrol today for €30 to get full access to all course materials, theory test, and instructor video review.</p>
+                    <p class="text-textMuted text-sm">Enrol today for €{{config('global.course_price')}} to get full access to all course materials, theory test, and instructor video review.</p>
                 </div>
-                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 30.00, quantity: 1 })"
+                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: {{ (float) config('global.course_price') }}, quantity: 1 })"
                         class="bg-emeraldPrimary hover:bg-emeraldHover text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-emeraldPrimary/20 whitespace-nowrap text-center cursor-pointer">
-                    Add to Cart (€30)
+                    Add to Cart (€{{config('global.course_price')}})
                 </button>
             </div>
         </div>
@@ -220,7 +220,7 @@
                 </button>
                 <button onclick="setWorkflowStep(2)" id="step-btn-2" class="workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight/70 border-slate-200 text-textMuted hover:border-slate-300">
                     <span class="text-xs font-bold text-textMuted block mb-1">STEP 02</span>
-                    <span class="font-semibold text-xs block">Buy the course (€30)</span>
+                    <span class="font-semibold text-xs block">Buy the course (€{{config('global.course_price')}})</span>
                 </button>
                 <button onclick="setWorkflowStep(3)" id="step-btn-3" class="workflow-btn p-4 rounded-xl border text-left transition-all bg-cardLight/70 border-slate-200 text-textMuted hover:border-slate-300">
                     <span class="text-xs font-bold text-textMuted block mb-1">STEP 03</span>
@@ -292,7 +292,7 @@
                             <div class="w-6 h-6 rounded-full bg-emeraldLight text-emeraldPrimary flex items-center justify-center text-xs mt-1 shrink-0 border border-emeraldBorder"><i class="fa-solid fa-check"></i></div>
                             <div>
                                 <h4 class="font-semibold text-textMain">Price</h4>
-                                <p class="text-textMuted text-sm">€30, paid once, with no hidden fees or subscriptions.</p>
+                                <p class="text-textMuted text-sm">€{{config('global.course_price')}}, paid once, with no hidden fees or subscriptions.</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-3">
@@ -387,7 +387,7 @@
                         <i id="faq-icon-4" class="fa-solid fa-chevron-down text-textMuted transition-transform"></i>
                     </button>
                     <div id="faq-content-4" class="hidden px-6 pb-6 text-textMuted text-sm leading-relaxed border-t border-slate-100 pt-4">
-                        The course costs €30. There are no hidden fees and no subscription.
+                        The course costs €{{config('global.course_price')}}. There are no hidden fees and no subscription.
                     </div>
                 </div>
 
@@ -626,8 +626,8 @@
                 tag: "Step 1 of 7"
             },
             2: {
-                title: "Buy the course (€30)",
-                desc: "Pay €30 securely online. There are no hidden fees and no recurring charges.",
+                title: "Buy the course (€{{config('global.course_price')}})",
+                desc: "Pay €{{config('global.course_price')}} securely online. There are no hidden fees and no recurring charges.",
                 icon: "fa-credit-card",
                 tag: "Step 2 of 7"
             },
