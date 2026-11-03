@@ -42,12 +42,11 @@
                 Login
             </a>
 
-            <!-- Quick Start Now Action -->
-            <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 27, quantity: 1 }); cartOpen = true;" 
-                    class="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-4 py-2 rounded-xl font-semibold text-sm transition-all shadow-md shadow-orange-500/20 flex items-center gap-1.5 cursor-pointer">
+            <a href="/register" 
+            class="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-4 py-2 rounded-xl font-semibold text-sm transition-all shadow-md shadow-orange-500/20 flex items-center gap-1.5 cursor-pointer">
                 <span>Start Now</span>
                 <i class="fa-solid fa-bolt text-xs"></i>
-            </button>
+            </a>
         </div>
 
         <!-- Mobile Right Action Area -->
@@ -175,11 +174,11 @@
                     <span class="text-orange-400 font-bold" x-text="days + 'd left'">00d left</span>
                 </div>
                 
-                <button @click="$store.cart.addItem({ id: 1, name: 'Manual Handling Training', price: 27, quantity: 1 }); cartOpen = true;" 
-                        class="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 text-white font-bold px-2.5 sm:px-4 py-1.5 rounded-lg text-xs shadow transition-all active:scale-95 inline-flex items-center gap-1 cursor-pointer">
+                <a href="/register" 
+                class="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 text-white font-bold px-2.5 sm:px-4 py-1.5 rounded-lg text-xs shadow transition-all active:scale-95 inline-flex items-center gap-1 cursor-pointer">
                     <span>Start Now</span>
                     <i class="fa-solid fa-arrow-right text-[9px]"></i>
-                </button>
+                </a>
             </div>
 
         </div>

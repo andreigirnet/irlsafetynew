@@ -1,6 +1,6 @@
 @extends('front.app')
 @section('content')
-    <section class="relative overflow-hidden hero-pattern py-20 lg:py-32 border-b border-slate-200 bg-gradient-to-b from-white via-surfaceLight to-surfaceLight">
+    <section class="relative overflow-hidden hero-pattern py-10 lg:py-32 border-b border-slate-200 bg-gradient-to-b from-white via-surfaceLight to-surfaceLight">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6">
