@@ -108,6 +108,11 @@
                                         Blogs
                                     </a>
                                 </div>
+                                <div>
+                                    <a href="{{ route('admin.traffic') }}">
+                                        <span>Traffic Monitor</span>
+                                    </a>
+                                </div>
                             </div>
                         </li>
                     @endif

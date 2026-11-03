@@ -12,6 +12,7 @@ use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\Tags\Url;
+use App\Http\Controllers\TrafficController;
 
 /*
 |--------------------------------------------------------------------------
@@ -113,6 +114,8 @@ Route::group(['middleware'=>'auth'], function () {
 
     Route::middleware(['is_admin'])->group(function () {
         Route::get('/admin/dashboard', [\App\Http\Controllers\AdminDashboardController::class,'index'])->name('admin.dashboard');
+
+        Route::get('/admin/traffic', [TrafficController::class, 'index'])->name('admin.traffic');
 
         Route::get('/search/all/employees', [App\Http\Controllers\UserController::class,'searchAllEmployees'])->name('user.search.all.employees');
         Route::get('/admin/users', [App\Http\Controllers\UserController::class,'index'])->name('users.index');
