@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use App\Models\VisitorLog;
+use GeoIp2\Database\Reader;
 
 class TrackVisitors
 {
@@ -76,6 +77,7 @@ class TrackVisitors
 
         // Browser language
         $acceptLanguage = $request->header('Accept-Language');
+
         $browserLanguage = $acceptLanguage
             ? explode(',', $acceptLanguage)[0]
             : null;
@@ -83,6 +85,34 @@ class TrackVisitors
         // Preserve first landing page
         if (!$session->has('first_landing_page')) {
             $session->put('first_landing_page', $request->fullUrl());
+        }
+
+        // Detect country using GeoLite2 database
+        $country = null;
+
+        try {
+            $databasePath = storage_path(
+                'app/geoip/GeoLite2-Country.mmdb'
+            );
+
+            if (file_exists($databasePath)) {
+                $reader = new Reader($databasePath);
+
+                try {
+                    $record = $reader->country($request->ip());
+                    $country = $record->country->isoCode;
+                } finally {
+                    $reader->close();
+                }
+            } else {
+                \Log::warning('GeoIP database not found: ' . $databasePath);
+            }
+
+        } catch (\Throwable $e) {
+            \Log::warning('GeoIP lookup failed', [
+                'ip' => $request->ip(),
+                'error' => $e->getMessage(),
+            ]);
         }
 
         // Record every public page visit
@@ -96,10 +126,10 @@ class TrackVisitors
             'utm_term' => $request->query('utm_term'),
             'utm_content' => $request->query('utm_content'),
 
-            // Cloudflare location
-            'country' => $request->header('CF-IPCountry'),
-            'city' => $request->header('CF-IPCity'),
-            'region' => $request->header('CF-Region'),
+            // GeoIP location
+            'country' => $country,
+            'city' => null,
+            'region' => null,
 
             // Browser and device
             'browser' => $browser,
